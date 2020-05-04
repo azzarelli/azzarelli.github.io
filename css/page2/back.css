@@ -1,0 +1,538 @@
+body{
+  background-color: #aadd77;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}html{
+  background-color: #aadd77;
+}
+
+.title_Box{
+  position: absolute;
+  opacity: 1;
+  height:120px;
+  width: 430px;
+  left: 50%;
+  margin-left: -215px;
+  top: 0px;
+  margin-top: -1.7%;
+  
+  -webkit-animation: title 2.2s;-moz-animation: title 2.2s;-o-animation: title 2.2s;-ms-animation: title 2.2s;
+
+}
+.title{ /* "Projects" Page */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 90px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  z-index: 100;
+}
+
+#back_space{
+  z-index: 100;
+  background-color: #aadd77;
+  opacity: 0.3;
+  background-image: url("arrow.png");
+  transform: scaleX(-1);
+  background-repeat: no-repeat;
+  background-position: 14px 9px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-size: 30px;
+  width: 70px;
+  height: 30px;
+  top: 10px;
+  left: -10px;
+  display: block;
+  position: fixed;
+  -webkit-animation: back 2s;-moz-animation: back 2s;-o-animation: back 2s;-ms-animation: back 2s;
+}
+#back_space:hover{
+  background-color: white;
+}
+#BARS{
+  position: absolute;
+  
+  width: 100%;
+  height:200%;
+  left: 0;
+  top: 0;
+}
+
+/* this is done to easily position the whole page at the center(top)*/
+#Page_Container{
+  position: absolute;
+  width:100%;
+  height: 600px;
+  top: 50%;
+  margin-top: -300px;
+  left:0;
+}
+
+/* From Left to Right
+        L1, L2, ML, MR, R2, R1 */
+.bar_L1{
+  position: absolute;background: rgba(255, 255, 255, 0.3);
+  width: 204.9px;height: 585px;top: 12px;left: 50%; margin-left: -669.34px;
+  -webkit-animation: slide1 2s;-moz-animation: slide1 2s;-o-animation: slide1 2s;-ms-animation: slide1 2s;
+}.bar_L2{
+  position: absolute;background: rgba(255, 255, 255, 0.3);
+  width: 204.9px;height: 585px;top: 12px;left: 50%;margin-left: -442.58px;
+  -webkit-animation: slide2 2.6s;-moz-animation: slide2 2.6ss;-o-animation: slide2 2.6s;-ms-animation: slide2 2.6s;
+}.bar_R2{
+  position: absolute; overflow: hidden;background: rgba(255, 255, 255, 0.3);
+  width: 204.9px;height: 585px;top: 12px; right: 50%; margin-right: -442.58px;
+  -webkit-animation: slide3 2s;-moz-animation: slide3 2s;-o-animation: slide3 2s;-ms-animation: slide3 2s;
+}.bar_R1{
+  position: absolute;background: rgba(255, 255, 255, 0.3);
+  width: 204.9px;height: 585px;top: 12px;right: 50%; margin-right: -669.34px;
+  -webkit-animation: slide4 3s;-moz-animation: slide4 3s;-o-animation: slide4 3s;-ms-animation: slide4 3s;
+}.bar_ML{
+  position: absolute;background: rgba(255, 255, 255, 0.3);
+  width: 204.9px;height: 450px;top: 148px;left: 50%; margin-left: -215.145px;
+  -webkit-animation: slide5 1.6s;-moz-animation: slide5 1.6s;-o-animation: slide5 1.6s;-ms-animation: slide5 1.6s;
+}.bar_MR{
+  position: absolute;background: rgba(255, 255, 255, 0.3);
+  width: 204.9px;height: 450px;top: 148px;right :50%; margin-right: -215.145px;
+  -webkit-animation: slide6 2.2s;-moz-animation: slide6 2.2s;-o-animation: slide6 2.2s;-ms-animation: slide6 2.2s;
+}
+
+.bar_L1:hover{background-color: rgba(255, 255, 255, 0.5);}
+.bar_L2:hover{background-color: rgba(255, 255, 255, 0.5);}
+.bar_R1:hover{background-color: rgba(255, 255, 255, 0.5);}
+.bar_R2:hover{background-color: rgba(255, 255, 255, 0.5);}
+.bar_ML:hover{background-color: rgba(255, 255, 255, 0.5);}
+.bar_MR:hover{background-color: rgba(255, 255, 255, 0.5);}
+/****************************************************************************************************************/
+
+/* Pannel Layout*/
+#pannel_Back{ /* inner background of pannel (container for everything else) */
+  z-index: 100;
+  position: absolute;
+  opacity: 1;
+  height: 565px;
+  width: 184.8px;
+  top: 10px;
+  left: 10px;
+  
+}div.subtitle_box{
+  z-index: 1;
+  width: 100%;
+  height: 20%;
+  top: 3%;
+  left: 0;
+  position: absolute;
+  background-color: rgba(196, 232, 160, 1);
+}p.subtitle{
+  z-index: 11;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -40px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /*font-family: "Courier New Bold", Courier,  monospace;*/
+}
+/****************************************************************************************************************/
+
+/* D5 Project Bar -R2 */
+.d5_back{
+  background-color: #EDF8E3;
+}.bar_R2:hover  div.subtitle_Box{
+  background-color: #D5EEBB
+}div.D5ImageOne{
+  width: 184.8px;
+  height: 435.05px;
+  position: absolute;
+  clip-path: polygon(5px 5px, 179.8px 5px, 5px 212.525px);
+  background-image: url("D5PanelImages/code.jpg");
+  top: 23%;
+  left: 0px;
+}div.D5ImageTwo{
+  width: 184.8px;
+  height: 435.05px;
+  position: absolute;
+  clip-path: polygon(5px 217.525px, 179.8px 10px, 179.8px 425.05px);
+  top: 23%;
+  left: 0px; 
+  background-image: url("D5PanelImages/housing.png");
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 30px 130px;
+  background-color: rgba(255,  245, 177, 1);
+
+}div.D5ImageThree{
+  width: 184.8px;
+  height: 435.05px;
+  position: absolute;
+  clip-path: polygon(5px 222.525px, 5px 430.05px, 179.8px 430.05px);
+  background-image: url("D5PanelImages/board.jpg");
+  background-position:-15px 222px;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  top: 23%;
+  left: 0px;
+}
+/****************************************************************************************************************/
+
+/* Website Project Bar */
+.Web_back{
+  background-color: #EDF8E3;/* rgba(25, 25, 25, 0.5);*/
+}.bar_L2:hover  div.subtitle_Box{
+  background-color: #D5EEBB
+}
+#webTitle{
+  text-align: left;
+}.WebImageOne{
+  top: 23%;
+  left: 0px;
+  width: 184.8px;
+  height: 435.05px;
+  position: absolute;
+  clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 107.5125px, 5px 107.5125px);
+  background-image: url("WebsitePanelImages/MainPage1.png");
+  background-position: -30px 0px;
+  background-size: 250px;
+  background-repeat: no-repeat;
+}.WebImageTwo{
+  top: 23%;
+  left: 0px;
+  width: 184.8px;
+  height: 435.05px;
+  position: absolute;
+  clip-path: polygon(5px 112.5125px, 179.8px 112.5125px, 179.8px 322.5375px, 5px 322.5375px);
+  background-image: url("WebsitePanelImages/codes.png");
+  background-position: 0px 90px;
+  background-size: 300px;
+  background-repeat: no-repeat;
+}.WebImageThree{
+  top: 23%;
+  left: 0px;
+  width: 184.8px;
+  height: 435.05px;
+  position: absolute;
+  clip-path: polygon(5px 327.5375px, 179.8px 327.5375px, 179.8px 430.05px, 5px 430.05px);
+  background-image: url("WebsitePanelImages/MainPage2.png");
+  background-position: -30px 325px;
+  background-size: 240px;
+  background-repeat: no-repeat;
+}
+/****************************************************************************************************************/
+
+/* Written Competence for Ukesf competition */
+.Write_back{
+  height: 430px !important;
+  background-color: #EDF8E3;/* rgba(25, 25, 25, 0.5);*/
+}.bar_ML:hover  div.subtitle_Box{
+  background-color: #D5EEBB
+}
+#Write_sub{
+  font-size: 25px !important;
+  top: -15px !important;
+}
+.WriteImageOne{
+ position: absolute;
+ height: 30%;
+ width: 100%;
+ top: 23%;
+ left: 0px;
+ background-image: url("WritePanelImages/essay.png");
+ clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 126.5px, 5px 126.5px);
+ background-position: 2px 4px;
+ background-size: 180px;
+ background-repeat: no-repeat;
+}
+.WriteImageTwo{
+  position: absolute;
+  height: 47%;
+  width: 100%;
+  top: 53%;
+  left: 0%;
+  background-image: url("WritePanelImages/competition.png");
+  clip-path: polygon(5px 2.5px, 179.8px 2.5px, 179.8px 197.1px, 5px 197.1px);
+  background-position: 5px 5px;
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+/****************************************************************************************************************/
+
+/* Public Speaking & Organisation */
+.Speak_back{
+  height: 430px !important;
+  background-color: #EDF8E3;/* rgba(25, 25, 25, 0.5);*/
+}.bar_MR:hover  div.subtitle_Box{
+  background-color: #D5EEBB
+}
+#Speak_sub{
+  font-size: 20px !important;
+  top: -05px !important;
+}
+.SpeakImageOne{
+ position: absolute;
+ height: 30%;
+ width: 100%;
+ top: 70%;
+ left: 0px;
+ background-image: url("SpeakPanelImages/event.png");
+ clip-path: polygon(5px 0px, 179.8px 0px, 179.8px 124px, 5px 124px);
+ background-position: 2px 4px;
+ background-size: 180px;
+ background-repeat: no-repeat;
+}
+.SpeakImageTwo{
+  position: absolute;
+  height: 47%;
+  width: 100%;
+  top: 23%;
+  left: 0%;
+  background-color: white;
+  clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 202.1px, 5px 202.1px);
+  background-position: 5px 5px;
+  background-size: 180px;
+  background-repeat: no-repeat;
+}
+/****************************************************************************************************************/
+
+/* Hyper Chip Design Project */
+.Hyper_back{
+  background-color: #EDF8E3;/* rgba(25, 25, 25, 0.5);*/
+}.bar_R1:hover  div.subtitle_Box{
+  background-color: #D5EEBB
+}
+#Speak_sub{
+  font-size: 20px !important;
+  top: -05px !important;
+  text-align: center;
+}
+
+/****************************************************************************************************************/
+
+/* Progress Bar when on a project window */
+#color_Progress:hover, #to_Bottom:hover, #return_Progress:hover, #to_Title:hover{
+  left:0px;}
+#bar_Progress{
+  position:fixed;
+  width: 70px;
+  height: 400px;
+  top: 50%;
+  margin-top: -200px;
+  left: -80px;
+  border-radius: 10px;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+}#return_Progress, #to_Title, #to_Bottom, #menu_Progress, #color_Progress{
+  position: absolute;
+  width: 100px;
+  left: -30px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3); 
+  transition: left 0.8s;
+  transition-timing-function: ease-out;
+}
+#return_Progress{
+  height: 78px;
+  top: 0;
+  border-top-right-radius: 10px;
+}.return_Image{
+  background-image: url("ProgressBarFolder/return1.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  top: 16px;
+  left: 45px;
+  opacity: 0.6;
+}
+#to_Title{
+  height: 78px;
+  top: 80px;
+}.to_Title{
+  background-image: url("ProgressBarFolder/arrow2.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  top: 14px;
+  left: 14px;
+  opacity: 0.6;
+}
+#menu_Progress{
+  height: 78px;
+  top: 160px;
+}.menu_Progress{
+  background-image: url("ProgressBarFolder/menu1.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  top: 12px;
+  left: 50px;
+  opacity: 0.6;
+}
+#to_Bottom{
+  height: 78px;
+  top: 240px;
+}.to_Bottom{
+  background-image: url("ProgressBarFolder/arrow2.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  transform: rotate(270deg);
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  top: -10px;
+  left: 54px;
+  opacity: 0.6;
+}
+#color_Progress{
+  height: 80px;
+  top: 320px;
+  border-bottom-right-radius: 10px;
+}.color_Progress{
+  background-image: url("ProgressBarFolder/comb1.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  transform: rotate(270deg);
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  top: -15px;
+  left: 54px;
+  opacity: 0.6;
+}
+/****************************************************************************************************************/
+/*  KEY FRAMES  */
+@-webkit-keyframes slide1 {
+  0% {left: -400px;}
+  100% {left: 50%;}}
+@-moz-keyframes slide1 {
+  0% {left: -400px;}
+  100% {left: 50%;}}
+@-o-keyframes slide1 {
+  0% {left: -400px;}
+  100% {left: 50%;}}
+@-ms-keyframes slide1 {
+  0% {left: -400px;}
+  100% {left: 50%;}}
+
+@-webkit-keyframes slide2 {
+  0% {top: -1000px;}
+  100% {top: 12px;}}
+@-moz-keyframes slide2 {
+  0% {top: -1000px;}
+  100% {top: 12px;}}
+ @-o-keyframes slide2 {
+  0% {top: -1000px;}
+  100% {top: 12px;}}
+@-ms-keyframes slide2 {
+  0% {top: -1000px;}
+  100% {top: 12px;}}
+
+@-webkit-keyframes slide3{
+  0% {top: 101%;}
+  100% {top: 12px;}}
+@-moz-keyframes slide3{
+  0% {top: 101%;}
+  100% {top: 12px;}}
+@-o-keyframes slide3{
+  0% {top: 101%;}
+  100% {top: 12px;}}
+@-ms-keyframes slide3{
+  0% {top: 101%;}
+  100% {top: 12px;}}
+
+@-webkit-keyframes slide4{
+  0% {right: -1%;}
+  100% {right: 50%;}}
+@-moz-keyframes slide4{
+  0% {right: -1%;}
+  100% {right: 50%;}}
+@-o-keyframes slide4{
+  0% {right: -1%;}
+  100% {right: 50%;}}
+ @-ms-keyframes slide4{
+  0% {right: -1%;}
+  100% {right: 50%;}}
+
+@-webkit-keyframes slide5{
+  0% {top: 101%;}
+  100% {top: 147px;}}
+@-moz-keyframes slide5{
+  0% {top: 101%;}
+  100% {top: 147px;}}
+@-o-keyframes slide5{
+  0% {top: 101%;}
+  100% {top: 147px;}}
+@-ms-keyframes slide5{
+  0% {top: 101%;}
+  100% {top: 147px;}}
+
+@-webkit-keyframes slide6{
+  0% {top: 110%;}
+  100% {top: 147px;}}
+@-moz-keyframes slide6{
+  0% {top: 110%;}
+  100% {top: 147px;}}
+@-o-keyframes slide6{
+  0% {top: 110%;}
+  100% {top: 147px;}}
+@-ms-keyframes slide6{
+  0% {top: 110%;}
+  100% {top: 147px;}}
+
+@-webkit-keyframes title{
+  0% { margin-top: -20%;}
+  100% { margin-top: -1.7%;}}
+@-moz-keyframes title{
+  0% { margin-top: -20%;}
+  100% { margin-top: -1.7%;}}
+@-o-keyframes title{
+  0% { margin-top: -20%;}
+  100% { margin-top: -1.7%;}}
+@-ms-keyframes title{
+  0% { margin-top: -20%;}
+  100% { margin-top: -1.7%;}}
+
+@-webkit-keyframes back{
+  0% {left: -5.5%;}
+  100% {left: -0.9%;}}
+@-moz-keyframes back{
+  0% {left: -5.5%;}
+  100% {left: -0.9%;}}
+@-o-keyframes back{
+  0% {left: -5.5%;}
+  100% {left: -0.9%;}}
+@-ms-keyframes back{
+  0% {left: -5.5%;}
+  100% {left: -0.9%;}}
+
+#cover{
+  position: absolute;
+  height: 400%;
+  width: 100%;
+  background-color: white;
+  top: -400%;
+  left: 0;
+  z-index: 100;
+}
+#Hexaco{
+  outline: 0;
+  border: 0;
+  z-index: 101;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -89px;
+  margin-left: -102px;
+  clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
+  background: #F2F2F2;
+  height: 348px;
+  width: 400px;
+}

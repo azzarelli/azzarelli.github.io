@@ -1,0 +1,12 @@
+
+
+#canvHold{
+    width:410px;
+    height: 410px;
+    position: fixed;
+    left: 50%;
+    margin-left: -205px;
+    top: 50%;
+    margin-top: -205px;
+    z-index: 10;
+}

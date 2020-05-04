@@ -1,0 +1,21 @@
+
+#back{
+
+  outline: 0;
+  border: 0;
+  display: block;
+  background-color: #ff6b8e;
+
+  top: 4%;
+  left: 2%;
+  width: 110px;
+  height: 20px;
+  position: fixed;
+
+  z-index: 5;
+
+}
+
+#back::-moz-focus-inner {
+  border:0;
+}
