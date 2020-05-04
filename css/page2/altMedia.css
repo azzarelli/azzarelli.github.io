@@ -4,7 +4,3 @@
     - etc
 */
 
-@media (max-width: 1350px) {
-  body{display:none;}/*For now block everything*/
-
-}
