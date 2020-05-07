@@ -2,6 +2,8 @@
 
 Project Status: -In Progress-
 
+Device Implementation: No mobile access
+
 Languages Used: HTML, css, JavaScript (w/ jQuery implementation)
 Libraries Used: jQuery (v3.5.1), p5.js
 
