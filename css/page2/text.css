@@ -25,7 +25,7 @@
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Lucida Console", Courier, monospace;
 }
 
 #WebContainer{ /* Contains the flow  and title*/
@@ -52,7 +52,7 @@
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Lucida Console", Courier, monospace;
 }
 
 #WriteContainer{ /* Contains the flow  and title*/
@@ -79,7 +79,7 @@
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Lucida Console", Courier, monospace;
 }
 #Write_twoContainer{
   font-size: 25px !important;
@@ -108,7 +108,7 @@
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "Lucida Console", Courier, monospace;
 }.Speak_textContainer{
   top: 175px !important;
 }
