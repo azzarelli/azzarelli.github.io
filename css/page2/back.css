@@ -185,7 +185,9 @@ body{
   background-color: #D5EEBB
 }
 #webTitle{
-  text-align: left;
+  text-align: center;
+  font-size: 35px !important;
+  top: -10px !important;
 }.WebImageOne{
   top: 23%;
   left: 0px;
