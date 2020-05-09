@@ -143,6 +143,16 @@ a{
 }
 /* 8************** */
 
+/*******CV IMAGE********/
+#CV{
+  margin-top: 300px;
+  width: 100%;
+  height: auto;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+}
+
 @-webkit-keyframes fade {
   0% {opacity: 0;}
   60% {opacity: 0;}
