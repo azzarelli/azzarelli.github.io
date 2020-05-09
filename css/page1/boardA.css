@@ -151,6 +151,7 @@ a{
   background-size: inherit;
   background-repeat: no-repeat;
   transform: rotate(90deg);
+  box-shadow: 0 0 20px grey;
 }
 
 @-webkit-keyframes fade {
