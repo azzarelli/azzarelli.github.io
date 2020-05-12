@@ -130,7 +130,7 @@ body{
   width: 100%;
   top: -40px;
   color: rgba(255, 255, 255, 1);
-  text-align: center;
+  text-align: center !important;
   font-size: 45px;
   font-weight: bold;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -186,8 +186,8 @@ body{
 }
 #webTitle{
   text-align: justify;
-  font-size: 35px !important;
-  top: -10px !important;
+  font-size: 45px !important;
+  top: -20px !important;
 }.WebImageOne{
   top: 23%;
   left: 0px;
