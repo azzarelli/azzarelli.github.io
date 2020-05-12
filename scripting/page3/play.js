@@ -18,6 +18,4 @@ document.addEventListener('keydown', function(event) { // Left, Up, Right, Down 
 
 $(document).ready(function (){
     console.log(DIRECTION);
-        
-    
 });

@@ -1,12 +1,8 @@
 
-
-#canvHold{
-    width:410px;
-    height: 410px;
+.p5Text{
     position: fixed;
-    left: 50%;
-    margin-left: -205px;
-    top: 50%;
-    margin-top: -205px;
-    z-index: 10;
+    right:10px;
+    bottom: 50px;
+    font-size: 40px;;
+
 }

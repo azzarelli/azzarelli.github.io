@@ -9,10 +9,10 @@ var state = "Pause"; // Game has been paused
 var initStart = 0; // Start screen
 
 function setup() {
-  createCanvas(400, 400);
+  let can = createCanvas(400, 400);
+  can.position((windowWidth/2)-200, (windowHeight/2)-200);
+  can.style("z-index: 10;");
   textFont("Roboto Mono");
-  
-
   difficulty = 0;
   
   frameRate(100);
@@ -23,7 +23,7 @@ function setup() {
 
 function draw() {
   textSize(20);
-  background(255);
+  sbackground(255);
   
   if(!enemyCount){
   
