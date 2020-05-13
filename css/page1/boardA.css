@@ -27,14 +27,33 @@ html{
     visibility: hidden;
   }
   #behind{
+    display: inline-block;
     position: absolute;
     background-color: #FFE5EE;
     width: 100%;
-    height: 1400px;
+    height: 200%;
     top: 100%;
     left: 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
+
+  /*******CV IMAGE********/
+  #CV{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: 101;
+    top: 50px;
+    left: 0%;
+
+    height: 100%;
+    width: auto;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px grey;
+
+  }
+
   #white_hex{
     z-index: -1;
     outline: 0;
@@ -54,49 +73,11 @@ html{
     -ms-animation: hex 4s;
   }
 
-  #frame{
-    border: none;
-    color:#FFFAFA ;
-  }
   #toolbarViewer {
     height: 32px;
     background-color: #FFFAFA !important;
   }
-
-  #back_w{
-    padding-top:55px;
-
-    overflow-x: hidden;
-    position: absolute;
-    background-color: #FFE5EE; /* seashell white/pink */
-    width: 90%;
-    height: 1500px;
-    top: 85%;
-    left: 5%;
-    margin-top: 5%; /* remeber to take out the / at end */
-    -webkit-animation: fade 9s;
-    -moz-animation: fade 9s;
-    -o-animation: fade 9s;
-    -ms-animation: fade 9s;
-
-  }
-  #inner_g{
-    position: absolute;
-    background-color:  #FFFAFA; /* snow white code */
-    width: 98%;
-    height: 100%;
-    left: 1%;
-    top: 0;
-  }
-  /*
-  #inner_butt{  this is a bar that makes it look like it had padding on the bottom
-    position: fixed;
-    background-color:  #ff9eb5;
-    width: 100%;
-    height: 1%;
-    top: 99%;
-  }
-  */
+ 
   #subtitle{ /* the course of your life */
     color: #ff6c8f;
     width: 420px;
@@ -139,22 +120,13 @@ html{
   /* TITLE:  This is the wrap for the typewrite */
   a{
     width: 800px;
+    height: 300%;
     position: fixed;
     top: 45%;
     margin-left: -400px;
   }
   /* 8************** */
 
-  /*******CV IMAGE********/
-  #CV{
-    margin-top: 300px;
-    width: 100%;
-    height: auto;
-    background-size: inherit;
-    background-repeat: no-repeat;
-    transform: rotate(90deg);
-    box-shadow: 0 0 20px grey;
-  }
 
   @-webkit-keyframes fade {
     0% {opacity: 0;}
@@ -193,118 +165,6 @@ html{
     100% {opacity: 1;}
   }
   /************* Writing in page ***********/
-
-  h2,h3,h4{
-    color: #353839;
-    position: absolute;
-  }
-
-  h2{
-    left:8%;
-    font-size: 100%;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  h3{
-    left: 8%;
-    font-size: 70%;
-    font-weight: 600;
-  }
-  h4{
-    left: 14%;
-    font-size: 70%;
-    font-weight: 200;
-  }
-
-  #work{
-    top: 10%;
-  }
-  #education{
-    top: 47%;
-  }
-  #personal{top: 89%;}
-
-  #work0{top: 13%;}
-    #desc0{top: 14.25%;}
-  #work1{top: 17%;}
-    #desc10{top: 18.5%;}
-    #desc11{top: 19.75%;}
-    #desc12{top: 21%;}
-    #desc13{top: 22.25%;}
-  #work2{top: 25%;}
-    #desc20{top: 26.5%;}
-    #desc21{top: 27.75%;}
-  #work3{top: 30.5%;}
-    #desc30{top: 32%;}
-    #desc305{ left: 15%; top: 33.25%;}
-    #desc31{top: 34.5%;}
-  #work4{top: 37.25%;}
-    #desc40{top: 38.75%;}
-    #desc405{top: 40%; left: 15%;}
-
-    #line00{
-      position: absolute;
-      background-color: black;
-      height: 2px;
-      width: 70%;
-      left: 15%;
-      top:  8%;
-      opacity: 1;
-    }
-    #line01{
-      position: absolute;
-      background-color: black;
-      height: 2px;
-      width: 70%;
-      left: 15%;
-      top:  45%;
-      opacity: 1;
-    }
-    #line02{
-      position: absolute;
-      background-color: black;
-      height: 2px;
-      width: 70%;
-      left: 15%;
-      top:  88%;
-      opacity: 1;
-    }
-
-  #ed0{top: 50%;}
-    #desc5{top: 49.7%; left: 18%;}
-  #ed1{top: 52%;}
-    #desc6{top: 51.7%; left: 27%;}
-  #ed2{top: 56%;}
-    #desc70{left: 8%;top:57.5%;}
-    #desc71{top: 58.75%;left: 8%;}
-    #desc72{top: 60%;left: 8%;}
-    #desc730{top: 62%;} #desc731{top: 62%;left: 38%;} #desc732{top: 62%;left:55%;} #desc733{top: 62%;left:67%;}
-    #desc734{top: 64%; left: 13%;}  #desc735{top: 64%; left: 35%;}  #desc736{top: 64%; left: 55%;}
-  #ed3{top: 69%;}
-    #desc80{top: 70.5%; left: 8%;}
-    #desc810{top: 72.5%;left: 20%;}#desc811{top: 72.5%; left: 45%;}#desc812{top: 72.5%; left: 65%;}
-  #ed4{top: 77.5%;}
-    #desc90{top: 79%; left: 8%;}
-    #desc910{top:81%; left: 11%;} #desc911{top:81%; left: 24%;} #desc912{top:81%; left: 38%;} #desc913{top:81%; left: 54%;}#desc914{top:81%; left: 64%;}
-    #desc915{top:83%; left: 63%;} #desc916{top:83%; left: 23%;}
-
-  #ps0{top:92%; left: 8%;}
-  #ps1{top:93.25%; left: 8%;}
-  #ps2{top:94.5%; left: 8%;}
-
-
-  #slash{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    display: none;
-    background-color: white;
-    transition: opacity 5s ease-in;
-    z-index: 0;
-  }
 
   #cover{
     position: absolute;
