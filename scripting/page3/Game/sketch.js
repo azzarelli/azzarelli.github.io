@@ -23,7 +23,7 @@ function setup() {
 
 function draw() {
   textSize(20);
-  sbackground(255);
+  background(255);
   
   if(!enemyCount){
   
