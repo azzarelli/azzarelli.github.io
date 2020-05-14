@@ -31,7 +31,7 @@ body {
     left: 10%;
     overflow: hidden;
   }
-/************** Sub Title / Conatiner **************/
+/**************Images**************/
 .down_png{
   position: fixed;
   width: 50px;
@@ -45,6 +45,18 @@ body {
   -moz-animation: up 6s;
   -o-animation: up 6s;
   -ms-animation: up 6s;
+}
+.download_img{
+  position: fixed;
+  width: 30px;
+  height: auto;
+  right: 1%;
+  bottom: 2%;
+  opacity: 0.1;
+  -webkit-animation: up 8s;
+  -moz-animation: up 8s;
+  -o-animation: up 8s;
+  -ms-animation: up 8s;
 }
   /*******CV IMAGE********/
   #CV{
@@ -212,6 +224,18 @@ body {
     -o-animation: up 6s;
     -ms-animation: up 6s;
   
+  }
+  .download_img{
+    position: fixed;
+    width: 30px;
+    height: auto;
+    right: 1%;
+    bottom: 2%;
+    opacity: 0.1;
+    -webkit-animation: up 10s;
+    -moz-animation: up 10s;
+    -o-animation: up 10s;
+    -ms-animation: up 10s;
   }
 
   /********** Page Scrolling ***********/
