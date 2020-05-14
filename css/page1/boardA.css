@@ -11,10 +11,9 @@ html{
       font-size: 25;
       overflow-x: hidden;
     }
-  
-    * { color: #ff6c8f; text-decoration: none; text-align: center;}  
     
 @media only screen and (min-width: 600px) {
+  * { color: #ff6c8f; text-decoration: none; text-align: center;}  
 
   /********** Page Scrolling ***********/
 
@@ -29,17 +28,33 @@ html{
   #behind{
     display: inline-block;
     position: absolute;
-    background-color: #FFE5EE;
-    width: 100%;
+    /* background-color: #FFE5EE; */
+    width: 80%;
     height: 200%;
     top: 100%;
-    left: 0;
+    left: 10%;
     overflow: hidden;
   }
+/************** Sub Title / Conatiner **************/
+.down_png{
+  position: fixed;
+  width: 50px;
+  height: auto;
+  /* opacity: 0.2; */
+  bottom:2%;
+  left:50%;
+  margin-left: -25px;
+
+  -webkit-animation: fade 6s;
+  -moz-animation: fade 6s;
+  -o-animation: fade 6s;
+  -ms-animation: fade 6s;
+  filter: invert(100%);
+}
 
   /*******CV IMAGE********/
   #CV{
-    position: relative;
+    position: static;
     display: block;
     margin: 0 auto;
     z-index: 101;
@@ -211,6 +226,7 @@ html{
 
 @media only screen and (max-width: 600px) {
 
+  * { color: #ff6c8f; text-decoration: none; text-align: center;}  
   #back_w{
     display: block !important;
 
@@ -238,8 +254,21 @@ html{
     
     box-shadow: 0 0 20px grey;
   }
-
-
+  .down_png{
+    position: fixed;
+    width: 20px;
+    height: auto;
+    /* opacity: 0.2; */
+    bottom:2%;
+    left:50%;
+    margin-left: -10px;
+  
+    -webkit-animation: fade 6s;
+    -moz-animation: fade 6s;
+    -o-animation: fade 6s;
+    -ms-animation: fade 6s;
+    filter: invert(100%);
+  }
 
   /********** Page Scrolling ***********/
 
