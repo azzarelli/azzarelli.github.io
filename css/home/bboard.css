@@ -1,104 +1,105 @@
-#Bboard{
-
-}
-
-#B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8{
-  background-color: white;
-  transition-property: background-color;
-  transition-duration: .8s;
-  transition-timing-function: linear;
-  position: fixed;
-
-  clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
-  -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
-  height: 174px;
-  width: 200px;
-  z-index: 101;
-}
+@media only screen and (min-width: 600px) {
 
 
+  #B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8{
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: .8s;
+    transition-timing-function: linear;
+    position: fixed;
 
-#B1{
-  transition-delay: 0.5s;
-  top: 50%;
-  left: 50%;
-  margin-top: -274px;
-  margin-left: 212px;
-}
-
-
-#B3{
-  transition-delay: .65s;
-  top: 50%;
-  left: 50%;
-  margin-top: 101px;
-  margin-left: 212px;
-}
-#B4{
-  transition-delay: 0.5s;
-  top: 50%;
-  left: 50%;
-  margin-top: 192px;
-  margin-left: 55px;
-}
-#B5{
-  transition-delay: 0.6s;
-  top: 50%;
-  left: 50%;
-  margin-top: 99px;
-  margin-left: -415px;
-}
-#B6{
-  transition-delay: 0.4s;
-  top: 50%;
-  left: 50%;
-  margin-top: -89px;
-  margin-left: -416px;
-}
-#B7{
-  transition-delay: 0.5s;
-  top: 50%;
-  left: 50%;
-  margin-top: -275px;
-  margin-left: -416px;
-}
-#B8{
-  transition-delay: 0.6s;
-  top: 50%;
-  left: 50%;
-  margin-top: -368px;
-  margin-left: -258px;
-}
+    clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
+    -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
+    height: 174px;
+    width: 200px;
+    z-index: 101;
+  }
 
 
 
-#center_hex:hover ~ #B1{
-  background-color: #f2f2f2;
-  visibility: visible;
-}
+  #B1{
+    transition-delay: 0.5s;
+    top: 50%;
+    left: 50%;
+    margin-top: -274px;
+    margin-left: 212px;
+  }
 
-#center_hex:hover ~ #B3{
-  background-color: #f2f2f2;
-  visibility: visible;
-}
-#center_hex:hover ~ #B4{
-  background-color: #f2f2f2;
-  visibility: visible;
-}
 
-#center_hex:hover ~ #B5{
-  background-color: #f2f2f2;
-  visibility: visible;
-}
-#center_hex:hover ~ #B6{
-  background-color: #f2f2f2;
-  visibility: visible;
-}
-#center_hex:hover ~ #B7{
-  background-color: #f2f2f2;
-  visibility: visible;
-}
-#center_hex:hover ~ #B8{
-  background-color: #f2f2f2;
-  visibility: visible;
+  #B3{
+    transition-delay: .65s;
+    top: 50%;
+    left: 50%;
+    margin-top: 101px;
+    margin-left: 212px;
+  }
+  #B4{
+    transition-delay: 0.5s;
+    top: 50%;
+    left: 50%;
+    margin-top: 192px;
+    margin-left: 55px;
+  }
+  #B5{
+    transition-delay: 0.6s;
+    top: 50%;
+    left: 50%;
+    margin-top: 99px;
+    margin-left: -415px;
+  }
+  #B6{
+    transition-delay: 0.4s;
+    top: 50%;
+    left: 50%;
+    margin-top: -89px;
+    margin-left: -416px;
+  }
+  #B7{
+    transition-delay: 0.5s;
+    top: 50%;
+    left: 50%;
+    margin-top: -275px;
+    margin-left: -416px;
+  }
+  #B8{
+    transition-delay: 0.6s;
+    top: 50%;
+    left: 50%;
+    margin-top: -368px;
+    margin-left: -258px;
+  }
+
+
+
+  #center_hex:hover ~ #B1{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+
+  #center_hex:hover ~ #B3{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+  #center_hex:hover ~ #B4{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+
+  #center_hex:hover ~ #B5{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+  #center_hex:hover ~ #B6{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+  #center_hex:hover ~ #B7{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+  #center_hex:hover ~ #B8{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }
+
 }
