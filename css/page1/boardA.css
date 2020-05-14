@@ -4,16 +4,16 @@ html{
   }
   
   /* GLOBAL STYLES */
-  body {
+body {
       background-color:#ff9eb5;
       color: black;
       padding-top:8em;
       font-size: 25;
       overflow-x: hidden;
-    }
-    
+}
+* { color: #ff6c8f; text-decoration: none; text-align: center;}  
+   
 @media only screen and (min-width: 600px) {
-  * { color: #ff6c8f; text-decoration: none; text-align: center;}  
 
   /********** Page Scrolling ***********/
 
@@ -40,18 +40,16 @@ html{
   position: fixed;
   width: 50px;
   height: auto;
-  /* opacity: 0.2; */
+  opacity: 0.1;
   bottom:2%;
   left:50%;
   margin-left: -25px;
 
-  -webkit-animation: fade 6s;
-  -moz-animation: fade 6s;
-  -o-animation: fade 6s;
-  -ms-animation: fade 6s;
-  filter: invert(100%);
+  -webkit-animation: up 6s;
+  -moz-animation: up 6s;
+  -o-animation: up 6s;
+  -ms-animation: up 6s;
 }
-
   /*******CV IMAGE********/
   #CV{
     position: static;
@@ -140,45 +138,7 @@ html{
     top: 45%;
     margin-left: -400px;
   }
-  /* 8************** */
 
-
-  @-webkit-keyframes fade {
-    0% {opacity: 0;}
-    60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-moz-keyframes fade {
-    0% {opacity: 0;}
-      60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-o-keyframes fade {
-    0% {opacity: 0;}
-      60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-ms-keyframes fade {
-    0% {opacity: 0;}
-      60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-webkit-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-moz-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-o-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-ms-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
   /************* Writing in page ***********/
 
   #cover{
@@ -209,24 +169,10 @@ html{
   }
 
 
-  @-webkit-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
-  @-moz-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
-  @-o-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
-  @-ms-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
 }
 
 
-@media only screen and (max-width: 600px) {
-
-  * { color: #ff6c8f; text-decoration: none; text-align: center;}  
+@media only screen and (max-width: 600px) {  
   #back_w{
     display: block !important;
 
@@ -256,18 +202,18 @@ html{
   }
   .down_png{
     position: fixed;
-    width: 20px;
+    width: 50px;
     height: auto;
-    /* opacity: 0.2; */
+    opacity: 0.1;
     bottom:2%;
     left:50%;
-    margin-left: -10px;
+    margin-left: -25px;
   
-    -webkit-animation: fade 6s;
-    -moz-animation: fade 6s;
-    -o-animation: fade 6s;
-    -ms-animation: fade 6s;
-    filter: invert(100%);
+    -webkit-animation: up 6s;
+    -moz-animation: up 6s;
+    -o-animation: up 6s;
+    -ms-animation: up 6s;
+  
   }
 
   /********** Page Scrolling ***********/
@@ -347,45 +293,6 @@ html{
     font-size: 30px;
     margin-left: -400px;
   }
-
-
-  @-webkit-keyframes fade {
-    0% {opacity: 0; }
-    60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-moz-keyframes fade {
-    0% {opacity: 0;}
-      60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-o-keyframes fade {
-    0% {opacity: 0;}
-      60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-ms-keyframes fade {
-    0% {opacity: 0;}
-      60% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-webkit-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-moz-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-o-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @-ms-keyframes hex {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-
   #cover{
     position: absolute;
     height: 400%;
@@ -413,18 +320,72 @@ html{
     width: 400px;
   }
 
+}
 
-  @-webkit-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
-  @-moz-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
-  @-o-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
-  @-ms-keyframes back{
-    0% {left: -90px;}
-    100% {left: -10;}}
 
+/********KeyFrames********/
+@-webkit-keyframes fade {
+  0% {opacity: 0; }
+  60% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fade {
+  0% {opacity: 0;}
+    60% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes fade {
+  0% {opacity: 0;}
+    60% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes fade {
+  0% {opacity: 0;}
+    60% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes hex {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes hex {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes hex {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-ms-keyframes hex {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes back{
+  0% {left: -90px;}
+  100% {left: -10;}}
+@-moz-keyframes back{
+  0% {left: -90px;}
+  100% {left: -10;}}
+@-o-keyframes back{
+  0% {left: -90px;}
+  100% {left: -10;}}
+@-ms-keyframes back{
+  0% {left: -90px;}
+  100% {left: -10;}}
+
+@-webkit-keyframes up {
+  0% {bottom: -20%;}
+  100% {bottom: 2%;}
+}
+@-moz-keyframes up {
+  0% {bottom: -20%;}
+  100% {bottom: 2%;}
+}
+@-o-keyframes up {
+  0% {bottom: -20%;}
+  100% {bottom: 2%;}
+}
+@-ms-keyframes up {
+  0% {bottom: -20%;}
+  100% {bottom: 2%;}
 }
