@@ -10,6 +10,7 @@
   position: fixed;
 
   clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
+  -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
   height: 174px;
   width: 200px;
   z-index: 101;
