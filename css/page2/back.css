@@ -148,6 +148,7 @@ body{
   height: 435.05px;
   position: absolute;
   clip-path: polygon(5px 5px, 179.8px 5px, 5px 212.525px);
+  -webkit-clip-path: polygon(5px 5px, 179.8px 5px, 5px 212.525px);
   background-image: url("D5PanelImages/code.jpg");
   top: 23%;
   left: 0px;
@@ -156,6 +157,7 @@ body{
   height: 435.05px;
   position: absolute;
   clip-path: polygon(5px 217.525px, 179.8px 10px, 179.8px 425.05px);
+  -webkit-clip-path: polygon(5px 217.525px, 179.8px 10px, 179.8px 425.05px);
   top: 23%;
   left: 0px; 
   background-image: url("D5PanelImages/housing.png");
@@ -169,6 +171,7 @@ body{
   height: 435.05px;
   position: absolute;
   clip-path: polygon(5px 222.525px, 5px 430.05px, 179.8px 430.05px);
+  -webkit-clip-path: polygon(5px 222.525px, 5px 430.05px, 179.8px 430.05px);
   background-image: url("D5PanelImages/board.jpg");
   background-position:-15px 222px;
   background-size: 300px;
@@ -195,6 +198,7 @@ body{
   height: 435.05px;
   position: absolute;
   clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 107.5125px, 5px 107.5125px);
+  -webkit-clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 107.5125px, 5px 107.5125px);
   background-image: url("WebsitePanelImages/MainPage1.png");
   background-position: -30px 0px;
   background-size: 250px;
@@ -206,6 +210,7 @@ body{
   height: 435.05px;
   position: absolute;
   clip-path: polygon(5px 112.5125px, 179.8px 112.5125px, 179.8px 322.5375px, 5px 322.5375px);
+  -webkit-clip-path: polygon(5px 112.5125px, 179.8px 112.5125px, 179.8px 322.5375px, 5px 322.5375px);
   background-image: url("WebsitePanelImages/codes.png");
   background-position: 0px 90px;
   background-size: 300px;
@@ -217,6 +222,7 @@ body{
   height: 435.05px;
   position: absolute;
   clip-path: polygon(5px 327.5375px, 179.8px 327.5375px, 179.8px 430.05px, 5px 430.05px);
+  -webkit-clip-path: polygon(5px 327.5375px, 179.8px 327.5375px, 179.8px 430.05px, 5px 430.05px);
   background-image: url("WebsitePanelImages/MainPage2.png");
   background-position: -30px 325px;
   background-size: 240px;
@@ -243,6 +249,7 @@ body{
  left: 0px;
  background-image: url("WritePanelImages/essay.png");
  clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 126.5px, 5px 126.5px);
+ -webkit-clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 126.5px, 5px 126.5px);
  background-position: 2px 4px;
  background-size: 180px;
  background-repeat: no-repeat;
@@ -255,6 +262,7 @@ body{
   left: 0%;
   background-image: url("WritePanelImages/competition.png");
   clip-path: polygon(5px 2.5px, 179.8px 2.5px, 179.8px 197.1px, 5px 197.1px);
+  -webkit-clip-path: polygon(5px 2.5px, 179.8px 2.5px, 179.8px 197.1px, 5px 197.1px);
   background-position: 5px 5px;
   background-size: 180px;
   background-repeat: no-repeat;
@@ -280,6 +288,7 @@ body{
  left: 0px;
  background-image: url("SpeakPanelImages/event.png");
  clip-path: polygon(5px 0px, 179.8px 0px, 179.8px 124px, 5px 124px);
+ -webkit-clip-path: polygon(5px 0px, 179.8px 0px, 179.8px 124px, 5px 124px);
  background-position: 2px 4px;
  background-size: 180px;
  background-repeat: no-repeat;
@@ -292,6 +301,7 @@ body{
   left: 0%;
   background-color: white;
   clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 202.1px, 5px 202.1px);
+  -webkit-clip-path: polygon(5px 5px, 179.8px 5px, 179.8px 202.1px, 5px 202.1px);
   background-position: 5px 5px;
   background-size: 180px;
   background-repeat: no-repeat;
@@ -534,6 +544,7 @@ body{
   margin-top: -89px;
   margin-left: -102px;
   clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
+  -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
   background: #F2F2F2;
   height: 348px;
   width: 400px;
