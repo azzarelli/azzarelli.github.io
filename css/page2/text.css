@@ -1,183 +1,186 @@
 /*************************************
     All Text Formatting in the doc
 **************************************/
-#D5Container{ /* Contains the flow  and title*/
-  position: absolute;
-  border-color: rgba(0, 0, 0, 0.5);
-  width: 1000px;
-  height: 700px;
-  top: -50px;
-  left: 200%;
-  margin-left: -350px;
-  overflow-y: scroll;
-}#D5TitleBox{
-  position: relative;
-  width: 600px;
-  height: 10%;
-  top: -20px;
-  left: 50%;
-  margin-left: -300px;
-  padding-bottom: 20px;
-}.D5Title{
-  color: rgba(255, 255, 255, 0.8);
-  top: 0;
+@media only screen and (min-width: 600px) {
 
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Lucida Console", Courier, monospace;
+  #D5Container{ /* Contains the flow  and title*/
+    position: absolute;
+    border-color: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    height: 700px;
+    top: -50px;
+    left: 200%;
+    margin-left: -350px;
+    overflow-y: scroll;
+  }#D5TitleBox{
+    position: relative;
+    width: 600px;
+    height: 10%;
+    top: -20px;
+    left: 50%;
+    margin-left: -300px;
+    padding-bottom: 20px;
+  }.D5Title{
+    color: rgba(255, 255, 255, 0.8);
+    top: 0;
+
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  #WebContainer{ /* Contains the flow  and title*/
+    position: absolute;
+    border-color: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    height: 700px;
+    top: -50px;
+    left: 200%;
+    margin-left: -350px;
+    overflow-y: scroll;
+  }#WebTitleBox{
+    position: relative;
+    width: 600px;
+    height: 10%;
+    top: -20px;
+    left: 50%;
+    margin-left: -300px;
+    padding-bottom: 20px;
+  }.WebTitle{
+    color: rgba(255, 255, 255, 0.8);
+    top: 0;
+
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  #WriteContainer{ /* Contains the flow  and title*/
+    position: absolute;
+    border-color: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    height: 700px;
+    top: -50px;
+    left: 200%;
+    margin-left: -350px;
+    overflow-y: scroll;
+  }#WriteTitleBox{
+    position: relative;
+    width: 700px;
+    height: 10%;
+    top: -20px;
+    left: 50%;
+    margin-left: -350px;
+    padding-bottom: 20px;
+  }.WriteTitle{
+    color: rgba(255, 255, 255, 0.8);
+    top: 0;
+
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+  #Write_twoContainer{
+    font-size: 25px !important;
+  }
+
+  #SpeakContainer{ /* Contains the flow  and title*/
+    position: absolute;
+    border-color: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    height: 700px;
+    top: -50px;
+    left: 200%;
+    margin-left: -350px;
+    overflow-y: scroll;
+  }#SpeakTitleBox{
+    position: relative;
+    width: 700px;
+    height: 10%;
+    top: -40px;
+    left: 50%;
+    margin-left: -350px;
+    padding-bottom: 20px;
+  }.SpeakTitle{
+    color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Lucida Console", Courier, monospace;
+  }.Speak_textContainer{
+    top: 175px !important;
+  }
+                                          /* 
+    Text Containers used for flow of page
+        -it's easier to update this way
+                                          */
+  #oneContainer,#twoContainer, #threeContainer, #fourContainer, #fiveContainer, #sixContainer, #sevenContainer{
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  #textContainer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 150px;
+    left: -3px;
+
+  }
+
+
+  /* 
+  1 "One"    - Project Aim
+  2 "Two"    - Team Structure
+  3 "Three"  - My Involvement
+  4 "Four"   - Code Example
+  5 "Five"   - Review Process - Outcomes
+  6 "Six"    - Project Summary
+  7 -"Seven" - References
+  */
+  .sub{
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Lucida Console", Courier, monospace;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    margin-left: 25px;
+  }
+  #sub{
+    position: relative;
+    left: 0px;
+    top: 0;
+    height: auto;
+    width: 80%;
+  }
+  #text{
+    position: relative;
+    left: 0;
+    margin-left: 90px;
+    height: auto;
+    width: 850px;
+    top: 0px;
+  }.text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-family: "Lucida Console", Courier, monospace;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  /* One */
+
+  /* Two */
+  /* Three */
+  /* Four */
+  /* Five */
+  /* Six */
+  /* Seven */
 }
-
-#WebContainer{ /* Contains the flow  and title*/
-  position: absolute;
-  border-color: rgba(0, 0, 0, 0.5);
-  width: 1000px;
-  height: 700px;
-  top: -50px;
-  left: 200%;
-  margin-left: -350px;
-  overflow-y: scroll;
-}#WebTitleBox{
-  position: relative;
-  width: 600px;
-  height: 10%;
-  top: -20px;
-  left: 50%;
-  margin-left: -300px;
-  padding-bottom: 20px;
-}.WebTitle{
-  color: rgba(255, 255, 255, 0.8);
-  top: 0;
-
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Lucida Console", Courier, monospace;
-}
-
-#WriteContainer{ /* Contains the flow  and title*/
-  position: absolute;
-  border-color: rgba(0, 0, 0, 0.5);
-  width: 1000px;
-  height: 700px;
-  top: -50px;
-  left: 200%;
-  margin-left: -350px;
-  overflow-y: scroll;
-}#WriteTitleBox{
-  position: relative;
-  width: 700px;
-  height: 10%;
-  top: -20px;
-  left: 50%;
-  margin-left: -350px;
-  padding-bottom: 20px;
-}.WriteTitle{
-  color: rgba(255, 255, 255, 0.8);
-  top: 0;
-
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Lucida Console", Courier, monospace;
-}
-#Write_twoContainer{
-  font-size: 25px !important;
-}
-
-#SpeakContainer{ /* Contains the flow  and title*/
-  position: absolute;
-  border-color: rgba(0, 0, 0, 0.5);
-  width: 1000px;
-  height: 700px;
-  top: -50px;
-  left: 200%;
-  margin-left: -350px;
-  overflow-y: scroll;
-}#SpeakTitleBox{
-  position: relative;
-  width: 700px;
-  height: 10%;
-  top: -40px;
-  left: 50%;
-  margin-left: -350px;
-  padding-bottom: 20px;
-}.SpeakTitle{
-  color: rgba(255, 255, 255, 0.8);
-  top: 0;
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Lucida Console", Courier, monospace;
-}.Speak_textContainer{
-  top: 175px !important;
-}
-                                         /* 
-  Text Containers used for flow of page
-      -it's easier to update this way
-                                         */
-#oneContainer,#twoContainer, #threeContainer, #fourContainer, #fiveContainer, #sixContainer, #sevenContainer{
-  position: static;
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-#textContainer{
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 150px;
-  left: -3px;
-
-}
-
-
-/* 
-1 "One"    - Project Aim
-2 "Two"    - Team Structure
-3 "Three"  - My Involvement
-4 "Four"   - Code Example
-5 "Five"   - Review Process - Outcomes
-6 "Six"    - Project Summary
-7 -"Seven" - References
-*/
-.sub{
-  position: relative;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: "Lucida Console", Courier, monospace;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0;
-  margin-left: 25px;
-}
-#sub{
-  position: relative;
-  left: 0px;
-  top: 0;
-  height: auto;
-  width: 80%;
-}
-#text{
-  position: relative;
-  left: 0;
-  margin-left: 90px;
-  height: auto;
-  width: 850px;
-  top: 0px;
-}.text{
-  color: rgba(255, 255, 255, 1);
-  font-size: 15px;
-  font-family: "Lucida Console", Courier, monospace;
-  line-height: 1.5;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-/* One */
-
-/* Two */
-/* Three */
-/* Four */
-/* Five */
-/* Six */
-/* Seven */

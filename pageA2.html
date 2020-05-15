@@ -1,276 +1,439 @@
 <html>
+
 <head>
-<link href="./css/page2/back.css" type="text/css" rel="stylesheet">
-<link href="./css/page2/text.css" type="text/css" rel="stylesheet">
-<link href="./css/page2/altMedia.css" type="text/css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="./css/page2/back.css" type="text/css" rel="stylesheet">
+    <link href="./css/page2/text.css" type="text/css" rel="stylesheet">
+    <link href="./css/page2/mobile.css" type="text/css" rel="stylesheet">
 
 
-<script src="jquery-3.4.1.js"></script>
+    <script src="jquery-3.4.1.js"></script>
 
-<div id="backG"></div>
-</head>
+    <div id="backG"></div>
+</head> 
 
 
 <body>
-<!-- script src="scripting/page2/return.js"></script -->
-<script src="scripting/page2/return.js"></script>
-<script src="scripting/page2/swipe.js"></script>
+    <!-- script src="scripting/page2/return.js"></script -->
+    <script src="scripting/page2/return.js"></script>
+    <script src="scripting/page2/swipe.js"></script>
 
-<div id="Page_Container">
-  <div class="title_Box">
-    <h1 class="title">PROJECTS</h1>
-  </div>
-
-  <button id="back_space" onclick="home()"></button>
-
-  
-  <!--  Photo Pannels  -->
-  <div id="BARS">
-      <!-- Right side pannel backs -->
-      <!-- Hyper Chip Design -->
-      <div class="bar_R1">
-        <div id="pannel_Back" class="Hyper_back">    <!-- &#8201/8202 is Thin/Hair spaceing like &nbsp -->
-          <div class="subtitle_box"><p id="HyperTitle" class="subtitle"></p></div>  
-          <!--Images Here-->
+    <div id="Page_Container">
+        <div class="title_Box">
+            <h1 class="title">PROJECTS</h1>
         </div>
-      </div> 
-      <!-- Right side pannel backs -->
-      <!-- Smart Meter d5 Project -->
-      <div class="bar_R2" onclick="swipe_R2()">
-        <div id="pannel_back" class="D5_back">
-          <div class="subtitle_box"><p class="subtitle">Smart<br>Meter</p></div>
-          <div class="D5ImageOne"></div>
-          <div class="D5ImageTwo"></div>
-          <div class="D5ImageThree"></div>
+
+        <button id="back_space" onclick="home()"></button>
+
+
+        <!--  Photo Pannels  -->
+        <div id="BARS">
+            <!-- Right side pannel backs -->
+
+            <!-- Right side pannel backs -->
+            <!-- Smart Meter d5 Project -->
+            <div class="bar_R2" onclick="swipe_R2()">
+                <div id="pannel_back" class="D5_back">
+                    <div class="subtitle_box">
+                        <p class="subtitle" id="sm_title">Smart<br>Meter</p>
+                    </div>
+                    <div class="D5ImageOne"></div>
+                    <div class="D5ImageTwo"></div>
+                    <div class="D5ImageThree"></div>
+                </div>
+            </div>
+            <!--Mid Left pannel-->
+            <!-- Writing Competence - Written entry to UKesf Automotive competition -->
+            <div class="bar_ML">
+                <div id="pannel_back" class="Write_back">
+                    <div class="subtitle_box" id="Write_sub_box">
+                        <p class="subtitle" id="Write_sub">Competent<br>Writing</p>
+                    </div>
+                    <div class="WriteImageOne"></div>
+                    <div class="WriteImageTwo"></div>
+                </div>
+            </div>
+            <!--Mid right panne l-->
+            <!-- Unsure Yet -->
+            <div class="bar_MR">
+                <div id="pannel_back" class="Speak_back">
+                    <div class="subtitle_box" id="Speak_sub_box">
+                        <p class="subtitle" id="Speak_sub">Public Speaking</p>
+                    </div>
+                    <div class="SpeakImageOne"></div>
+                    <div class="SpeakImageTwo"></div>
+                </div>
+            </div>
+            <!--Left side pannel backs-->
+
+            <!-- Webpage Project -->
+            <div class="bar_L2">
+                <div id="pannel_Back" class="Web_back">
+                    <!-- &#8201/8202 is Thin/Hair spaceing like &nbsp -->
+                    <div class="subtitle_box">
+                        <p id="webTitle" class="subtitle">WEBSITE</p>
+                    </div>
+                    <div class="WebImageOne"></div>
+                    <div class="WebImageTwo"></div>
+                    <div class="WebImageThree"></div>
+                    <div class="WebImageFour"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!--Mid Left pannel-->
-      <!-- Writing Competence - Written entry to UKesf Automotive competition -->
-      <div class="bar_ML">
-        <div id="pannel_back" class="Write_back">
-          <div class="subtitle_box" id="Write_sub_box"><p class="subtitle" id="Write_sub">Competent<br>Writing</p></div>
-          <div class="WriteImageOne"></div>
-          <div class="WriteImageTwo"></div>
+
+                    <!-- Unsure Yet -->
+            <div class="bar_L1">
+                <div id="pannel_Back" class="Web_back">
+                    <!-- &#8201/8202 is Thin/Hair spaceing like &nbsp -->
+                    <div class="subtitle_box">
+                        <p id="none" class="subtitle">none</p>
+                    </div>
+                    <!--Images Here-->
+                </div>
+            </div>
+            <!-- Hyper Chip Design -->
+            <div class="bar_R1">
+                <div id="pannel_Back" class="Hyper_back">
+                    <!-- &#8201/8202 is Thin/Hair spaceing like &nbsp -->
+                    <div class="subtitle_box">
+                        <p id="none" class="subtitle">none</p>
+                    </div>
+                    <!--Images Here-->
+                </div>
+            </div>
+
+        <!-- This is the Tab bar (on the left) that comes in when you select a project to read about -->
+        <div id="bar_Progress">
+            <div id="return_Progress" title="Return">
+                <div class="return_Image"></div>
+            </div>
+            <div id="to_Title" title="Go to Bottom of Page">
+                <div class="to_Title"></div>
+            </div>
+            <div id="menu_Progress" title="Menu">
+                <div class="menu_Progress"></div>
+            </div>
+            <div id="to_Bottom" title="Go to Bottom of Page">
+                <div class="to_Bottom"></div>
+            </div>
+            <div id="color_Progress" title="Random Colour Generator using jQuery">
+                <div class="color_Progress"></div>
+            </div>
         </div>
-      </div> 
-      <!--Mid right panne l-->
-      <!-- Unsure Yet -->
-      <div class="bar_MR">
-        <div id="pannel_back" class="Speak_back">
-          <div class="subtitle_box" id="Speak_sub_box"><p class="subtitle" id="Speak_sub">Public Speaking<br>& Organisation</p></div>
-          <div class="SpeakImageOne"></div>
-          <div class="SpeakImageTwo"></div>
+
+        <!-- D5 Project Page -->
+        <div id="D5Container">
+            <div id="D5TitleBox">
+                <h2 class="D5Title">Smart Meter</h2>
+            </div>
+
+            <div id="textContainer">
+
+                <div id="oneContainer">
+                    <div id="sub">
+                        <h3 class="sub">Project Description:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text"><span style="font-weight:900"> [This is a University project which is equivalent to one module]</span>
+                            <br>&nbsp <span style="font-weight:900">Aim:</span> to build a commercial smart meter that would be used within a moving Medical site which would opperate in areas of large struggle.
+                            <br> <span style="font-weight:900">Method:</span> Each team is allocated six EEE students and has the goal of building a powersupply, housing, interface cricuitry and software that makes up the smart meter. You are given 25£
+                            budget with 7-week deadline and are expected to log individual progress in logbooks to show your involvement within the project. Each subteam has a set of standards that the team must abide by to be successfully marked.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="twoContainer">
+                    <div id="sub">
+                        <h3 class="sub">Team Structure:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text"> I was the Team Leader. Other roles included: Treasurer (for 25£ spending limit) and Team Organiser (for meetings date/time, minutes etc.) <br> As the Lead I divided the team into Power supply, Housing, Interface and Programming
+                            Subteams. I took the role as Head of Programming where I developed the control system, LCD interface and additional (wireless) interfaces. Additionally I helped with Housing team with the initial design and the interface circuitry
+                            with building simulation models on Multisim</p>
+                    </div>
+                </div>
+
+                <div id="threeContainer" style="text-align: justify;">
+                    <div id="sub">
+                        <h3 class="sub">My Involvement:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text"> <span style="font-weight:bold">[Programming, C]</span><br>&nbsp I implemented a basic multi-path control system. The system develops an out-come (not always 'output') depending on the current state of the Medical centre (described
+                            by inputs). Its relatively simple in design however serveral minimisation techniques were used to ensure that the concept acts more efficiently. This is important in Medical situations where everything is time-pressured. I
+                            also implemented an LCD interface which displays key results with an additional graph-features to create a better looking UI.
+                            <br><span style="font-weight:900">[Programming, C++]</span><br>&nbsp As an additional feature I built a wireless access point (WAP) using a NodeMCU (Arduino with WIFI module) which hosted a website (using local WIFI) which
+                            displayed the same values as the LCD interface with additional calculations. The site is smartphone-friendly and incorporates controlability using HTTP POST and GET input methods to control the LCD interface as well as manually
+                            changing the current state of the Medical center.
+                            <br><span style="font-weight:900">[Housing]</span><br>&nbsp I developed the intial housing model. I implemented "intsert" walls that would prevent water from entering the body. As the 3D printers provided were relatively small
+                            I designed the levels of the body to be stacked and screwed from the inside to create a strong structure. Features within the hosuing consist of ledges for rest the LCD screen in and particular positioning of screws for PCB
+                            and micrcontroller mounting.
+                            <br><span style="font-weight:900">[Interface Circuitry]</span><br>&nbsp I built and modeled a PWM output signal which was used to control an boost the output of signals from 3.3V (microcontroller output) to 5V (required output).
+                        </p>
+                    </div>
+                </div>
+                <div id="fiveContainer">
+                    <div id="sub">
+                        <h3 class="sub">Review Process and Outcomes</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            <span style="font-weight:900">[First Review]</span><br>&nbsp I develpoed a six-person presentation to convey the progress of each sub-team in the first two weeks of this project. We scored 8/10, which is a testament to our
+                            rehersals and planning that was made. We were also assessed on the Housing design where we scored 5/5.
+
+                            <br><span style="font-weight:900">[Second Review]</span><br>&nbsp Our individual log books (Progress books) were marked for which I recieved a 7/10. I do believe this reflected the work I had, and I knew that I would need to
+                            increase in quality for a higher mark. As a group we were graded on our power supply design (scored 5/5) and the 3D housing model (scored 5/5).
+
+                            <br><span style="font-weight:900">[Final Review]</span><br>&nbsp In the final (seventh) week the group was assessed on our individual contribution towards the project. This mark was the largest given mark contributing to 25%
+                            of the grade. For this I ensured that my section of the project was completely developed with additional features and because of the +150 page report I scored full mark (25/25). I am proud of this as assessment writing is something
+                            I had struggled with on the path, however have only recently overcome it.
+                            <br> Regarding the final group report, I co-wrote it with another team memeber. Within the report I described our final product as well as the team's achievements of which I was proud of (as a team leader). I also answered
+                            "what if..." questions, detailing what would have gone on if we were given an industry sized budget with an industry sized time-scheme. For this report we scored 11/15. <br> Finally we were given marks for the final product
+                            which had, rather dissapointingly, ran through issues during the final test, scoring 13/20. Though our product worked well we a lost majority of marks building a machine that did not comply much with the project specification.
+                            The reasoning behind this decision was made by me. I wanted to create a smart-meter with aditional functionalitites as when faced with competition in a working environment products need to have unique selling points and in
+                            following with this aspect of the project takss, I wanted to create a unique device.
+                        </p>
+                    </div>
+                </div>
+                <div id="sixContainer">
+                    <div id="sub">
+                        <h3 class="sub">Project Summary:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            &nbsp In my university career this is the largest project I have been able to take part of (worth 1 Module, 7 Weeks). Knowing this I needed to make sure I had full control of my own mark and to do this I elected myself as the Team Leader. My final mark
+                            (79/100) was one of the highest scoring. My primary role as 'Leader' was to ensure that my team had the correct tools and understnading to complete the given tasks to the highest level. I used kaban-style list-making applications
+                            (Trello) as well as strong messaging-document transfer applications (Slack) to ensure nothing was mis-communicated and within my programming team I set up a GitHub with multi-branch implementation and taught my team memebers
+                            to use it effectively. Personally, devdeloping my embedded C/C++ skills fruther allowed me to develop a stronger understanding of connected devices (using WAP, WIFI-module etc.), and implementing these skill within a simulated
+                            work environment pushed me to understand the difficulties behind designing electronic products.
+                            <br>So far I do believe (particularly) this project is a testament of my work as a Team Leader and a programmer.
+                        </p>
+                    </div>
+                </div>
+                <div id="sevenContainer">
+                    <div id="sub">
+                        <h3 class="sub">References:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            Trello: https://trello.com/
+                            <br> Slack: https://slack.com/intl/en-gb/
+                            <br> Github: https://github.com/
+                            <br> Multisim: https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-      <!--Left side pannel backs-->
-      <!-- Unsure Yet -->
-      <div class="bar_L1">
-        <div id="pannel_Back" class="Web_back">    <!-- &#8201/8202 is Thin/Hair spaceing like &nbsp -->
-          <div class="subtitle_box"><p id="webTitle" class="subtitle"></p></div>  
-          <!--Images Here-->
+
+        <!-- Web Project Page -->
+        <div id="WebContainer">
+            <div id="WebTitleBox">
+                <h2 class="WebTitle">Web Design</h2>
+            </div>
+
+            <div id="textContainer">
+
+                <div id="oneContainer">
+                    <div id="sub">
+                        <h3 class="sub">Personal Aim:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            My aim in building this website it to showcase the skills and qualities I think are important for students working towards a job in technology. Additionally, I have used building this website as a reason to improve my skills in programming.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="twoContainer">
+                    <div id="sub">
+                        <h3 class="sub">Experience:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            The website is composed of HTML(w/CSS3), JavaScript(w/jquery, p5 library) and _____. Before the intial development of this website I had no understanding of JavaScript and minimal undertstanding of _____. When I began writing up the home page I primarily
+                            wrote the animations using the css-transition property. This soon became exhaustive as I had to program for >20 page elements (each individual hexagon) and so I thought it was a smart way to began using javascript.
+                            <br>&nbsp [Before I continue: if you use your 'Web-Developer' browser options you have to ability to look at the sites source code. I encourage you to use this to notice the differences between pages' source code]
+                            <br>&nbsp As the site became more javascript heavy I decided to create a more "experienced" type of animation. This is where I developed the 'typewriter' effect, on the "CV" page. I didn't just want a box to slide around/dissapear
+                            I wanted to show "intelligence", this is why the typewriter animation corrects itself once it originally misspells Curriculum Vitae (which of course is what CV stands for). For those that do not understand javascript, you need
+                            to know there is no proper timer-delay function that exists. Unlike C/C++ which utilise a computer's internal clock, javascript does not. From this I learnt how to use the provided timing fuctions and so further my understanding
+                            of javascript implementation.
+                            <br>&nbsp When learning a new language you often find yourself either procrastinating or deciphering helpful advice from the 'Stack Overflow' website. I mostly found myslef in the former, however on the occasion I was in the
+                            latter category I often read about 'jQueries' and their use within the javascript language. For those of you that have perhaps never heard or used jQuery, it is a library that increases the functionality of the javascript language
+                            by simplifying the HTML DOM and easing the control of the DOMs style properties (using CSS). This is the library I decided would be fun to experiment with during the development of page 2: the "Projects" page, which is the
+                            page you are currently on.
+                            <br>&nbsp Having used jQuery made everything easier: accessing HTML elements was easier, controlling the aspects became simpler. Though, most significant to my work, the time-delay function that was missing with javascript
+                            became accessible to me. Therefore you may see the over-use of animations used for the projects sections - brought to you by jQuery.
+                            <br>&nbsp Following the discovery of jQuery I began searching for other libraries that would further my relationship with javascript. This is where I met the 'p5.js' - a library commonly used by one of my heroes, Daniel Shiffman
+                            (a programmer known as "The Coding Train"). The use of this library would primarily simplify the construction of a dynamic site and as I wanted to build some mini-Games to showcase my skills in object-oriented programming,
+                            this was the perfect fit. The library is built similarly to the Arduino IDE, where you are given a 'set-up' function and a 'loop'(in p5.js this is "draw") function, therefore made it easier for me to learn.
+                            <br>&nbsp Up to now this is the furthest I have gone with my site in terms of language-library use. Though, I have plans! Recently I partook in a "Spring into Banking" programme where I learnt about Deutsche Bank and how they
+                            operate as a techology firm. In doing this I was also given a 'Buddy'(a random post-grad employee). We spoke several times and I learnt a lot. He explained to me what the 'elastic-search' (Java) library does and it's uses,
+                            he gave me resources to further understand 'equity derivatives' (one of DB's main focuses regarding investment banking), additionally he mentioned 'Scala'. This piqued my interest. Scala is a programming language that writes
+                            like Python, however has the purpose of improving on the static side of the Java language.
+                            <br>&nbsp The reason I mention this is because, since I began writing this website I didn't know how to program very well. I understood C/C++ pretty well, though these are not high-level and for complex use. When Scala was
+                            mentioned it had intruigued me the same way p5.js had prior and jQuery before that. And if you have read up to now it may be of interest to you that I am in the process of learning Scala, and hopefully soon I will be able to
+                            use it within my website.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="threeContainer">
+                    <div id="sub">
+                        <h3 class="sub">Outcomes:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            The obviosu thing to say here is: "These are the programming languages that I have learnt". But I think I have learnt something more important. This is of course the ability to understand languages more fluently. Understanding a certain level of a language
+                            unlocks the hidden ability to more easily understand other languages. Learning python made it easier for me to understand javascript, and understanding javascript has made it easier for me to understand Scala. This is the level
+                            of fliud programming understanding that renders you to begin a new language more comfortably. And I am certain the uncomfortability aspect of learning a new language is common to many of you reading, though I can tell you it
+                            gets easier.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="fourContainer">
+                    <div id="sub">
+                        <h3 class="sub">What I have Learnt:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div> 
-      <!-- Webpage Project -->
-      <div class="bar_L2">
-        <div id="pannel_Back" class="Web_back">    <!-- &#8201/8202 is Thin/Hair spaceing like &nbsp -->
-          <div class="subtitle_box"><p id="webTitle" class="subtitle" >WEBSITE</p></div>  
-          <div class="WebImageOne"></div>
-          <div class="WebImageTwo"></div>
-          <div class="WebImageThree"></div>
-          <div class="WebImageFour"></div>
+        <!-- Writing Competency Project - UKEsf essay comp. -->
+        <div id="WriteContainer" style="text-align: justify;">
+            <div id="WriteTitleBox">
+                <h2 class="WriteTitle">Essay Writing</h2>
+            </div>
+            <div id="textContainer">
+
+                <div id="oneContainer">
+                    <div id="sub">
+                        <h3 class="sub">AESIN & UKESF Essay Competition:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            <span style="font-weight:900"> Competition Title: </span>Blog-style post about your ideas of <br><span style="font-weight:900">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"The Future of Cyber-Security for Connected and Autonomous Vehicles"</span>
+                            <br>&nbsp When I began drafting the post, I was attending a conference about the importance of the regulatory sector to SMEs within the Aerospace industry. This influence expresses the first theme within my essay: 'Regulations
+                            within Cyber-Security'. In my eyes this is an imperative point to make. Regulations dictate company growth in any economic market (to an extent); within the securities industry it plays an even larger role, as 'messing up'
+                            impacts a lot more people than other industries. Take for example the Adobe hack in 2013 where 150 million accounts had been hacked - that's a crazy-large amount. Therefore within my essay I felt compelled to express the opinion
+                            that regulations is always going to be a main focus for the cyber-security industry.
+                            <br>&nbsp Another prevelant theme you may notice is that of Hollywood's role within the industry. I know - I know - this sounds far-fetched, but it's not. The influence that 'the movies' have on a young mind is great; it's
+                            the reason I took Maths more seriously at High-school after watching 'Good Will Hunting' and good-Will's brain at work. And so the effect that movies like James Bond and [insert generic spy movie] have on young kids is also
+                            pretty significant. Obviously a majority of these kids will be deterred sooner-or-later by the difficulty of making it in the securities industry (perhaps the passion for acting has overcome them), but those that stick it out
+                            will most likely tell you that spy movies did play an influential role. Therefore I felt that the theme of Hollywood was appropriate for such an essay.
+                            <br>&nbsp The last theme I stuck to describes the unicity of successful tech industries, such as the phone-software industry which has two major players, IOS and Android. This industry governance is something that is missing
+                            within vehicle softwares, though to be fair it's still in the infancy stage of development. It is something I hope to see play more of an active role in car-selling and with the slow rise of electric vehicles, the software
+                            that grows with it is becoming evermore paramount. The issues I raise with the multiplicity of car-softwares is that of errors. Errors that are bad. Very bad in cars. It is one of the reasons you will find minimal errors in
+                            developed, unified industry products such as phones. And it is also why it is more difficult to provide system protection for products that compete with a lot of players, like cars. Smaller competition means larger allocation
+                            of resources and therefore by logic should make your system more infallible, and curently there are too many players in the game.
+                            <br>&nbsp So you see, this is how I came to the conclusion that the future of cyber-security for connected and autonomous vehicles depends on a unified industry, that thrives alongside a strong regulatory system with the aspiration
+                            of making a machine so secure a James Bond villain couldn't hack it.
+                        </p>
+                    </div>
+                </div>
+                <div id="fourContainer">
+                    <div id="sub">
+                        <h3 class="sub">Final Submission:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            <span style="font-weight:900;">&nbsp &nbsp &nbsp &nbsp Hollywood, Hollywood, Go away, Come again another day for movie inspiration</span>
+                            <br>Traditional thought on technology, portrayed mainly by Hollywood, revolves around the vulnerabilities of important computer systems. Say like cars driven remotely by a “hacker” leading to a character’s dramatic demise.
+                            Especially recently, where we are seeing this massive movement from independently functioning devices to IoT devices; the ability to control other people’s electronic property is becoming much easier, and so the movies become
+                            more relatable. However these changes don’t stop here, the development of newer connections, for example V2IoT(Vehicle-to-IoT) or V2V(Vehicle-to-vehicle), increase the number of ‘entry-points’ in a system making it easier for
+                            hackers to find paths to...pretty much everything. And yes, I know Hollywood’s portrayal of this can be a tad over-the-top, nevertheless there is still an aspect of relatability to the movies being shown.
+                            <br>&nbsp The transition to the IoT is being done by thousands of companies globally and rightly so, the more companies working within the industry the faster we can discover the range of capabilities that these devices have.
+                            Although, there is an issue that is becoming ever-more present due to this uprising of tech businesses within the automotive industry. This is of course the diversity of platforms and operating systems. “This is the era of
+                            own-brand Technology” – I’ll say after making my own brand. Volkswagen will develop their own systems; Audi will do the same and so on. This is acceptable yet somehow, it’s also not great. Multiplicity within systems derives
+                            faults that no one else has but you and resolving it will be expensive and tedious – for you and your consumers. The system will reach less people and so the chance of resolving all the errors, seen and unseen, will be small.
+                            Which is why when we look up to ‘successful’ industries like the computer-software, phone-software and, yes, watch-software industries there are only a couple of dominant operating systems. The issues become shared and consequently
+                            are easier to solve. So why is this not the same for the automotive-software industry? I say it’s because we have not set solid standards that the sector can follow. Take for example a UK Gov. document labelled “Key Principles
+                            of Cyber Security for Connected and Automated Vehicles” (Don’t worry I am here to read the riveting material provided by the government). Within the article the government acknowledges that “a consistent set of guidelines that
+                            support this global industry” do need to be established. This was released in 2017 and three years late I can safely say not much has changed in the three years since (which is why this essay competition holds the same title),
+                            yet we know that a strong set of regulations, or even “guidelines”, need to be set up for the automotive sector to move forward. Acceptable levels of security, accessibility for the user and rigidity and durability are among
+                            the more important regulations to be established. Hopefully soon we can say “goodbye” to Mr. Bond’s 2-second car-hack and “hello” to 3 hours of unsuccessful re-programming from Q.
+                            <br>&nbsp I know the idea of regulations boring - because it makes me want to change discipline - but there is no way around it. The only thing we get to decide for now is who is going to regulate the industry. Government administration
+                            or Public? This is the Proprietary-Open Source software debate all over again, at least for now you can decide. Well some people already have decided. And even though we are routing for the un-eventful un-exciting scenarios
+                            that won’t fuel Hollywood’s spy movies, we can surely hope that they still excite us.
+                            <br>&nbsp I know the idea of regulations boring - because it makes me want to change discipline - but there is no way around it. The only thing we get to decide for now is who is going to regulate the industry. Government administration
+                            or Public? This is the Proprietary-Open Source software debate all over again, at least for now you can decide. Well some people already have decided. And even though we are routing for the un-eventful un-exciting scenarios
+                            that won’t fuel Hollywood’s spy movies, we can surely hope that they still excite us.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="fiveContainer">
+                    <div id="sub">
+                        <h3 class="sub">References:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text"> UK Gov doc “Key Principles of Cyber Security for Connected and Automated Vehicles, 2017” </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-  </div>
+        <!-- Public Speaking for 3Y IP -->
+        <div id="SpeakContainer">
+            <div id="SpeakTitleBox">
+                <h2 class="SpeakTitle">Public Speaking and Organisation</h2>
+            </div>
+            <div id="textContainer" class="Speak_textContainer">
 
-<!-- This is the Tab bar (on the left) that comes in when you select a project to read about -->
-  <div id="bar_Progress">
-    <div id="return_Progress" title="Return"><div class="return_Image"></div></div>
-    <div id="to_Title" title="Go to Bottom of Page"><div class="to_Title"></div></div>
-    <div id="menu_Progress" title="Menu"><div class="menu_Progress"></div></div>
-    <div id="to_Bottom" title="Go to Bottom of Page"><div class="to_Bottom"></div></div>
-    <div id="color_Progress" title="Random Colour Generator using jQuery"><div class="color_Progress"></div></div>
-  </div>
+                <div id="oneContainer">
+                    <div id="sub">
+                        <h3 class="sub">Speaking Your Mind - Influences</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            Using influence when writing a speech is as much a technical tool as a pencil to painters tool (in the way that you use a pencil to plan and not to paint). You should not be looking to mimic your influencers, you should only be using them to structure
+                            your speech. This took me a long time to learn. Additionally, inluencers are not a constant when writing your speech. If I use Einstein to speak about Physics great! However, if I keep using Einstein to speak about Physics
+                            I will run out of Einstein-related Physics quickly. Varying your influences is important when speaking as it shows you have made effort to research. Given this information I would like to say it doesn't matter where you draw
+                            your influence.
+                            <br>&nbsp During high-school, my English teachers would draw inspiration from speeches that took place at UN conferences (I remeber analysing Emma Watson and Malala Yousafzai in class). This type of influence always confused
+                            me because my teachers would idealise the sum of techniques used, where the only consistent technique would be that of pragmatic clarity (the need for this being: translating a quick, complex speech is more difficult than a
+                            clear, concise speech). Envisioning myself in such a position as Ms Watson infront of the UN allows me to draw clarity into speech writing.
+                            <br>&nbsp In the situations when I want to find technical influence I fall towards well-structure pannel discussions. When speaking I don't want to come off 'robotic' by ticking off a list of technniques as i speak. What I
+                            want is to come off as someone who passionately understands what they are saying and can communicate it easily. This is where pannel discussions can influence the "ease-of-speaking" aspect.
+                            <br>&nbsp I am not going to tell you where to find your sources or who to look at for influence because frankly it does not matter. It really doesn't. As I said before influence is like a pencil to a paintbrush - in this case
+                            not all painters need to use a pencil to plan.
+                        </p>
+                    </div>
+                </div>
 
-  <!-- D5 Project Page -->
-  <div id="D5Container">
-    <div id="D5TitleBox"><h2 class="D5Title">Smart Meter</h2></div>
-    
-    <div id="textContainer">
+                <div id="twoContainer">
+                    <div id="sub">
+                        <h3 class="sub">Experience Public Speaking:</h3>
+                    </div>
+                    <div id="text">
+                        <p class="text">
+                            I am not Malala, I had not spoken infront of the UN before going to University. However, here are some of my successful experiences with public presentation.
+                            <br>&nbsp During high-school the Mathematics department ran 'public speaking' exercise where students could talk about any mathematical topic they wanted as a means to improve confidence when speaking. I spoke about black-holes
+                            and the reasoning behind event horizons. I spoke confidently about how many cows it would take to make a black hole and people clapped. This to me what successful.
+                            <br>&nbsp More recently I ran a panel-discussion at University with the purpose of discussing third-year projects (a component of Electronics and Computer Sciences degrees specific to the University of Southampton). This was
+                            mainly heald for first and second year under-grad students who wanted to understand more about what was going to be required of them for a large part of the course in the following 12 months. This was something I was interested
+                            in understanding and so I did some work to understand what was going on (spoke about this subject for several minutes) and then invited some older students to participate in a discussion which was followed by a QnA. To my surprise
+                            >80 people had attended so I would say it was very successful.
+                        </p>
+                    </div>
+                </div>
 
-      <div id="oneContainer">
-        <div id="sub"><h3 class="sub">Project Description:</h3></div>
-          <div id="text"><p class="text"><span style="font-weight:900"> [This is a University project which is equivalent to one module]</span>
-<br>&nbsp <span style="font-weight:900">Aim:</span> to build a commercial smart meter that would be used within a moving Medical site which would opperate in areas of large struggle.
-<br> <span style="font-weight:900">Method:</span> Each team is allocated six EEE students and has the goal of building a powersupply, housing, interface cricuitry and software that makes up the smart meter.
-You are given 25£ budget with 7-week deadline and are expected to log individual progress in logbooks to show your involvement within the project. Each subteam has a set of
-standards that the team must abide by to be successfully marked.
-            </p></div>
-      </div>
+            </div>
 
-      <div id="twoContainer">
-        <div id="sub"><h3 class="sub">Team Structure:</h3></div>
-          <div id="text"><p class="text"> I was the Team Leader. Other roles included: Treasurer (for 25£ spending limit) and Team Organiser (for meetings date/time, minutes etc.) <br> As the Lead I divided the team into Power supply, Housing, Interface and Programming Subteams. I took the role as Head of Programming where I developed the control system, LCD interface and additional (wireless) interfaces. Additionally I helped with Housing team with the initial design and the interface circuitry with building simulation models on Multisim</p></div>
-      </div>
-
-      <div id="threeContainer" style="text-align: justify;">
-        <div id="sub"><h3 class="sub">My Involvement:</h3></div>
-          <div id="text"><p class="text"> <span style="font-weight:bold">[Programming, C]</span><br>&nbsp I implemented a basic multi-path control system. The system develops an out-come (not always 'output') depending on the current state of the Medical centre (described by inputs). Its relatively simple in design however serveral minimisation techniques were used to ensure that the concept acts more efficiently. This is important in Medical situations where everything is time-pressured. I also implemented an LCD interface which displays key results with an additional graph-features to create a better looking UI. 
-            <br><span style="font-weight:900">[Programming, C++]</span><br>&nbsp As an additional feature I built a wireless access point (WAP) using a NodeMCU (Arduino with WIFI module) which hosted a website (using local WIFI) which displayed the same values as the LCD interface with additional calculations. The site is smartphone-friendly and incorporates controlability using HTTP POST and GET input methods to control the LCD interface as well as manually changing the current state of the Medical center. 
-            <br><span style="font-weight:900">[Housing]</span><br>&nbsp I developed the intial housing model. I implemented "intsert" walls that would prevent water from entering the body. As the 3D printers provided were relatively small I designed the levels of the body to be stacked and screwed from the inside to create a strong structure. Features within the hosuing consist of ledges for rest the LCD screen in and particular positioning of screws for PCB and micrcontroller mounting.
-            <br><span style="font-weight:900">[Interface Circuitry]</span><br>&nbsp I built and modeled a PWM output signal which was used to control an boost the output of signals from 3.3V (microcontroller output) to 5V (required output).
-      </p></div>
-      </div>
-      <div id="fiveContainer">
-        <div id="sub"><h3 class="sub">Review Process and Outcomes</h3></div>
-        <div id="text"><p class="text"> 
-          <span style="font-weight:900">[First Review]</span><br>&nbsp I develpoed a six-person presentation to convey the progress of each sub-team in the first two weeks of this project. We scored 8/10, which is a testament to our 
-rehersals and planning that was made. We were also assessed on the Housing design where we scored 5/5.
-          
-<br><span style="font-weight:900">[Second Review]</span><br>&nbsp Our individual log books (Progress books) were marked for which I recieved a 7/10. I do believe this reflected the work I had, and I knew that I would need to increase in quality for a higher mark.
-As a group we were graded on our power supply design (scored 5/5) and the 3D housing model (scored 5/5).
-          
-<br><span style="font-weight:900">[Final Review]</span><br>&nbsp In the final (seventh) week the group was assessed on our individual contribution towards the project. This mark was the largest given mark contributing to 25% of the grade. 
-For this I ensured that my section of the project was completely developed with additional features and because of the +150 page report I scored full mark (25/25). I am proud of this as assessment writing is something I had struggled with on the path, however have only recently overcome it.
-<br> Regarding the final group report, I co-wrote it with another team memeber. Within the report I described our final product as well as the team's achievements  of which I was proud of (as a team leader). I also answered "what if..." questions, detailing what would have gone on if we were given an
-industry sized budget with an industry sized time-scheme. For this report we scored 11/15. <br> Finally we were given marks for the final product which had, rather dissapointingly, ran through issues during the final test, scoring 13/20. Though our product worked well we a lost majority of marks 
-building a machine that did not comply much with the project specification. The reasoning behind this decision was made  by me.
- I wanted to create a smart-meter with aditional functionalitites as when faced with competition in a working environment products need to have unique selling points and in following with this aspect of the project takss, I wanted to create a unique device.
- </p></div>
-      </div>
-      <div id="sixContainer">
-        <div id="sub"><h3 class="sub">Project Summary:</h3></div>
-        <div id="text"><p class="text">
-          &nbsp In my university career this is the largest project I have been able to take part of (worth 1 Module, 7 Weeks). Knowing this I needed to make sure I had full control of my own 
-mark and to do this I elected myself as the Team Leader. My final mark (79/100) was one of the highest scoring. My primary role as 'Leader' was to ensure that my team had the 
-correct tools and understnading to complete the given tasks to the highest level. I used kaban-style list-making applications (Trello) as well as strong messaging-document transfer
-applications (Slack) to ensure nothing was mis-communicated and within my programming team I set up a GitHub with multi-branch implementation and taught my team memebers to use it 
-effectively. Personally, devdeloping my embedded C/C++ skills fruther allowed me to develop a stronger understanding of connected devices (using WAP, WIFI-module etc.), and 
-implementing these skill within a simulated work environment pushed me to understand the difficulties behind designing electronic products.
-<br>So far I do believe (particularly) this project is a testament of my work as a Team Leader and a programmer.
-          </p></div>
-      </div>
-      <div id="sevenContainer">
-        <div id="sub"><h3 class="sub">References:</h3></div>
-        <div id="text"><p class="text">
-          Trello: https://trello.com/
-          <br> Slack: https://slack.com/intl/en-gb/
-          <br> Github: https://github.com/
-          <br> Multisim: https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html
-          </p></div>
-      </div>
-
+        </div>
     </div>
- 
-  </div>
 
-    <!-- Web Project Page -->
-    <div id="WebContainer">
-      <div id="WebTitleBox"><h2 class="WebTitle">Web Design</h2></div>
-      
-      <div id="textContainer">
-  
-        <div id="oneContainer">
-          <div id="sub"><h3 class="sub">Personal Aim:</h3></div>
-            <div id="text"><p class="text">  
-              My aim in building this website it to showcase the skills and qualities I think are important for students working towards a job in technology. Additionally, I have used building this website as a reason to improve my skills in programming.
-            </p></div>
-        </div>
-  
-        <div id="twoContainer">
-          <div id="sub"><h3 class="sub">Experience:</h3></div>
-            <div id="text"><p class="text"> 
-              The website is composed of HTML(w/CSS3), JavaScript(w/jquery, p5 library) and _____. Before the intial development of this website I had no understanding of JavaScript and minimal undertstanding of _____. When I began writing up the home page I primarily wrote the animations using the css-transition property. This soon became exhaustive as I had to program for >20 page elements (each individual hexagon) and so I thought it was a smart way to began using javascript. 
-              <br>&nbsp [Before I continue: if you use your 'Web-Developer' browser options you have to ability to look at the sites source code. I encourage you to use this to notice the differences between pages' source code]
-              <br>&nbsp As the site became more javascript heavy I decided to create a more "experienced" type of animation. This is where I developed the 'typewriter' effect, on the "CV" page. I didn't just want a box to slide around/dissapear I wanted to show "intelligence", this is why the typewriter animation corrects itself once it originally misspells Curriculum Vitae (which of course is what CV stands for). For those that do not understand javascript, you need to know there is no proper timer-delay function that exists. Unlike C/C++ which utilise a computer's internal clock, javascript does not. From this I learnt how to use the provided timing fuctions and so further my understanding of javascript implementation.
-              <br>&nbsp When learning a new language you often find yourself either procrastinating or deciphering helpful advice from the 'Stack Overflow' website. I mostly found myslef in the former, however on the occasion I was in the latter category I often read about 'jQueries' and their use within the javascript language. For those of you that have perhaps never heard or used jQuery, it is a library that increases the functionality of the javascript language by simplifying the HTML DOM and easing the control of the DOMs style properties (using CSS). This is the library I decided would be fun to experiment with during the development of page 2: the "Projects" page, which is the page you are currently on.
-              <br>&nbsp Having used jQuery made everything easier: accessing HTML elements was easier, controlling the aspects became simpler. Though, most significant to my work, the time-delay function that was missing with javascript became accessible to me. Therefore you may see the over-use of animations used for the projects sections - brought to you by jQuery.
-              <br>&nbsp Following the discovery of jQuery I began searching for other libraries that would further my relationship with javascript. This is where I met the 'p5.js' - a library commonly used by one of my heroes, Daniel Shiffman (a programmer known as "The Coding Train"). The use of this library would primarily simplify the construction of a dynamic site and as I wanted to build some mini-Games to showcase my skills in object-oriented programming, this was the perfect fit. The library is built similarly to the Arduino IDE, where you are given a 'set-up' function and a 'loop'(in p5.js this is "draw") function, therefore made it easier for me to learn.
-              <br>&nbsp Up to now this is the furthest I have gone with my site in terms of language-library use. Though, I have plans! Recently I partook in a "Spring into Banking" programme where I learnt about Deutsche Bank and how they operate as a techology firm. In doing this I was also given a 'Buddy'(a random post-grad employee). We spoke several times and I learnt a lot. He explained to me what the 'elastic-search' (Java) library does and it's uses, he gave me resources to further understand 'equity derivatives' (one of DB's main focuses regarding investment banking), additionally he mentioned 'Scala'. This piqued my interest. Scala is a programming language that writes like Python, however has the purpose of improving on the static side of the Java language.
-              <br>&nbsp The reason I mention this is because, since I began writing this website I didn't know how to program very well. I understood C/C++ pretty well, though these are not high-level and for complex use. When Scala was mentioned it had intruigued me the same way p5.js had prior and jQuery before that. And if you have read up to now it may be of interest to you that I am in the process of learning Scala, and hopefully soon I will be able to use it within my website.  
-            </p></div>
-        </div>
-  
-        <div id="threeContainer">
-          <div id="sub"><h3 class="sub">Outcomes:</h3></div>
-            <div id="text"><p class="text"> 
-              The obviosu thing to say here is: "These are the programming languages that I have learnt". But I think I have learnt something more important. This is of course the ability to understand languages more fluently. Understanding a certain level of a language unlocks the hidden ability to more easily understand other languages. Learning python made it easier for me to understand javascript, and understanding javascript has made it easier for me to understand Scala. This is the level of fliud programming understanding that renders you to begin a new language more comfortably. And I am certain the uncomfortability aspect of learning a new language is common to many of you reading, though I can tell you it gets easier.
-            </p></div>
-        </div>
-  
-        <div id="fourContainer">
-          <div id="sub"><h3 class="sub">What I have Learnt:</h3></div>
-          <div id="text"><p class="text"> 
-            
-          </p></div>
-        </div>
-  
-      </div>
-   
-    </div>
-    <!-- Writing Competency Project - UKEsf essay comp. -->
-    <div id="WriteContainer" style="text-align: justify;">
-      <div id="WriteTitleBox"><h2 class="WriteTitle">Essay Writing</h2></div>
-      <div id="textContainer">
-  
-        <div id="oneContainer">
-          <div id="sub"><h3 class="sub">AESIN & UKESF Essay Competition:</h3></div>
-            <div id="text"><p class="text"> 
-              <span style="font-weight:900"> Competition Title: </span>Blog-style post about your ideas of <br><span style="font-weight:900">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp"The Future of Cyber-Security for Connected and Autonomous Vehicles"</span>
-              <br>&nbsp When I began drafting the post, I was attending a conference about the importance of the regulatory sector to SMEs within the Aerospace industry. This influence expresses the first theme within my essay: 'Regulations within Cyber-Security'. In my eyes this is an imperative point to make. Regulations dictate company growth in any economic market (to an extent); within the securities industry it plays an even larger role, as 'messing up' impacts a lot more people than other industries. Take for example the Adobe hack in 2013 where 150 million accounts had been hacked - that's a crazy-large amount.  Therefore within my essay I felt compelled to express the opinion that regulations is always going to be a main focus for the cyber-security industry.
-              <br>&nbsp Another prevelant theme you may notice is that of Hollywood's role within the industry. I know - I know - this sounds far-fetched, but it's not. The influence that 'the movies' have on a young mind is great; it's the reason I took Maths more seriously at High-school after watching 'Good Will Hunting' and good-Will's brain at work. And so the effect that movies like James Bond and [insert generic spy movie] have on young kids is also pretty significant. Obviously a majority of these kids will be deterred sooner-or-later by the difficulty of making it in the securities industry (perhaps the passion for acting has overcome them), but those that stick it out will most likely tell you that spy movies did play an influential role. Therefore I felt that the theme of Hollywood was appropriate for such an essay. 
-              <br>&nbsp The last theme I stuck to describes the unicity of successful tech industries, such as the phone-software industry which has two major players, IOS and Android. This industry governance is something that is missing within vehicle softwares, though to be fair it's still in the infancy stage of development. It is something I hope to see play more of an active role in car-selling and with the slow rise of electric vehicles, the software that grows with it is becoming evermore paramount. The issues I raise with the multiplicity of car-softwares is that of errors. Errors that are bad. Very bad in cars. It is one of the reasons you will find minimal errors in developed, unified industry products such as phones. And it is also why it is more difficult to provide system protection for products that compete with a lot of players, like cars. Smaller competition means larger allocation of resources and therefore by logic should make your system more infallible, and curently there are too many players in the game. 
-              <br>&nbsp So you see, this is how I came to the conclusion that the future of cyber-security for connected and autonomous vehicles depends on a unified industry, that thrives alongside a strong regulatory system with the aspiration of making a machine so secure a James Bond villain couldn't hack it.
-            </p></div>
-        </div>
-        <div id="fourContainer">
-          <div id="sub"><h3 class="sub">Final Submission:</h3></div>
-          <div id="text"><p class="text"> 
-            <span style="font-weight:900;">&nbsp &nbsp &nbsp &nbsp Hollywood, Hollywood, Go away, Come again another day for movie inspiration</span>
-            <br>Traditional thought on technology, portrayed mainly by Hollywood, revolves around the vulnerabilities of important computer systems. Say like cars driven remotely by a “hacker” leading to a character’s dramatic demise. Especially recently, where we are seeing this massive movement from independently functioning devices to IoT devices; the ability to control other people’s electronic property is becoming much easier, and so the movies become more relatable. However these changes don’t stop here, the development of newer connections, for example V2IoT(Vehicle-to-IoT) or V2V(Vehicle-to-vehicle), increase the number of ‘entry-points’ in a system making it easier for hackers to find paths to...pretty much everything. And yes, I know Hollywood’s portrayal of this can be a tad over-the-top, nevertheless there is still an aspect of relatability to the movies being shown.
-            <br>&nbsp The transition to the IoT is being done by thousands of companies globally and rightly so, the more companies working within the industry the faster we can discover the range of capabilities that these devices have. Although, there is an issue that is becoming ever-more present due to this uprising of tech businesses within the automotive industry. This is of course the diversity of platforms and operating systems. “This is the era of own-brand Technology” – I’ll say after making my own brand. Volkswagen will develop their own systems; Audi will do the same and so on. This is acceptable yet somehow, it’s also not great. Multiplicity within systems derives faults that no one else has but you and resolving it will be expensive and tedious – for you and your consumers. The system will reach less people and so the chance of resolving all the errors, seen and unseen, will be small. Which is why when we look up to ‘successful’ industries like the computer-software, phone-software and, yes, watch-software industries there are only a couple of dominant operating systems. The issues become shared and consequently are easier to solve. So why is this not the same for the automotive-software industry? I say it’s because we have not set solid standards that the sector can follow. Take for example a UK Gov. document labelled “Key Principles of Cyber Security for Connected and Automated Vehicles” (Don’t worry I am here to read the riveting material provided by the government). Within the article the government acknowledges that “a consistent set of guidelines that support this global industry” do need to be established. This was released in 2017 and three years late I can safely say not much has changed in the three years since (which is why this essay competition holds the same title), yet we know that a strong set of regulations, or even “guidelines”, need to be set up for the automotive sector to move forward. Acceptable levels of security, accessibility for the user and rigidity and durability are among the more important regulations to be established. Hopefully soon we can say “goodbye” to Mr. Bond’s 2-second car-hack and “hello” to 3 hours of unsuccessful re-programming from Q.
-            <br>&nbsp I know the idea of regulations boring - because it makes me want to change discipline - but there is no way around it. The only thing we get to decide for now is who is going to regulate the industry. Government administration or Public? This is the Proprietary-Open Source software debate all over again, at least for now you can decide. Well some people already have decided. And even though we are routing for the un-eventful un-exciting scenarios that won’t fuel Hollywood’s spy movies, we can surely hope that they still excite us.
-            <br>&nbsp I know the idea of regulations boring - because it makes me want to change discipline - but there is no way around it. The only thing we get to decide for now is who is going to regulate the industry. Government administration or Public? This is the Proprietary-Open Source software debate all over again, at least for now you can decide. Well some people already have decided. And even though we are routing for the un-eventful un-exciting scenarios that won’t fuel Hollywood’s spy movies, we can surely hope that they still excite us.
-          </p></div>
-        </div>
-  
-        <div id="fiveContainer">
-          <div id="sub"><h3 class="sub">References:</h3></div>
-          <div id="text"><p class="text"> UK Gov doc “Key Principles of Cyber Security for Connected and Automated Vehicles, 2017” </p></div>
-        </div>
-  
-      </div>
-   
-    </div>
-    <!-- Public Speaking for 3Y IP -->
-    <div id="SpeakContainer">
-      <div id="SpeakTitleBox"><h2 class="SpeakTitle">Public Speaking and Organisation</h2></div>
-      <div id="textContainer" class="Speak_textContainer">
-  
-        <div id="oneContainer">
-          <div id="sub"><h3 class="sub">Speaking Your Mind - Influences</h3></div>
-            <div id="text"><p class="text">
-              Using influence when writing a speech is as much a technical tool as a pencil to painters tool (in the way that you use a pencil to plan and not to paint). You should not be looking to mimic your influencers, you should only be using them to structure your speech. This took me a long time to learn. Additionally, inluencers are not a constant when writing your speech. If I use Einstein to speak about Physics great! However, if I keep using Einstein to speak about Physics I will run out of Einstein-related Physics quickly. Varying your influences is important when speaking as it shows you have made effort to research. Given this information I would like to say it doesn't matter where you draw your influence. 
-              <br>&nbsp During high-school, my English teachers would draw inspiration from speeches that took place at UN conferences (I remeber analysing Emma Watson and Malala Yousafzai in class). This type of influence always confused me because my teachers would idealise the sum of techniques used, where the only consistent technique would be that of pragmatic clarity (the need for this being: translating a quick, complex speech is more difficult than a clear, concise speech). Envisioning myself in  such a position as Ms Watson infront of the UN allows me to draw clarity into speech writing.
-              <br>&nbsp In the situations when I want to find technical influence I fall towards well-structure pannel discussions. When speaking I don't want to come off 'robotic' by ticking off a list of technniques as i speak. What I want is to come off as someone who passionately understands what they are saying and can communicate it easily. This is where pannel discussions can influence the "ease-of-speaking" aspect.
-              <br>&nbsp I am not going to tell you where to find your sources or who to look at for influence because frankly it does not matter. It really doesn't. As I said before influence is like a pencil to a paintbrush - in this case not all painters need to use a pencil to plan.
-            </p></div>
-        </div>
-  
-        <div id="twoContainer">
-          <div id="sub"><h3 class="sub">Experience Public Speaking:</h3></div>
-            <div id="text"><p class="text"> 
-              I am not Malala, I had not spoken infront of the UN before going to University. However, here are some of my successful experiences with public presentation. 
-              <br>&nbsp During high-school the Mathematics department ran 'public speaking' exercise where students could talk about any mathematical topic they wanted as a means to improve confidence when speaking. I spoke about black-holes and the reasoning behind event horizons. I spoke confidently about how many cows it would take to make a black hole and people clapped. This to me what successful.
-              <br>&nbsp More recently I ran a panel-discussion at University with the purpose of discussing third-year projects (a component of Electronics and Computer Sciences degrees specific to the University of Southampton). This was mainly heald for first and second year under-grad students who wanted to understand more about what was going to be required of them for a large part of the course in the following 12 months. This was something I was interested in understanding and so I did some work to understand what was going on (spoke about this subject for several minutes) and then invited some older students to participate in a discussion which was followed by a QnA. To my surprise >80 people had attended so I would say it was very successful.
-            </p></div>
-        </div>
-  
-      </div>
-   
-    </div>
-</div>
-
-  <div id="cover"></div>
-<div id="Hexaco"></div>
+    <div id="cover"></div>
+    <div id="Hexaco"></div>
 </body>
+
 </html>
