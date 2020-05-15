@@ -1,46 +1,42 @@
 <html>
 <head>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-<link href="./css/page1/boardA.css" type="text/css" rel="stylesheet">
+  <link href="./css/page1/boardA.css" type="text/css" rel="stylesheet">
 
 </head>
-
-
-
 <body>
+  <div id="cover"></div>
+  <div id="Hexaco"></div>
 
-<div id="cover"></div>
-<div id="Hexaco"></div>
+  <script src="scripting/page1/script.js"></script>
+  <script src="scripting/page1/return.js"></script>
 
-<script src="scripting/page1/script.js"></script>
-<script src="scripting/page1/return.js"></script>
+  <div id="partI">
 
-<div id="partI">
+    <div id="white_hex"></div>
+    <h1 id="concatinate"> <!--concatinate the typewrite to disapear-->
+      <a href="" class="typewrite" data-period="1000" data-type='[ "rucil", "Curriculum Vitae (CV) "]'>
 
-  <div id="white_hex"></div>
-  <h1 id="concatinate"> <!--concatinate the typewrite to disapear-->
-    <a href="" class="typewrite" data-period="1000" data-type='[ "rucil", "Curriculum Vitae (CV) "]'>
+      <span class="wrap"></span>
+      </a>
+    </h1>                <!-- END concatinate -->
 
-    <span class="wrap"></span>
-    </a>
-  </h1>                <!-- END concatinate -->
+    <h1 id="subtitle">- "the course of your life"</h1>
 
-  <h1 id="subtitle">- "the course of your life"</h1>
+  </div><!-- A1 pageI container -->
+  <div class="down_title">&nbsp<br><br>
+    <img class="down_png" src="css/page1/down.png"></img>
+  </div>
 
-</div><!-- A1 pageI container -->
-<div class="down_title">&nbsp<br><br>
-  <img class="down_png" src="css/page1/down.png"></img>
-</div>
+  <div id="behind">
+    <a href="cv.pdf" download="Adrian_Azzarelli_CV">
+      <img title="Download CV" src="css/page1/download.png" class="download_img" alt="Download">
+    </a> 
+    <img src="cv.png" id="CV"></img>
+  </div>
 
-<div id="behind">
-  <a href="cv.pdf" download="Adrian_Azzarelli_CV">
-    <img title="Download CV" src="css/page1/download.png" class="download_img" alt="Download">
-  </a> 
-  <img src="cv.png" id="CV"></img>
-</div>
+  <button id="back_space" onclick="returnHome()"></button>
 
-<button id="back_space" onclick="returnHome()"></button>
-
-<div id="slash"></div>
+  <div id="slash"></div>
 </body>
 </html>

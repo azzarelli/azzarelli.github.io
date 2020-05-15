@@ -145,74 +145,107 @@
             display: block;
             background-color: #d7d7d7;
         }
-        #Bboard{
-
-        }
-        
-        #B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8{
+/*********************************************************************************/   
+    #B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8{
         background-color: white;
         transition-property: background-color;
         transition-duration: .8s;
         transition-timing-function: linear;
         position: fixed;
-        
+
         clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
         -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
         height: 174px;
         width: 200px;
         z-index: 101;
-        }
-        
-        #B4{
+    }
+    #B1{
+        transition-delay: 0.5s;
+        top: 50%;
+        left: 50%;
+        margin-top: -274px;
+        margin-left: 212px;
+    }
+    #B3{
+        transition-delay: .65s;
+        top: 50%;
+        left: 50%;
+        margin-top: 101px;
+        margin-left: 212px;
+    }
+    #B4{
         transition-delay: 0.5s;
         top: 50%;
         left: 50%;
         margin-top: 192px;
         margin-left: 55px;
-        }
-
-        #B8{
+    }
+    #B5{
+        transition-delay: 0.6s;
+        top: 50%;
+        left: 50%;
+        margin-top: 99px;
+        margin-left: -415px;
+    }
+    #B6{
+        transition-delay: 0.4s;
+        top: 50%;
+        left: 50%;
+        margin-top: -89px;
+        margin-left: -416px;
+    }
+    #B7{
+        transition-delay: 0.5s;
+        top: 50%;
+        left: 50%;
+        margin-top: -275px;
+        margin-left: -416px;
+    }
+    #B8{
         transition-delay: 0.6s;
         top: 50%;
         left: 50%;
         margin-top: -368px;
         margin-left: -258px;
-        }
-        
-        
-        
+    }
 
-        #center_hex:hover ~ #B4{
+
+
+    #center_hex:hover ~ #B1{
         background-color: #f2f2f2;
         visibility: visible;
-        }
-        
-        #center_hex:hover ~ #B8{
+    }
+
+    #center_hex:hover ~ #B3{
         background-color: #f2f2f2;
         visibility: visible;
-        }
-        
-    #back{
+    }
+    #center_hex:hover ~ #B4{
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
 
-        outline: 0;
-        border: 0;
-        display: block;
-        background-color: #ff6b8e;
-    
-        top: 4%;
-        left: 2%;
-        width: 110px;
-        height: 20px;
-        position: fixed;
-    
-        z-index: 5;
-    
+    #center_hex:hover ~ #B5{
+        background-color: #f2f2f2;
+        visibility: visible;
     }
-    
-    #back::-moz-focus-inner {
-        border:0;
+    #center_hex:hover ~ #B6{
+        background-color: #f2f2f2;
+        visibility: visible;
     }
-    
-        
+    #center_hex:hover ~ #B7{
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
+    #center_hex:hover ~ #B8{
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
+
+/*********************************************************************************/
+#E1, #E2, #E3, #E4, #E5, #E6, #E7, #E8,#E9, #E10, #E11, #E12, #E13, #E14, #E15, #E16, #E17, #E18, #E19, #E20{
+    display:none;
+
+  }   
 
 }
