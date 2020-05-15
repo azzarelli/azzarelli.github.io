@@ -1,6 +1,5 @@
    
 @media only screen and (min-width: 600px) {
-
   body{
     transition-duration: .75s;
     transition-timing-function: linear;
@@ -11,23 +10,18 @@
   #container{
       overflow: hidden;
   }
-
   #center_hex::-moz-focus-inner {
     border:0;
   }
   #A1::-moz-focus-inner {
     border:0;
-  }
-  #A2::-moz-focus-inner {
+  }#A2::-moz-focus-inner {
+    border:0;
+  }#A3::-moz-focus-inner {
+    border:0;
+  }#A4::-moz-focus-inner {
     border:0;
   }
-  #A3::-moz-focus-inner {
-    border:0;
-  }
-  #A4::-moz-focus-inner {
-    border:0;
-  }
-
   #center_hex{
     outline: 0;
     border: 0;
@@ -45,7 +39,6 @@
     width: 400px;
     z-index: 101;
   }
-
   #A1, #A2, #A3, #A4{
     border: 0;
 
@@ -62,8 +55,6 @@
     height: 174px;
     width: 200px;
   }
-
-
   #A1Text{
     font-size: 150px;
     width:200px;
@@ -73,8 +64,7 @@
     left: -5px;
     z-index: 100;
     color: white;;
-  }
-  #A2Text{
+  }#A2Text{
     font-size: 38px;
     width:200px;
     height:200px;
@@ -93,55 +83,43 @@
     z-index: 100;
     color: white;;
   }
-
   #A1{
     top: 50%;
     left: 50%;
     margin-top: -182px;
     margin-left: 55px;
-  }
-
-  #A2{
+  }#A2{
     transition-delay: 0.2s;
     top: 50%;
     left: 50%;
     margin-top: 6px;
     margin-left: 55px;
-  }
-  #A3{
+  }#A3{
     transition-delay: 0s;
     top: 50%;
     left: 50%;
     margin-top: 6px;
     margin-left: -258px;
-  }
-  #A4{
+  }#A4{
     transition-delay: 0.2s;
     top: 50%;
     left: 50%;
     margin-top: -182px;
     margin-left: -258px;
   }
-
-
-
   #center_hex:hover ~ #A1{
     background-color: #f2f2f2;
     visibility: visible;
-  }
-  #center_hex:hover ~ #A2{
+  }#center_hex:hover ~ #A2{
     background-color: #f2f2f2;
       visibility: visible;
-  }
-  #center_hex:hover ~ #A3{
+  }#center_hex:hover ~ #A3{
+    background-color: #f2f2f2;
+    visibility: visible;
+  }#center_hex:hover ~ #A4{
     background-color: #f2f2f2;
     visibility: visible;
   }
-  #center_hex:hover ~ #A4{
-    background-color: #f2f2f2;
-    visibility: visible;
-  }
-
   #center_hex:hover{
     display: block;
     background-color: #d7d7d7;

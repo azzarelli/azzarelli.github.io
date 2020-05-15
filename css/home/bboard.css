@@ -1,6 +1,5 @@
 @media only screen and (min-width: 600px) {
 
-
   #B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8{
     background-color: white;
     transition-property: background-color;
@@ -14,9 +13,6 @@
     width: 200px;
     z-index: 101;
   }
-
-
-
   #B1{
     transition-delay: 0.5s;
     top: 50%;
@@ -24,8 +20,6 @@
     margin-top: -274px;
     margin-left: 212px;
   }
-
-
   #B3{
     transition-delay: .65s;
     top: 50%;
