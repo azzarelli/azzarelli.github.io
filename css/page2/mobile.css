@@ -271,6 +271,7 @@
         left: 0%;
         margin-left: 0px;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }#D5TitleBox{
         overflow-wrap: break-word;
     
@@ -301,6 +302,7 @@
         left: 0%;
         margin-left: 0px;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
       }#WebTitleBox{
         overflow-wrap: break-word;
     
@@ -331,6 +333,7 @@
         left: 0%;
         margin-left: 0px;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
       }#SpeakTitleBox{
         overflow-wrap: break-word;
     
@@ -363,6 +366,7 @@
         left: 0%;
         margin-left: 0px;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
       }#WriteTitleBox{
         overflow-wrap: break-word;
     
