@@ -1,251 +1,265 @@
-@media only screen and (max-width: 600px) {  
-        body{
-            transition-duration: .75s;
-            transition-timing-function: linear;
-            background-color: white;
-            transition-delay: 1s;
-        }
-        
-        #container{
-            overflow: hidden;
-        }
-        
-        #center_hex::-moz-focus-inner {
-            border:0;
-        }
-        #A1::-moz-focus-inner {
-            border:0;
-        }
-        #A2::-moz-focus-inner {
-            border:0;
-        }
-        #A3::-moz-focus-inner {
-            border:0;
-        }
-        #A4::-moz-focus-inner {
-            border:0;
-        }
-        
-        #center_hex{
-            outline: 0;
-            border: 0;
-        
-            display: block;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            margin-top: -89px;
-            margin-left: -102px;
-            clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
-            -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
-            background: #F2F2F2;
-            height: 348px;
-            width: 400px;
-            z-index: 101;
-        }
-        
-        
-        #A1, #A2, #A3, #A4{
-            border: 0;
-        
-            background-color: white;
-        
-            transition-duration: .75s;
-            transition-timing-function: linear;
-        
-            position: fixed;
-            z-index: 1;
-        
-            clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
-            -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
-            height: 174px;
-            width: 200px;
-        }
-        
-        
-        #A1Text{
-            font-size: 150px;
-            width:200px;
-            height:200px;
-            position:absolute;
-            top: -100px;
-            left: -5px;
-            z-index: 100;
-            color: white;;
-        }
-        #A2Text{
-            font-size: 38px;
-            width:200px;
-            height:200px;
-            position:absolute;
-            top: 35px;
-            left: 0px;
-            z-index: 100;
-            color: white;;
-        }#A3Text{
-            font-size: 50px;
-            width:200px;
-            height:200px;
-            position:absolute;
-            top: -10px;
-            left: 0px;
-            z-index: 100;
-            color: white;;
-        }
-        
-        #A1{
-            top: 50%;
-            left: 50%;
-            margin-top: -182px;
-            margin-left: 55px;
-        }
-        
-        #A2{
-            transition-delay: 0.2s;
-            top: 50%;
-            left: 50%;
-            margin-top: 6px;
-            margin-left: 55px;
-        }
-        #A3{
-            transition-delay: 0s;
-            top: 50%;
-            left: 50%;
-            margin-top: 6px;
-            margin-left: -258px;
-        }
-        #A4{
-            transition-delay: 0.2s;
-            top: 50%;
-            left: 50%;
-            margin-top: -182px;
-            margin-left: -258px;
-        }
-        
-        
-        
-        #center_hex:hover ~ #A1{
-            background-color: #f2f2f2;
-            visibility: visible;
-        }
-        #center_hex:hover ~ #A2{
-            background-color: #f2f2f2;
-            visibility: visible;
-        }
-        #center_hex:hover ~ #A3{
-            background-color: #f2f2f2;
-            visibility: visible;
-        }
-        #center_hex:hover ~ #A4{
-            background-color: #f2f2f2;
-            visibility: visible;
-        }
-        
-        #center_hex:hover{
-            display: block;
-            background-color: #d7d7d7;
-        }
-/*********************************************************************************/   
-    #B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8{
+@media only screen and (max-width: 600px) {
+    body {
+        transition-duration: .75s;
+        transition-timing-function: linear;
+        background-color: white;
+        transition-delay: 1s;
+    }
+    #container {
+        overflow: hidden;
+    }
+    #center_hex::-moz-focus-inner {
+        border: 0;
+    }
+    #A1::-moz-focus-inner {
+        border: 0;
+    }
+    #A2::-moz-focus-inner {
+        border: 0;
+    }
+    #A3::-moz-focus-inner {
+        border: 0;
+    }
+    #A4::-moz-focus-inner {
+        border: 0;
+    }
+    #center_hex {
+        outline: 0;
+        border: 0;
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -89px;
+        margin-left: -102px;
+        clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
+        -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 87px);
+        background: #F2F2F2;
+        height: 348px;
+        width: 400px;
+        z-index: 101;
+    }
+    #A1,
+    #A2,
+    #A3,
+    #A4 {
+        border: 0;
+        background-color: white;
+        transition-duration: .75s;
+        transition-timing-function: linear;
+        position: fixed;
+        z-index: 1;
+        clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
+        -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
+        height: 174px;
+        width: 200px;
+    }
+    #A1Text {
+        font-size: 150px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -100px;
+        left: -5px;
+        z-index: 100;
+        color: white;
+        ;
+    }
+    #A2Text {
+        font-size: 38px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        z-index: 100;
+        color: white;
+        ;
+    }
+    #A3Text {
+        font-size: 50px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        z-index: 100;
+        color: white;
+        ;
+    }
+    #A1 {
+        top: 50%;
+        left: 50%;
+        margin-top: -274px;
+        margin-left: -102px;
+    }
+    #A2 {
+        transition-delay: 0.2s;
+        top: 50%;
+        left: 50%;
+        margin-top: 99px;
+        margin-left: -102px;
+    }
+    #A3 {
+        transition-delay: 0s;
+        top: 50%;
+        left: 50%;
+        margin-top: 6px;
+        margin-left: -258px;
+    }
+    #A4 {
+        transition-delay: 0.2s;
+        top: 50%;
+        left: 50%;
+        margin-top: -182px;
+        margin-left: -258px;
+    }
+    #center_hex:hover~#A1 {
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
+    #center_hex:hover~#A2 {
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
+    #center_hex:hover~#A3 {
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
+    #center_hex:hover~#A4 {
+        background-color: #f2f2f2;
+        visibility: visible;
+    }
+    #center_hex:hover {
+        display: block;
+        background-color: #d7d7d7;
+    }
+    #B6 {
+        display: none;
+    }
+    #B1,
+    #B2,
+    #B3,
+    #B4,
+    #B5,
+    #B7,
+    #B8 {
         background-color: white;
         transition-property: background-color;
         transition-duration: .8s;
         transition-timing-function: linear;
         position: fixed;
-
         clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
         -webkit-clip-path: polygon(50px 0px, 150px 0px, 200px 87px, 150px 174px, 50px 174px, 0px 86px);
         height: 174px;
         width: 200px;
         z-index: 101;
     }
-    #B1{
+    #B1 {
         transition-delay: 0.5s;
         top: 50%;
         left: 50%;
-        margin-top: -274px;
-        margin-left: 212px;
+        margin-top: -182px;
+        margin-left: 55px;
     }
-    #B3{
+    #B3 {
         transition-delay: .65s;
         top: 50%;
         left: 50%;
-        margin-top: 101px;
-        margin-left: 212px;
-    }
-    #B4{
-        transition-delay: 0.5s;
-        top: 50%;
-        left: 50%;
-        margin-top: 192px;
+        margin-top: 6px;
         margin-left: 55px;
     }
-    #B5{
-        transition-delay: 0.6s;
-        top: 50%;
-        left: 50%;
-        margin-top: 99px;
-        margin-left: -415px;
-    }
-    #B6{
-        transition-delay: 0.4s;
-        top: 50%;
-        left: 50%;
-        margin-top: -89px;
-        margin-left: -416px;
-    }
-    #B7{
+    #B4 {
         transition-delay: 0.5s;
         top: 50%;
         left: 50%;
-        margin-top: -275px;
-        margin-left: -416px;
+        margin-top: 190px;
+        margin-left: 55px;
     }
-    #B8{
+    #B5 {
         transition-delay: 0.6s;
         top: 50%;
         left: 50%;
-        margin-top: -368px;
+        margin-top: 190px;
         margin-left: -258px;
     }
-
-
-
-    #center_hex:hover ~ #B1{
+    #B7 {
+        transition-delay: 0.5s;
+        top: 50%;
+        left: 50%;
+        margin-top: -370px;
+        margin-left: -258px;
+    }
+    #B8 {
+        transition-delay: 0.6s;
+        top: 50%;
+        left: 50%;
+        margin-top: -370px;
+        margin-left: 55px;
+    }
+    #center_hex:hover~#B1 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-
-    #center_hex:hover ~ #B3{
+    #center_hex:hover~#B3 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-    #center_hex:hover ~ #B4{
+    #center_hex:hover~#B4 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-
-    #center_hex:hover ~ #B5{
+    #center_hex:hover~#B5 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-    #center_hex:hover ~ #B6{
+    #center_hex:hover~#B6 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-    #center_hex:hover ~ #B7{
+    #center_hex:hover~#B7 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-    #center_hex:hover ~ #B8{
+    #center_hex:hover~#B8 {
         background-color: #f2f2f2;
         visibility: visible;
     }
-
-/*********************************************************************************/
-#E1, #E2, #E3, #E4, #E5, #E6, #E7, #E8,#E9, #E10, #E11, #E12, #E13, #E14, #E15, #E16, #E17, #E18, #E19, #E20{
-    display:none;
-
-  }   
-
+    #E1,
+    #E2,
+    #E3,
+    #E4,
+    #E5,
+    #E6,
+    #E7,
+    #E8,
+    #E9,
+    #E10,
+    #E11,
+    #E12,
+    #E13,
+    #E14,
+    #E15,
+    #E16,
+    #E17,
+    #E18,
+    #E19,
+    #E20 {
+        display: none;
+    }
+    #back {
+        outline: 0;
+        border: 0;
+        display: block;
+        background-color: #ff6b8e;
+        top: 4%;
+        left: 2%;
+        width: 110px;
+        height: 20px;
+        position: fixed;
+        z-index: 5;
+    }
+    #back::-moz-focus-inner {
+        border: 0;
+    }
 }
