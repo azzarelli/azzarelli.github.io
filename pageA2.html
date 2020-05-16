@@ -1,13 +1,13 @@
 <html>
 
 <head>
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="./css/page2/back.css" type="text/css" rel="stylesheet">
     <link href="./css/page2/text.css" type="text/css" rel="stylesheet">
-    <link href="./css/page2/mobile.css" type="text/css" rel="stylesheet">
+    <link href="./css/page2/altMedia.css" type="text/css" rel="stylesheet">
 
 
     <script src="jquery-3.4.1.js"></script>
+
 
     <div id="backG"></div>
 </head> 
@@ -19,9 +19,7 @@
     <script src="scripting/page2/swipe.js"></script>
 
     <div id="Page_Container">
-        <div class="title_Box">
-            <h1 class="title">PROJECTS</h1>
-        </div>
+        <div class="title">PROJECTS</div>
 
         <button id="back_space" onclick="home()"></button>
 
@@ -32,7 +30,7 @@
 
             <!-- Right side pannel backs -->
             <!-- Smart Meter d5 Project -->
-            <div class="bar_R2" onclick="swipe_R2()">
+            <div class="bar_R2" >
                 <div id="pannel_back" class="D5_back">
                     <div class="subtitle_box">
                         <p class="subtitle" id="sm_title">Smart<br>Meter</p>
@@ -105,19 +103,19 @@
         <!-- This is the Tab bar (on the left) that comes in when you select a project to read about -->
         <div id="bar_Progress">
             <div id="return_Progress" title="Return">
-                <div class="return_Image"></div>
+                <div class="return_Image"><img class="rT_img" src="./css/page2/ProgressBarFolder/return1.png"><img></div>
             </div>
             <div id="to_Title" title="Go to Bottom of Page">
-                <div class="to_Title"></div>
+                <div class="to_Title"><img class="tP_img" src="./css/page2/ProgressBarFolder/arrow1.png"><img></div>
             </div>
             <div id="menu_Progress" title="Menu">
                 <div class="menu_Progress"></div>
             </div>
             <div id="to_Bottom" title="Go to Bottom of Page">
-                <div class="to_Bottom"></div>
+                <div class="to_Bottom"><img class="bP_img" src="./css/page2/ProgressBarFolder/arrow1.png"><img></div>
             </div>
             <div id="color_Progress" title="Random Colour Generator using jQuery">
-                <div class="color_Progress"></div>
+                <div class="color_Progress"><img class="cP_img" src="./css/page2/ProgressBarFolder/comb1.png"><img></div>
             </div>
         </div>
 
@@ -127,7 +125,7 @@
                 <h2 class="D5Title">Smart Meter</h2>
             </div>
 
-            <div id="textContainer">
+            <div id="textContainer" class="D5_textContainer">
 
                 <div id="oneContainer">
                     <div id="sub">
@@ -233,7 +231,7 @@
                 <h2 class="WebTitle">Web Design</h2>
             </div>
 
-            <div id="textContainer">
+            <div id="textContainer"  class="Web_textContainer">
 
                 <div id="oneContainer">
                     <div id="sub">
@@ -312,7 +310,7 @@
             <div id="WriteTitleBox">
                 <h2 class="WriteTitle">Essay Writing</h2>
             </div>
-            <div id="textContainer">
+            <div id="textContainer" class="Write_textContainer">
 
                 <div id="oneContainer">
                     <div id="sub">
