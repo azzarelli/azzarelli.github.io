@@ -8,23 +8,43 @@ var difficulty;
 var state = "Pause"; // Game has been paused
 var initStart = 0; // Start screen
 
+// Initiallise the Buttons
+let buttonUP;
+let buttonDOWN;
+let buttonLEFT;
+let buttonRIGHT;
+let bSpace;
+let bE;
+let bM;
+let bH;
+let bR;
+
+
+var bP = 0; //variable that tells the keypress event what button has been pressed (is using buttons as controls)
+
 function setup() {
-  let can = createCanvas(400, 400);
-  can.position((windowWidth/2)-200, (windowHeight/2)-200);
-  can.style("z-index: 10;");
+  createCanvas(400, 600);
   textFont("Roboto Mono");
+  
+  
+  buttonCreate();
+    
   difficulty = 0;
   
   frameRate(100);
   man = new Man();
   enemy = new Enemy();
-  fruit = new Fruit();
+  fruit = new Fruit();  
+  
 }
-
 function draw() {
   textSize(20);
   background(255);
+  fill('rgb(255,255,255)');
+  rect(-2,402, 405, 205);
   
+  
+
   if(!enemyCount){
   
     if(!pressed) initStart = 1;
@@ -99,7 +119,6 @@ function draw() {
   
       if(pressed){
         fill(0.2);
-        rect(30, 400, 100,10);
         textSize(50);
         text("Game Paused",  30,210);
         textSize(20);
@@ -121,11 +140,65 @@ function draw() {
     fill(0.8);
     textSize(20);
     text("Score: "+ count, 145 ,220); 
-    text("Press [R] to Restart", 85 ,360); 
-    
+    text("Press [R] to Restart", 85 ,360);  
   }
-
 }
+
+function up(){row = 0; col = -1; console.log('up')};
+function down(){row = 0; col =1;};
+function left(){row = -1; col =0;};
+function right(){row = 1; col =0;};
+function space(){pressed = (pressed + 1) % 2 ;clear();};
+function easy(){difficulty = 0;};
+function medium(){difficulty = 1;};
+function hard(){difficulty = 2;};
+function reset(){enemyCount = 0; count =0; difficulty =0;};
+
+
+
+function buttonCreate(){
+  buttonUP = createButton('');
+  buttonUP.size(50,50);
+  buttonUP.position((windowWidth/2)-25, 410, 'fixed');
+  buttonDOWN = createButton('');
+  buttonDOWN.size(50,50);
+  buttonDOWN.position((windowWidth/2)-25, 480, 'fixed');
+  buttonLEFT = createButton('');
+  buttonLEFT.size(50,50);
+  buttonLEFT.position((windowWidth/2)-85, 450, 'fixed');
+  buttonRIGHT = createButton('');
+  buttonRIGHT.size(50,50);
+  buttonRIGHT.position((windowWidth/2)+35, 450, 'fixed');
+  
+  bSpace = createButton('[SPACE]');
+  bSpace.size(100,30);
+  bSpace.position((windowWidth/2)-50, 550);
+
+  bE = createButton('[E]');
+  bE.size(50,50);
+  bE.position((windowWidth/2)-180, 420);
+  bM = createButton('[M]');
+  bM.size(50,50);
+  bM.position((windowWidth/2)-180, 480);
+  bH = createButton('[H]');
+  bH.size(50,50);
+  bH.position((windowWidth/2)-180, 540);
+
+  bR = createButton('[R]');
+  bR.size(50,50);
+  bR.position((windowWidth/2)+140, 540, 'fixed');
+  
+  buttonUP.mouseClicked(up);
+  buttonDOWN.mouseClicked(down);
+  buttonLEFT.mouseClicked(left);
+  buttonRIGHT.mouseClicked(right);
+  bSpace.mouseClicked(space);
+  bE.mouseClicked(easy);
+  bM.mouseClicked(medium);
+  bH.mouseClicked(hard);
+  bR.mouseClicked(reset);
+}
+
 
 function keyPressed(){
   if(!pressed){

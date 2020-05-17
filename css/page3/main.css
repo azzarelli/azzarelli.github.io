@@ -3,6 +3,10 @@
     position: fixed;
     right:10px;
     bottom: 50px;
-    font-size: 40px;;
-
+    font-size: 40px;
+}
+.p5Canvas{
+    opacity: 1;
+    top:-600px;
+    /* left: -200px !important; */
 }

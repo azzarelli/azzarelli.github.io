@@ -4,57 +4,21 @@ body{
   overflow: hidden;
 }
 
-#slide_L{
-    z-index: 1;
-    opacity: 0.6;
-    position: fixed;
-    background: grey;
-    display: block;
-    height: 60%;
-    width: 100%;
-    top: 20%;
-    left: -50%;
-    animation-timing-function: ease-in;
-    -webkit-animation: lefty 3s;-moz-animation: lefty 3s;-o-animation: lefty 3s;-ms-animation: lefty 3s;
+button{
+  opacity: 0;
+  background-color: #aec6cf;
+  border: 0;
+  color: rgba(0,0,0,0.2);
+
 }
-#slide_R{
-  z-index: 1;
-  opacity: 0.6;
-  position: fixed;
-  background: grey;
-  display: block;
-  height: 60%;
-  width: 100%;
-  top: 20%;
-  right: -50%;
-  animation-timing-function: ease-in;
-  -webkit-animation: righty 3s;-moz-animation: righty 3s;-o-animation: righty 3s;-ms-animation: righty 3s;
+button:active{
+  background-color: rgb(121, 139, 146);
+  color: black;
 }
 
-@-webkit-keyframes lefty{
-  0% {left: -100%;}
-  100% {left: -50%;}}
-@-moz-keyframes lefty{
-  0% {left: -100%;}
-  100% {left: -50%;}}
-@-o-keyframes lefty{
-  0% {left: -100%;}
-  100% {left: -50%;}}
-@-ms-keyframes lefty{
-  0% {left: -100%;}
-  100% {left: -50%;}}
-  @-webkit-keyframes righty{
-    0% {right: -100%;}
-    100% {right: -50%;}}
-  @-moz-keyframes righty{
-    0% {right: -100%;}
-    100% {right: -50%;}}
-  @-o-keyframes righty{
-    0% {right: -100%;}
-    100% {right: -50%;}}
-  @-ms-keyframes righty{
-    0% {right: -100%;}
-    100% {right: -50%;}}
+button::-moz-focus-inner {
+  border: 0;
+}
 
 #cover{
     position: absolute;
@@ -84,7 +48,7 @@ body{
 
 #back_space{
   z-index: 100;
-  background-color: grey;
+  background-color: rgba(255,2,2,0);
   opacity: 0.5;
   opacity: 0.3;
   background-image: url("arrow.png");
@@ -102,6 +66,16 @@ body{
   display: block;
   position: fixed;
   -webkit-animation: back 2s;-moz-animation: back 2s;-o-animation: back 2s;-ms-animation: back 2s;
-}#back_space:hover{
-  background-color: white;
 }
+@-webkit-keyframes back{
+  0% {left: -25.5%;}
+  100% {left: -2.5%;}}
+@-moz-keyframes back{
+  0% {left: -25.5%;}
+  100% {left: -2.5%;}}
+@-o-keyframes back{
+  0% {left: -25.5%;}
+  100% {left: -2.5%;}}
+@-ms-keyframes back{
+  0% {left: -25.5%;}
+  100% {left: -2.5%;}}
