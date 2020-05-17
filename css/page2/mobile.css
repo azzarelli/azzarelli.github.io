@@ -452,6 +452,7 @@ p.subtitle{
 
 #Hexaco {
     outline: 0;
+    display: none;
     border: 0;
     z-index: 101;
     opacity: 0;

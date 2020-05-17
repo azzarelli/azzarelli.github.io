@@ -557,6 +557,7 @@ body{
     z-index: 100;
   }
   #Hexaco{
+    display:none;
     outline: 0;
     border: 0;
     z-index: 101;

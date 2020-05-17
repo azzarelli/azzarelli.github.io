@@ -3,6 +3,8 @@ function home (){
     var hex = document.getElementById("Hexaco");
     var cover = document.getElementById("cover");
     var back = document.getElementById("back_space");
+    hex.style.display = "block";
+
     var position = -400; //initial position is -300% as it is above page
     var i = 0; //position changer
     var j = 0.05; //unsure
