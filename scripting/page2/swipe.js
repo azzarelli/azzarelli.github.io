@@ -170,7 +170,8 @@ $(document).ready(function (){
           $(".title_Box").delay(800).animate({'margin-left':"-215px", 'top':"0px"}, 2000);
         
           $("body").css('overflow', 'hidden');
-          $("#WebContainer, #WriteContainer, #SpeakContainer").animate({'bottom':"-200%"}, 1200);
+          
+          $("#WebContainer, #WriteContainer, #SpeakContainer,#D5Container").animate({'bottom':"-200%"}, 1200);
           $("#D5Container,#WebContainer, #WriteContainer, #SpeakContainer").delay(2000).animate({ scrollTop: 0 }, 1500);
         });
         
