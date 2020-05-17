@@ -41,23 +41,16 @@ function buttonCreate(){
   bR.size(50,50);
   bR.position((windowWidth/2)+140, 540, 'fixed');
   
-  buttonUP.mouseClicked(up);
-  buttonDOWN.mouseClicked(down);
-  buttonLEFT.mouseClicked(left);
-  buttonRIGHT.mouseClicked(right);
-  bSpace.mouseClicked(space);
-  bE.mouseClicked(easy);
-  bM.mouseClicked(medium);
-  bH.mouseClicked(hard);
-  bR.mouseClicked(reset);
 }
-function setup() {
-  createCanvas(400, 600);
-  textFont("Roboto Mono");
-  buttonCreate();
-  difficulty = 0;
-  frameRate(100);
-  man = new Man();
-  enemy = new Enemy();
-  fruit = new Fruit();  
+
+function buttonRun(){
+    buttonUP.mouseClicked(up);
+    buttonDOWN.mouseClicked(down);
+    buttonLEFT.mouseClicked(left);
+    buttonRIGHT.mouseClicked(right);
+    bSpace.mouseClicked(space);
+    bE.mouseClicked(easy);
+    bM.mouseClicked(medium);
+    bH.mouseClicked(hard);
+    bR.mouseClicked(reset);
 }

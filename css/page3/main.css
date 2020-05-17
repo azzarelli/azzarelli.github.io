@@ -10,3 +10,19 @@
     top:-600px;
     /* left: -200px !important; */
 }
+button{
+    opacity: 0;
+    background-color: #aec6cf;
+    border: 0;
+    color: rgba(0,0,0,0.2);
+    z-index:100;
+  }
+  button:active{
+    background-color: rgb(121, 139, 146);
+    color: black;
+  }
+  
+  button::-moz-focus-inner {
+    border: 0;
+  }
+  

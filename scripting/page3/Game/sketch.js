@@ -1,4 +1,3 @@
-var counter = document.getElementsByClassName("counter");
 var count = 0;
 var enemyCount = 0; // if the enemy has eaten the fruit you loose
 var pressed = 1;
@@ -20,6 +19,21 @@ let bH;
 let bR;
 var bP = 0; //variable that tells the keypress event what button has been pressed (is using buttons as controls)
 
+function preload(){
+  buttonCreate();
+}
+
+function setup() {
+  createCanvas(400, 600);
+  textFont("Roboto Mono");
+  difficulty = 0;
+  frameRate(100);
+  man = new Man();
+  enemy = new Enemy();
+  fruit = new Fruit(); 
+  buttonRun();
+ 
+}
 function draw() {
   textSize(20);
   background(255);
