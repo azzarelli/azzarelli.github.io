@@ -157,18 +157,18 @@ function reset(){enemyCount = 0; count =0; difficulty =0;};
 
 
 function buttonCreate(){
-  buttonUP = createButton('');
+  buttonUP = createButton('U');
   buttonUP.size(50,50);
-  buttonUP.position((windowWidth/2)-25, 410, 'fixed');
-  buttonDOWN = createButton('');
+  buttonUP.position((windowWidth/2)-25, 410);
+  buttonDOWN = createButton('D');
   buttonDOWN.size(50,50);
-  buttonDOWN.position((windowWidth/2)-25, 480, 'fixed');
-  buttonLEFT = createButton('');
+  buttonDOWN.position((windowWidth/2)-25, 480);
+  buttonLEFT = createButton('L');
   buttonLEFT.size(50,50);
-  buttonLEFT.position((windowWidth/2)-85, 450, 'fixed');
-  buttonRIGHT = createButton('');
+  buttonLEFT.position((windowWidth/2)-85, 450);
+  buttonRIGHT = createButton('R');
   buttonRIGHT.size(50,50);
-  buttonRIGHT.position((windowWidth/2)+35, 450, 'fixed');
+  buttonRIGHT.position((windowWidth/2)+35, 450);
   
   bSpace = createButton('[SPACE]');
   bSpace.size(100,30);
