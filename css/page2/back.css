@@ -26,6 +26,7 @@ body{
     text-align: center;
     font-family: "Lucida Console", Courier, monospace;
     z-index: 100;
+    opacity: 0;
   }
 
   #back_space{
@@ -331,7 +332,9 @@ body{
 
   /* Progress Bar when on a project window */
   #color_Progress:hover, #to_Bottom:hover, #return_Progress:hover, #to_Title:hover{
-    left:0px;}
+    background-color: rgba(255, 255, 255, 0.5); 
+    left:0px;
+  }
   #bar_Progress{
     position:fixed;
     width: 70px;
@@ -340,6 +343,7 @@ body{
     margin-top: -200px;
     left: -80px;
     border-radius: 10px;
+    
     /* background-color: rgba(255, 255, 255, 0.3); */
   }#return_Progress, #to_Title, #to_Bottom, #menu_Progress, #color_Progress{
     position: absolute;
