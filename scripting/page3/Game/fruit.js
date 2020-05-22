@@ -35,8 +35,8 @@ class Fruit{
     
     if(((enemy.x - 10) < y ) && ( y < (enemy.x + 15))){
       if(((enemy.y - 10) < x) && (x < (enemy.y + 15))){
-        this.height = floor(random(400-10));
-        this.width = floor(random(400-10));
+        this.height = floor(random(300-10));
+        this.width = floor(random(300-10));
         return "enemy";
       }
     }
