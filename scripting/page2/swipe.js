@@ -19,7 +19,7 @@ $(document).ready(function (){
           //Do again so all the bars are fully out the picture(sometimes this bugs out)
           $(".bar_R1, .bar_L1, .bar_L2, .bar_MR, .bar_ML").delay(1000).animate({'top':"-=600px"}, 1000);
         
-          $("#D5Container").delay(1200).animate({'opacity':"1"}, 2000);
+          $("#D5Container").delay(1200).animate({'opacity':"1"}, 2000).css({'z-index':'101'});
         });
         $(document).on('click', '.bar_MR', function () {
           $(".bar_R1, .bar_L1, .bar_R2, .bar_L2, .bar_ML").animate({'top':"-2000px"}, 1000);
@@ -28,7 +28,7 @@ $(document).ready(function (){
           $("#bar_Progress").delay(1800).animate({'left':"-10px"}, 500);
           $(".bar_R1, .bar_L1, .bar_R2, .bar_ML, .bar_L2").delay(1000).animate({'top':"-=600px"}, 1000);
         
-          $("#SpeakContainer").delay(1200).animate({'opacity':"1"}, 2000);
+          $("#SpeakContainer").delay(1200).animate({'opacity':"1"}, 2000).css({'z-index':'101'});
         });
         $(document).on('click', '.bar_L2', function () {
           $(".bar_R1, .bar_L1, .bar_R2, .bar_MR, .bar_ML").animate({'top':"-2000px"}, 1000);
@@ -37,7 +37,7 @@ $(document).ready(function (){
           $("#bar_Progress").delay(1800).animate({'left':"-10px"}, 500);
           $(".bar_R1, .bar_L1, .bar_R2, .bar_MR, .bar_ML").delay(1000).animate({'top':"-=2000px"}, 1000);
           
-          $("#WebContainer").delay(1200).animate({'opacity':"1"}, 2000);
+          $("#WebContainer").delay(1200).animate({'opacity':"1"}, 2000).css({'z-index':'101'});
         });$(document).on('click', '.bar_ML', function () {
           $(".bar_R1, .bar_L1, .bar_R2, .bar_MR, .bar_L2").animate({'top':"-2000px"}, 1000);
           $(".title").animate({'opacity':"0"}, 1200);
@@ -45,7 +45,7 @@ $(document).ready(function (){
           $("#bar_Progress").delay(1800).animate({'left':"-10px"}, 500);
           $(".bar_R1, .bar_L1, .bar_R2, .bar_MR, .bar_L2").delay(1000).animate({'top':"-=600px"}, 1000);
 
-          $("#WriteContainer").delay(1200).animate({'opacity':"1"}, 2000);
+          $("#WriteContainer").delay(1200).animate({'opacity':"1"}, 2000).css({'z-index':'101'});
         });
 /* Empty Pannels */
                 /* Doing the same for the Right side */
@@ -86,10 +86,9 @@ $(document).ready(function (){
           $(".title").delay(1500).animate({'opacity':"1"}, 1200);
         
           $("body").css('overflow', 'hidden');
-          $("#D5Container").animate({'left':"200%"}, 1200);
 
-          $("#WebContainer, #WriteContainer, #SpeakContainer").animate({'opacity':"0"}, 1200);
-          $("#D5Container,#WebContainer, #WriteContainer, #SpeakContainer").delay(2000).animate({ scrollTop: 0 }, 1500);
+          $("#WebContainer, #WriteContainer, #SpeakContainer, #D5Container").animate({'opacity':"0"}, 1200);
+          $("#D5Container,#WebContainer, #WriteContainer, #SpeakContainer").delay(2000).animate({ scrollTop: 0 }, 1500).css({'z-index':'1'});
         });
         
         $(document).on('click', '#to_Title', function () {
