@@ -4,24 +4,10 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 <head>
-  <link rel="preload" href="scripting/home/script.js" as="script">
-  <link rel="preload" href="scripting/home/javaid.js" as="script">
+  <link rel="preload" href="scripting/home.js" as="script">
 
-  <link rel="preload" href="./css/home/aboard.css" as="style">
-  <link rel="preload" href="./css/home/bboard.css" as="style">
-
-  <!--Loading page3 contents early to increase efficiency (as page3 is worst for loading)-->
-  <link rel="prefetch" href="scripting/page3/onLoad.js" as="script">
-  <link rel="prefetch" href="./css/page3/main.css" as="style">
-
-
-  
-
-  <link href="./css/home/mobile.css" type="text/css" rel="stylesheet">
-  <link href="./css/home/aboard.css" type="text/css" rel="stylesheet">
-  <link href="./css/home/bboard.css" type="text/css" rel="stylesheet">
-  <link href="./css/home/externalboard.css" type="text/css" rel="stylesheet">
-  <link href="./css/home/extra.css" type="text/css" rel="stylesheet">
+  <link href="./css/foreground.css" type="text/css" rel="stylesheet">
+  <link href="./css/background.css" type="text/css" rel="stylesheet">
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -31,63 +17,105 @@
 <body>
   <script src="jquery-3.4.1.js"></script>
 
-  <!-- hitwebcounter Code START  https://www.hitwebcounter.com/webcounter.php -->
-  <div style="position: absolute; z-index: 200;opacity: 0;">
-    <a href="https://www.hitwebcounter.com" target="_blank">
-      <img src="https://hitwebcounter.com/counter/counter.php?page=7346422&style=0024&nbdigits=4&type=page&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
-    </a>
-  </div>   
-
 <script src="scripting/home/script.js"></script>
 <script src="scripting/home/javaid.js"></script>
 
 <div id="container">
+  <div id="background">
+    <span class="dot"></span>
+    <div class="triangle"></div>
 
-<button id="center_hex" onclick="stick()"></button>
+    <a target="_blank" href="https://github.com/azzarelli">
+      <img class="icon" src="css/ghicon.png" >
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/adrian-azzarelli/">
+      <img class="icon" style="right:80px;" src="css/liicon.png" >
+    </a>
+  </div>
 
-<!--Background-->
-  <div id="background"></div>
+  <div id="foreground">
+    <div class="page-title">
+      <h1 class="page-title-h1">Adrian Azzarelli</h1>
+    </div>
+    <div class="introduction">
+      <p class="introduction-text">
+        My interests lie in Human-Centered AI - keenly influenced by my passion for Philosophy, Psychology and
+        Sociology (polymath-esque).
 
-<!--a-layer hexagons -->
+        I am critical of systems which do not utilise the appropriate model structures to fit their objective and wish to
+        contribute towards more reasoned frameworks.
 
-<!-- <button id="back" onclick="backbox"> Back</button> -->
-  
-  <button id="A1" onclick="hexA1()" href=""><h1 id="A1Text">CV</h1></button>
-  <button id="A2" onclick="hexA2()"><h1 id="A2Text">PROJECTS</h1></button>
-  <button id="A3" onclick="hexA3()"><h1 id="A3Text">mini-<br>GAMES</h1></button>
-  <button id="A4" onclick="hexA4()"></button>
+        Looking to take part in some fantastic projects!
+      </p>
+    </div>
 
-<!--B-layer hexagons -->
-  <div id="B1"></div>
-<!-- Not there <div id="B2"></div> -->
-  <div id="B3"></div>
-  <div id="B4"></div>
-  <div id="B5"></div>
-  <div id="B6"></div>
-  <div id="B7"></div>
-  <div id="B8"></div>
+    <div class="banner">
+      <p class="banner-text">Projects</p>
+    </div>
 
-<!--External hexagons -->
-  <div id="E1"></div>
-  <div id="E2"></div>
-  <div id="E3"></div>
-  <div id="E4"></div>
-  <div id="E5"></div>
-  <div id="E6"></div>
-  <div id="E7"></div>
-  <div id="E8"></div>
-  <div id="E9"></div>
-  <div id="E10"></div>
-  <div id="E11"></div>
-  <div id="E12"></div>
-  <div id="E13"></div>
-  <div id="E14"></div>
-  <div id="E15"></div>
-  <div id="E16"></div>
-  <div id="E17"></div>
-  <div id="E18"></div>
-  <div id="E19"></div>
-  <div id="E20"></div>
+    <div class="project-container">
+      <span>
+        <h1>Inspecting Functional Modularity in NNs</h1>
+        <h2 style="margin-top:-10px">Reproduction of ICLR 2021 Paper - Jan-(Ongoing) 2022</h2>
+        <p>
+          A reproduction of, <i>Are Neural Nets Modular? Inspecting Functional Modularity through Differentiable Weight Masks</i>
+          , R Csordas et Al., International Conference on Representation Learning, 2021.
+          We aim to reproduce the proposed tool for inspecting functional modularity and will test it on a range of NNs
+          (notably CNNs and RNNs).
+        </p>
+      </span>
+      <span>
+        <h1>The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
+        <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022</h2>
+        <p>
+          I reproduced and extended the proposed Genetic Algorithm; which focuses on replicating the conditions of
+          grouping and dispersal in bacterial micro-colonies to provide insight into the evolution of cooperation (and
+          further to understand if strategies exist to ensure cooperation is selected for in evolving
+          societies).
+          The extension focused on better representing individuals to allow for imprecisions in their understanding of
+          the simulated environment. The paper and adjoint code can be found
+          <a target="_blank" href="https://github.com/azzarelli/Individual-Selection-for-Cooperative-Group-Formation/tree/main/coursework2">here</a>.
+        </p>
+      </span>
+
+      <span>
+        <h1>Online Trend Detection at Scale</h1>
+        <h2 style="margin-top:-10px">MEng Group Design Project - Client: Senseye Ltd. - Sept-Jan 2021/22</h2>
+        <p style="margin-top:-10px">
+          I retained the position of Secretary and Primary Author for this group project.
+        </p>
+        <p>
+          We researched and designed three innovative generalised (online) models which, given a (very) large set of univariate
+          time-series data, were capable of detecting numerous types of trends. I personally implemented a trend-detection
+          model which focused on re-defining the notion of a trend as 'variance-related errors with respect to the current
+          state of data'. This allowed us to extrapolate both monotonic and heteroscedastic trends, which reduced the detection error.
+          In addition, I contributed an essential (novel) optimisation technique; rather than running the same evaluation
+          processes on every data point, we ran a change-point detection algorithm (inherently less erroneous than
+          classical trend-detection models) to signal 'interesting' windows of data which we then evaluated using the
+          usual evaluation process. This reduced computation by >30%. Documentation can be found
+          <a href="https://github.com/azzarelli/Trend-Detection-at-Scale">here</a>.
+        </p>
+      </span>
+      <span>
+        <h1>Generalised Ethical Dilemma Solver</h1>
+        <h2 style="margin-top:-10px">MEng Thesis - Sept-May 2020/21</h2>
+        <p>
+          For my thesis I implemented a philosophical framework by relating classical ML techniques to philosophical
+          concepts. The basis of this model was to prove that ML structures can reason (and provide reason) so long as the methods implemented
+          match the dynamics of chosen philosophies. In addition, I demonstrated this application with respect to the generalised
+          scope of ethical dilemmas which granted me the opportunity to test my hypothesis over various sociological and psychological
+          situation where our agent would have to make a crucial decision.
+          I got several professionals working in the fields of Psychology, Ethics and AI to evaluate the model and ensure
+          that it does in fact reason (no technical testing methods by me would work here without compromising the
+          integrity of the agent). As a result this dissertation was given the title of "award worthy" by the University of
+          Southampton and suggested for publication. Source and Documentation can be found
+          <a href="https://github.com/azzarelli/MEng-Dissertation">here</a>.
+        </p>
+      </span>
+
+
+    </div>
+  </div>
 
 </div>
 
