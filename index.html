@@ -20,62 +20,34 @@
 <script src="scripting/home/script.js"></script>
 <script src="scripting/home/javaid.js"></script>
 
-<div id="container">
-  <div id="background">
-    <span class="dot"></span>
-    <div class="triangle"></div>
-    <a class="name">Adrian Azzarelli</a>
-    <a target="_blank" href="https://github.com/azzarelli">
-      <img class="icon" src="css/ghicon.png" >
-    </a>
-    <a target="_blank" href="https://www.linkedin.com/in/adrian-azzarelli/">
-      <img class="icon" style="left:130px;" src="css/liicon.png" >
-    </a>
-
-    <img class="photo" src="css/me.png">
-  </div>
-
   <div id="foreground">
-    <div class="page-title">
-      <h1 class="page-title-h1"></h1>
-    </div>
 
 
-    <div class="banner">
-      <p class="banner-text" style="width:178px">Contact Details</p>
-    </div>
-
-    <div class="project-container" style="padding-bottom: 0px">
-      <span>
-        <p>Email: aazzarellib@gmail.com</p>
-      </span>
-      <span>
-        <p>Phone:(+44) 7435287861</p>
-      </span>
-    </div>
-    <div class="banner">
+    <div class="banner" style="padding-top:100px;">
       <p class="banner-text">About</p>
     </div>
-    <div class="project-container" style="padding-bottom:0px">
+    <div class="project-container" style="padding-bottom:0px;">
       <p class="introduction-text">
         My interests lie in Human-Centered AI - keenly influenced by my passion for Philosophy, Psychology and
         Sociology.
-
-        I am critical of systems which do not utilise the appropriate model structures to fit their objective and wish to
-        contribute towards more reasoned frameworks.
       </p>
+      <div style="position:absolute" id="itext"></div>
+
       <p class="introduction-text">
         For my MEng I studied at the <a href="https://www.ecs.soton.ac.uk/">University of Southampton</a> and wrote my dissertation on philosophical frameworks
         by relating classification techniques such as PCA and LDA to philosophical and sociological concepts; supervised by
         <a href="https://www.ecs.soton.ac.uk/people/mjw7">Mark Weal</a>.
       </p>
-      <p class="introduction-text">
-        My research interests include mathematical reasoning and multi-perspective reasoning and logical decision networks.
+
+      <p class="introduction-text" >
+        My research interests include mathematical reasoning, multi-perspective intelligence systems and logical decision networks.
+
       </p>
+
     </div>
 
     <div class="banner">
-      <p class="banner-text">Projects</p>
+      <p class="banner-text" id="proj">Projects</p>
     </div>
 
     <div class="project-container">
@@ -93,7 +65,7 @@
         <h1>The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
         <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022</h2>
         <p>
-          I reproduced and extended the proposed Genetic Algorithm; which focuses on replicating the conditions of
+          I reproduced and extended the proposed <i>Genetic Algorithm</i>; which focuses on replicating the conditions of
           grouping and dispersal in bacterial micro-colonies to provide insight into the evolution of cooperation (and
           further to understand if strategies exist to ensure cooperation is selected for in evolving
           societies).
@@ -107,16 +79,18 @@
         <h1>Online Trend Detection at Scale</h1>
         <h2 style="margin-top:-10px">MEng Group Design Project - Client: Senseye Ltd. - Sept-Jan 2021/22</h2>
         <p style="margin-top:-10px">
-          I retained the position of Secretary and Primary Author for this group project.
+          I retained the position of <i>Secretary</i> and <i>Primary Author</i> for this group project.
         </p>
         <p>
           We researched and designed three innovative generalised (online) models which, given a (very) large set of univariate
           time-series data, were capable of detecting numerous types of trends. I personally implemented a trend-detection
           model which focused on re-defining the notion of a trend as 'variance-related errors with respect to the current
-          state of data'. This allowed us to extrapolate both monotonic and heteroscedastic trends, which reduced the detection error.
-          In addition, I contributed an essential (novel) optimisation technique; rather than running the same evaluation
-          processes on every data point, we ran a change-point detection algorithm (inherently less erroneous than
-          classical trend-detection models) to signal 'interesting' windows of data which we then evaluated using the
+          state of data'. This allowed us to comprehensively evaluate both monotonic and heteroscedastic trends, which reduces the loss of
+          information through model selection bias and is capable of detecting various types of behaviour (which both classical and
+          SoA approaches do not).
+          In addition, I contributed a (novel) optimisation technique; rather than running the same evaluation
+          processes on every data point, we ran a change-point detection algorithm (initially detecting trend-incidents rather
+          than entire windows) to signal 'interesting' windows of data which we then evaluated using the
           usual evaluation process. This reduced computation by >30%. Documentation can be found
           <a href="https://github.com/azzarelli/Trend-Detection-at-Scale">here</a>.
         </p>
@@ -129,7 +103,7 @@
           concepts. The basis of this model was to prove that ML structures can reason (and provide reason) so long as the methods implemented
           match the dynamics of chosen philosophies. In addition, I demonstrated this application with respect to the generalised
           scope of ethical dilemmas which granted me the opportunity to test my hypothesis over various sociological and psychological
-          situation where our agent would have to make a crucial decision.
+          situations where our agent would have to make a crucial decision.
           I got several professionals working in the fields of Psychology, Ethics and AI to evaluate the model and ensure
           that it does in fact reason (no technical testing methods by me would work here without compromising the
           integrity of the agent). As a result this dissertation was given the title of "award worthy" by the University of
@@ -138,8 +112,47 @@
         </p>
       </span>
 
+      <span>
+        <h1>Spatial Distribution of Sensor Network under Star Topology</h1>
+        <h2 style="margin-top:-10px">Research Internship at <a href="https://lurtis.com/en/">Lurtis Rules</a> - July-Nov 2020</h2>
+        <p>
+          During this internship I wrote a comparative paper (unpublished) on evaluating linear and non-linear strategies
+          of node distribution for generalised irregular (agricultural) fields; supervised by
+          <a href="https://www.linkedin.com/in/jose-m-chema-pe%C3%B1a-a0944569/">Jose M. Pena</a>. We worked with strategies
+          concerning <i>Differential Evolution</i> and found that linear startegies can sometimes outperform non-linear
+          strategies as a result of over-complication particular when presented with a nearly-regular "iregular" field shape.
+        </p>
+      </span>
+
 
     </div>
+
+  </div>
+
+  <div id="background">
+    <span class="dot"></span>
+    <div class="triangle"></div>
+    <a class="name">Adrian Azzarelli</a>
+    <a target="_blank" href="https://github.com/azzarelli">
+      <img class="icon" src="css/ghicon.png" >
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/adrian-azzarelli/">
+      <img class="icon" style="left:130px;" src="css/liicon.png" >
+    </a>
+    <a href="mailto:aazzarellib@gmail.com"><img class="icon" src="css/emicon.png" style="left:172px" target="_blank">
+    </a>
+
+    <img class="photo" src="css/me.png">
+
+
+  </div>
+  <div class="topbar">
+    <div class="tabs">
+      <p class="tab_txt" style="position:fixed;left:100px">Adrian Azzarelli</p>
+      <p class="tab_txt" style="left:80px; font-size:25px;" ><a href="#foreground" style="text-decoration:none;color:black;">About</a></p>
+      <p class="tab_txt" style="left:200px; font-size:25px;"><a href="#itext" style="text-decoration:none;color:black;">Projects</a></p>
+    </div>
+
 
   </div>
 
