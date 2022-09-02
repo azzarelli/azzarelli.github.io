@@ -1,8 +1,7 @@
 #foreground {
     position: relative;
     width: 1200px;
-    left:50%;
-    margin-left:-500px;
+    left:250px;
         z-index:1;
 
 }
