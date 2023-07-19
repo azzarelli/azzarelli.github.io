@@ -27,11 +27,14 @@
       <p class="banner-text">About Me</p>
     </div>
     <div class="project-container" style="padding-bottom:0px;">
-      <p class="introduction-text">
-        My interests lie in Human-Centered AI - keenly influenced by my passion for Philosophy, Psychology and
-        Sociology. Currently working as a Doctoral Researcher for MyWorld in the Creative-AI industries.
+      <!-- <div style="position:absolute" id="itext"></div> -->
+      
+      <p class="introduction-text" >
+        I am currently pursuing a PhD in Intelligent Cinematography (Y1/3). My project focuses on intelligent 3D reconstruction for creative video production. The project is supervised by <a href="https://www.bristol.ac.uk/people/person/David-Bull-f53987d8-4d62-431b-8228-2d39f944fbfe/">Dave Bull</a>
+        and <a href="https://www.bristol.ac.uk/people/person/Pui-Anantrasirichai-49b2250e-53e4-4631-aedc-8154b2cff568/">Pui Anantrasirichai</a> and funded by
+        <a href="https://www.myworld-creates.com/">My World</a>.
       </p>
-      <div style="position:absolute" id="itext"></div>
+
 
       <p class="introduction-text">
         For my MEng I studied at the <a href="https://www.ecs.soton.ac.uk/">University of Southampton</a> and wrote my dissertation on philosophical frameworks
@@ -39,17 +42,24 @@
         <a href="https://www.ecs.soton.ac.uk/people/mjw7">Mark Weal</a>.
       </p>
     
-      <p class="introduction-text" >
-        I am currently pursuing a PhD in Intelligent Cinematography (Y1/3). My project is focused on intelligent 3D reconstruction of virtual stage/volume, film production, environments
-        for use in previs. My goal is to provide this as an Unreal 5 plugin/configurable workspace for 3D set-design, advanced 3D stroyboarding, simulating shots, and so on.
-        The research goal is to reconstruct a physcial workspace from one video sweep of the environment and recognise equiptment and structures to correct and segment, ultimately providing 
-        highquality configurable assets. The project is supervised by <a href="https://www.bristol.ac.uk/people/person/David-Bull-f53987d8-4d62-431b-8228-2d39f944fbfe/">Dave Bull</a>
-        and <a href="https://www.bristol.ac.uk/people/person/Pui-Anantrasirichai-49b2250e-53e4-4631-aedc-8154b2cff568/">Pui Anantrasirichai</a> and funded by
-        <a href="https://www.myworld-creates.com/">My World</a>. Call for collaboration: I am looking for studios willing to provide access to virtual stages and related equiptment 
-        for 3D capture (not for use of a stage). This could either be a singular capture of the stage space (containing equitpment) or capture of individual/grouped equiptment. If you're interested in
-        collaborating, shoot me an email.
-      </p>
+      
 
+    </div>
+
+    <div class="banner">
+      <p class="banner-text">Papers</p>
+    </div>
+
+    <div class="project-container">
+
+      <span>
+        <h1>Towards a Robust Framework for NeRF Evaluation</h1>
+        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2305.18079">arXiv</a> - <a href="https://github.com/azzarelli/wape">code</a> - Jan-May 2023</h2>
+        <p>
+        Neural Radiance Field (NeRF) research has attracted significant attention recently, with 3D modelling, virtual/augmented reality, and visual effects driving its application. While current NeRF implementations can produce high quality visual results, there is a conspicuous lack of reliable methods for evaluating them. Conventional image quality assessment methods and analytical metrics (e.g. PSNR, SSIM, LPIPS etc.) only provide approximate indicators of performance since they generalise the ability of the entire NeRF pipeline. Hence, in this paper, we propose a new test framework which isolates the neural rendering network from the NeRF pipeline and then performs a parametric evaluation by training and evaluating the NeRF on an explicit radiance field representation. We also introduce a configurable approach for generating representations specifically for evaluation purposes. This employs ray-casting to transform mesh models into explicit NeRF samples, as well as to "shade" these representations. Combining these two approaches, we demonstrate how different "tasks" (scenes with different visual effects or learning strategies) and types of networks (NeRFs and depth-wise implicit neural representations (INRs)) can be evaluated within this framework. Additionally, we propose a novel metric to measure task complexity of the framework which accounts for the visual parameters and the distribution of the spatial data. Our approach offers the potential to create a comparative objective evaluation framework for NeRF methods.
+
+        </p>
+      </span>
     </div>
 
     <div class="banner">
@@ -57,64 +67,6 @@
     </div>
 
     <div class="project-container">
-      <span>
-        <h1>Reasonably and Reliably Designing Human-tasked Robots through Reignforcement Learning</h1>
-        <h2 style="margin-top:-10px">Literature Review - Jan-June 2022</h2>
-        <p> I have evaluated a dozen of papers which explore designing human-centric AI by training a network using numerous reinforcement learning methods. 
-          Many of these papers have been taken from AIES 2020/21 conference.
-          (On going)
-        </p>
-      </span>
-      
-      <span>
-        <h1>Solving a Maze blind using a Duelling Deep Q-Network</h1>
-        <h2 style="margin-top:-10px">Model Implementation and Extension - Jan-June 2022</h2>
-        <p>
-          As a result of the progression made with deep Q-learning, we assess methods of optimisation which will allow our actor, who is globally-blind 
-          (can only observe their direct surroundings), to solve a large maze. We have inspected the use of <i>combined experience replay</i> 
-          (A Deeper Look at Experience Replay, Zhang and Sutton, 2017) for our transition buffer, as well as compared the greedy episilon and Boltzmann eplxoration 
-          methods. Repository for this project can be found
-          <a target="_blank" href="https://github.com/azzarelli/RL-Dynamic-Maze-Solver">here</a>.
-          
-        </p>
-      </span>
-      <span>
-        <h1>The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
-        <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022</h2>
-        <p>
-          I reproduced and extended the proposed <i>Genetic Algorithm</i>; which focuses on replicating the conditions of
-          grouping and dispersal in bacterial micro-colonies to provide insight into the evolution of cooperation (and
-          further to understand if strategies exist to ensure cooperation is selected for in evolving
-          societies).
-          The extension focused on better representing individuals to allow for imprecisions in their understanding of
-          the simulated environment. The paper and adjoint code can be found
-          <a target="_blank" href="https://github.com/azzarelli/Individual-Selection-for-Cooperative-Group-Formation/tree/main/coursework2">here</a>.
-        </p>
-      </span>
-      
-      <span>
-        <h1>Inspecting Functional Modularity in NNs</h1>
-        <h2 style="margin-top:-10px">Reproduction of ICLR 2021 Paper - Jan-June 2022</h2>
-        <p>
-          A reproduction of, <i>Are Neural Nets Modular? Inspecting Functional Modularity through Differentiable Weight Masks</i>
-          , R Csordas et Al., International Conference on Representation Learning, 2021.
-          We reproduce the proposed tool for inspecting functional modularity and tested it on a range of NNs
-          (notably CNNs and RNNs). We were ultimately able to replicate several results, though found the original implementation to be somewhat contrived.
-        </p>
-      </span>
-      <span>
-        <h1>The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
-        <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022</h2>
-        <p>
-          I reproduced and extended the proposed <i>Genetic Algorithm</i>; which focuses on replicating the conditions of
-          grouping and dispersal in bacterial micro-colonies to provide insight into the evolution of cooperation (and
-          further to understand if strategies exist to ensure cooperation is selected for in evolving
-          societies).
-          The extension focused on better representing individuals to allow for imprecisions in their understanding of
-          the simulated environment. The paper and adjoint code can be found
-          <a target="_blank" href="https://github.com/azzarelli/Individual-Selection-for-Cooperative-Group-Formation/tree/main/coursework2">here</a>.
-        </p>
-      </span>
 
       <span>
         <h1>Online Trend Detection at Scale</h1>
@@ -152,10 +104,60 @@
           <a href="https://github.com/azzarelli/MEng-Dissertation">here</a>.
         </p>
       </span>
+      <span>
+        <h1>Solving a Maze blind using a Duelling Deep Q-Network</h1>
+        <h2 style="margin-top:-10px">Model Implementation and Extension - Jan-June 2022 - Not Published</h2>
+        <p>
+          As a result of the progression made with deep Q-learning, we assess methods of optimisation which will allow our actor, who is globally-blind 
+          (can only observe their direct surroundings), to solve a large maze. We have inspected the use of <i>combined experience replay</i> 
+          (A Deeper Look at Experience Replay, Zhang and Sutton, 2017) for our transition buffer, as well as compared the greedy episilon and Boltzmann eplxoration 
+          methods. Repository for this project can be found
+          <a target="_blank" href="https://github.com/azzarelli/RL-Dynamic-Maze-Solver">here</a>.
+          
+        </p>
+      </span>
+      <span>
+        <h1>The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
+        <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022 - Not Published</h2>
+        <p>
+          I reproduced and extended the proposed <i>Genetic Algorithm</i>; which focuses on replicating the conditions of
+          grouping and dispersal in bacterial micro-colonies to provide insight into the evolution of cooperation (and
+          further to understand if strategies exist to ensure cooperation is selected for in evolving
+          societies).
+          The extension focused on better representing individuals to allow for imprecisions in their understanding of
+          the simulated environment. The paper and adjoint code can be found
+          <a target="_blank" href="https://github.com/azzarelli/Individual-Selection-for-Cooperative-Group-Formation/tree/main/coursework2">here</a>.
+        </p>
+      </span>
+      
+      <span>
+        <h1>Inspecting Functional Modularity in NNs</h1>
+        <h2 style="margin-top:-10px">Reproduction of ICLR 2021 Paper - Jan-June 2022 - Not Published</h2>
+        <p>
+          A reproduction of, <i>Are Neural Nets Modular? Inspecting Functional Modularity through Differentiable Weight Masks</i>
+          , R Csordas et Al., International Conference on Representation Learning, 2021.
+          We reproduce the proposed tool for inspecting functional modularity and tested it on a range of NNs
+          (notably CNNs and RNNs). We were ultimately able to replicate several results, though found the original implementation to be somewhat contrived.
+        </p>
+      </span>
+      <span>
+        <h1>The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
+        <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022 - Not Published</h2>
+        <p>
+          I reproduced and extended the proposed <i>Genetic Algorithm</i>; which focuses on replicating the conditions of
+          grouping and dispersal in bacterial micro-colonies to provide insight into the evolution of cooperation (and
+          further to understand if strategies exist to ensure cooperation is selected for in evolving
+          societies).
+          The extension focused on better representing individuals to allow for imprecisions in their understanding of
+          the simulated environment. The paper and adjoint code can be found
+          <a target="_blank" href="https://github.com/azzarelli/Individual-Selection-for-Cooperative-Group-Formation/tree/main/coursework2">here</a>.
+        </p>
+      </span>
+
 
       <span>
         <h1>Spatial Distribution of Sensor Network under Star Topology</h1>
-        <h2 style="margin-top:-10px">Research Internship at <a href="https://lurtis.com/en/">Lurtis Rules</a> - July-Nov 2020</h2>
+        <h2 style="margin-top:-10px">Research Internship at <a href="https://lurtis.com/en/">Lurtis Rules</a> - July-Nov 2020  - Rejection</h2>
         <p>
           During this internship I wrote a comparative paper (unpublished) on evaluating linear and non-linear strategies
           of node distribution for generalised irregular (agricultural) fields; supervised by
