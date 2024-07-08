@@ -7,10 +7,18 @@ body{
 }
 #background {
     position: fixed;
-    width: 30%;
+    width: 15%;
     left:0px;
     height: 100%;
     top:50px;
+    overflow: hidden;
+}
+
+.headingcontainers{
+    position: relative;
+    height:50px;
+    text-align: center;
+
     overflow: hidden;
 }
 
@@ -49,18 +57,9 @@ body{
     position:relative;
     top:0px;
     left:0px;
-    width: 10%;
+    width: 35%;
     height:auto;
     display: inline;
-}
-
-.photo {
-    position: relative;
-    border-radius: 20px;
-    height: auto;
-    width:80%;
-    left:10%;
-    top: 10px;
 }
 
 .topbar {
@@ -73,18 +72,44 @@ body{
     opacity: 0.6;
 }.tabs {
     position: relative;
-    width:800px;
+    width:100%;
     height: 50px;
-
-    top: 50%;margin-top:-25px;
-    left:350px;
+    display: flex;
 }
 .tab_txt{
     font-family: Georgia, serif;
     text-align: centre;
-    position: absolute;
-    font-size: 40px;
+    position: relative;
+    font-size: 25px;
     width:auto;
     top:-15px;
+}
+.top_subbar{
+    position: fixed;
+    z-index: 2;
+    height:20px;
+    width: 100%;
+    top:50px;left:0px;
+    opacity: 0.9;
+    display: flex;
+}.linktab{
+    position: relative;
+    margin-left:.1666%;
+    width: 33%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}.link_txt{
+    
+    margin:0;
+    margin-top: 3px;
+    font-family:monospace;
+    text-align: centre;
+    position: absolute;
+    font-size: 11px;
+    width:100%;
+    top:0px;
+    text-align: center;
+}.link_link{
 }
 
