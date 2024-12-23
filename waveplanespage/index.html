@@ -74,14 +74,23 @@
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://arxiv.org/abs/2312.02218" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+                      </span>
+                  
+                      <span class="link-block">
+                        <a href="static/pdfs/suppmat.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper + Supp.</span>
+                        <span>Supp. Material</span>
                       </a>
                     </span>
-
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -113,47 +122,20 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/model.PNG" alt="MY ALT TEXT"/>
-
-      <h2 class="subtitle has-text-centered">
-        Model Overview: (a-f) illustrates the main pipeline, (1) outlines the compression pipeline (accomplished after training)   
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/sizetable.png" alt="MY ALT TEXT"/>
-
-      <h2 class="subtitle has-text-centered">
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Dynamic Neural Radiance Fields (Dynamic NeRF) enhance NeRF technology to model moving scenes. However, they are resource intensive and challenging to compress. To address this issue, this paper presents WavePlanes, a fast and more compact explicit model. 
-            We propose a multi-scale space and space-time feature plane representation using N-level 2-D wavelet coefficients. The inverse discrete wavelet transform reconstructs N feature signals at varying detail, which are linearly decoded to approximate the color and density of volumes in a 4-D grid. Exploiting the sparsity of wavelet coefficients, we compress a Hash Map containing only non-zero coefficients and their locations on each plane. This results in a compressed model size of ~12 MB. Compared with state-of-the-art plane-based models, WavePlanes is up to 15x smaller, less computationally demanding and achieves comparable results in as little as one hour of training - without requiring custom CUDA code or high performance computing resources. Additionally, we propose new feature fusion schemes that work as well as previously proposed schemes while providing greater interpretability.          </p>
+            Dynamic Novel View Synthesis (Dynamic NVS) enhances NVS technologies to model moving 3-D scenes. However, current methods are resource intensive and challenging to compress. To address this, we present WavePlanes, a fast and more compact hex plane representation, applicable to both Neural Radiance Fields and Gaussian Splatting methods. Rather than modeling many feature scales separately (as done previously), we use the inverse discrete wavelet transform to reconstruct features at varying scales. This leads to a more compact representation and allows us to explore wavelet-based compression schemes for further gains. The proposed compression scheme exploits the sparsity of wavelet coefficients, by applying hard thresholding to the wavelet planes and storing nonzero coefficients and their locations on each plane in a Hash Map. Compared to the state-of-the-art (SotA), WavePlanes is significantly smaller, less resource demanding and competitive in reconstruction quality. Compared to small SotA models, WavePlanes outperforms methods in both model size and quality of novel views.
+                     </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
 <section class="hero is-small">
   <div class="hero-body">
@@ -169,6 +151,43 @@
     </div>
   </div>
 </section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Proposed work:</h2>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/model.PNG" alt="MY ALT TEXT"/>
+
+      <h2 class="subtitle has-text-centered">
+        Model Overview: (a-f) illustrates the main pipeline, (1) outlines the compression pipeline (accomplished after training)   
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/sizetable.png" alt="MY ALT TEXT"/>
+
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -184,38 +203,52 @@
   </div>
 </section>
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantative Results:</h2>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/dnerf.PNG" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
-          Model overview
-        </h2> -->
+        <img src="static/images/dnerf_results.png" alt="MY ALT TEXT"/>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/dynerf.PNG" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2> -->
+        <img src="static/images/dynerf_results.png" alt="MY ALT TEXT"/>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/llff.PNG" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2> -->
      </div>
   </div>
 </div>
 </div>
 </section>
-<!-- End image carousel -->
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <span class="link-block">
+          <a href="https://www.albertpumarola.com/research/D-NeRF/index.html" target="_blank"
+          class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>D-NeRF Synthetic Scenes</span>
+        </a>
+      </span>
+
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -224,103 +257,103 @@
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/dynerf/famon_ZMMvsZAM.mp4"
+            <source src="static/videos/dnerf/gs.mp4"
             type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            ZMM (Left) vs ZAM (right) Flame Salmon Results
+            WavePlanes applied to Gaussian Splatting
           </h2>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/dynerf/hpzmzaspinach.mp4"
+            <source src="static/videos/dnerf/nerf.mp4"
             type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            HP (Left) vs ZMM (cent) vs ZAM (right) Cooking Spinach Results. Top: Render, Middle: GT, Bottom: Pixel Error.
+            WavePlanes applied to K-Planes
           </h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/dynerf/ceef_ZAM.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            ZAM Cooking Beef Result
-          </h2>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/dynerf/zam_searstake.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            ZAM Sear Stake Result
-          </h2>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/dynerf/zmm_coffeemartini.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            ZMM Coffee Martini Result
-          </h2>
-        </div>
-        <div class="item item-video6">
-          <video poster="" id="video6" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/dynerf/zmm_flamestake.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            ZAM Flame Stake Result
-          </h2>
-        </div>
+        
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <span class="link-block">
+          <a href="https://github.com/facebookresearch/Neural_3D_Video" target="_blank"
+          class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>Dy-NeRF Real Scenes</span>
+        </a>
+      </span>
+
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-        <div class="item item-video7">
-          <video poster="" id="video7" autoplay controls muted loop height="100%">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/trexdecomposition_.mp4"
+            <source src="static/videos/dynerf/gs.mp4"
             type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
-            Decomposing T-Rex Scene into Static and Dynamic Components
+            WavePlanes applied to Gaussian Splatting
           </h2>
         </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/dynerf/nerf.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            WavePlanes applied to K-Planes
+          </h2>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/dynerf/kpc_comparison.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            WavePlanes (left) vs K-Planes-Compact (right)
+          </h2>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/dynerf/4dgs_comparison.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            4DGS (left) vs WavePlanes (right)
+          </h2>
+        </div>
+        
+      </div>
     </div>
   </div>
 </section>
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%" style="content: center;">
-            <!-- Your video file here -->
-            <source src="static/videos/trextstatic_.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            360 Degree view of Static Components
-          </h2>
-        </div>
-    </div>
-  </div>
-</section>
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -335,6 +368,9 @@
 </section>
 <!--End BibTex citation -->
 
+
+
+<!-- End image carousel -->
 
   <footer class="footer">
   <div class="container">
