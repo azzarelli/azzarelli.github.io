@@ -1,15 +1,23 @@
+
+
 #foreground {
     position: relative;
-    width:calc(100% - 100px);
-    left:0%;
     z-index:1;
-    top:70px;
-    height: calc(100% - 70px);
-    overflow-y: scroll;
-    margin-left: 50px;
 
+    height:100%;
+    /* height: calc(100% - 70px); */
+    width:80%;
+    max-width: 900px;
+
+    left:50%;
+    transform: translateX(-50%);
+    top:70px;
+
+    
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    /* scrollbar-width: none;  */
+    overflow-y: scroll;
+    margin-bottom: 200px;
 }
 #foreground::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
