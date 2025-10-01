@@ -1,0 +1,123 @@
+body{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f2f2f2;
+
+}
+#background {
+    position: fixed;
+    width: 15%;
+    left:0px;
+    height: 100%;
+    top:50px;
+    overflow: hidden;
+}
+
+.headingcontainers{
+    position: relative;
+    height:50px;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.dot {
+    position:fixed;
+    height: 800px;
+    width: 800px;
+    top:300px;
+    left:-200px;
+    background-color: #bae1ff;
+    border-radius: 50%;
+    display: inline-block;    z-index:-1;
+
+}
+.triangle {
+    z-index:-1;
+    position: fixed;
+    top:-150px;
+    right:-250px;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 500px solid #ffb3ba;
+
+}
+
+.icon-holder{
+    position: relative;
+    width: 80%;
+    left:10%;
+    height: 30px;
+    top:25px;
+}
+.icon {
+    position:relative;
+    top:0px;
+    left:0px;
+    width: 35%;
+    height:auto;
+    display: inline;
+}
+
+.topbar {
+    z-index:2;
+    position:fixed;
+    width:100%;
+    height:50px;
+    left:50%;
+    transform: translateX(-50%);
+
+    top:0px;
+    opacity: 0.6;
+
+    max-width: 900px;
+}.tabs {
+    position: relative;
+    width:100%;
+    height: 50px;
+    display: flex;
+}
+.tab_txt{
+    font-family: Georgia, serif;
+    text-align: centre;
+    position: relative;
+    font-size: 25px;
+    width:auto;
+    top:-15px;
+}
+.top_subbar{
+    position: fixed;
+    z-index: 2;
+    height:20px;
+    width: 100%;
+    top:50px;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    display: flex;
+    max-width: 900px;
+
+}.linktab{
+    position: relative;
+    margin-left:.1666%;
+    width: 33%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}.link_txt{
+    
+    margin:0;
+    margin-top: 3px;
+    font-family:monospace;
+    text-align: centre;
+    position: absolute;
+    font-size: 11px;
+    width:100%;
+    top:0px;
+    text-align: center;
+}.link_link{
+}
+
