@@ -10,6 +10,7 @@
   <link href="./css/background.css" type="text/css" rel="stylesheet">
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/dropdown.js"></script>
 
 </head>
 
@@ -50,45 +51,111 @@
     <hr>
 
     <div class="banner">
-      <p class="banner-text">First Author Papers</p>
+      <p class="banner-text">Research Papers</p>
     </div>
 
     <div class="project-container">
-      <span>
-        <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production</h1>
-        <h2 style="margin-top:-10px"><a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">Springer Nature: Artificial Intelligence Review</a> - Sep-Apr 2022/25</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          The first (comprehensive) review of computer vision research in the context of real video content acquisition for entertainment. 
-          To establish a structure, we categorise work by General, Virtual, Live and Aerial production, and within each category we 
-          discuss various machine learning applications and their links to other forms production. We also provide category-specific comments
-          on future works and discuss the socail responsibilities for conducting ethical research.
-        </p>
-      </span>
-      <span>
-        <h1 class="subtitle">Towards a Robust Framework for NeRF Evaluation</h1>
-        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2305.18079">arXiv</a> - <a href="https://github.com/azzarelli/wape">code</a> - Jan-May 2023</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          Moving towards robust NeRF evaluation using synthetic datasets for point-based architectures. 
-          This focuses on point-quality and biases involved with various training and test camera distributions to derive metrics for scene complexity.
-        </p>
+      
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">Splatography: Sparse multi-view dynamic Gaussian Splatting for film-making challenge (technical)</h1>
+        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2312.02218">International Conference on 3D Vision 2026 (3DV)</a> - <a href="https://interims-git.github.io/">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a> - Jan-Aug 2025</h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            Deformable Gaussian Splatting (GS) accomplishes photorealistic dynamic 3-D reconstruction from dense multi-view video (MVV) by learning to deform a canonical GS representation. 
+            However, in filmmaking, tight budgets can result in sparse camera configurations, which limits state-of-the-art (SotA) methods when capturing complex dynamic features. 
+            To address this issue, we introduce an approach that splits the canonical Gaussians and deformation field into foreground and background components using a sparse set of masks 
+            for frames at t=0. Each representation is separately trained on different loss functions during canonical pre-training. Then, during dynamic training, different parameters are 
+            modeled for each deformation field following common filmmaking practices. The foreground stage contains diverse dynamic features so changes in color, position and rotation are 
+            learned. While, the background containing film-crew and equipment, is typically dimmer and less dynamic so only changes in point position are learned. Experiments on 3-D and 
+            2.5-D entertainment datasets show that our method produces SotA qualitative and quantitative results; up to 3 PSNR higher with half the model size on 3-D scenes. Unlike the 
+            SotA and without the need for dense mask supervision, our method also produces segmented dynamic reconstructions including transparent and dynamic textures. 
+          </p>
+        </div>
+
       </span>
 
-      <span>
-        <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields</h1>
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields (technical)</h1>
         <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2312.02218">arXiv</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a> - July-Nov 2024</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          We focus on improving the compactness of 4-D NeRF representations while reducing GPU utilization so 
-          that we can run large datasets without high performance compute; with minor drop in performance. See webpage for results.
-        </p>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            Dynamic Novel View Synthesis (Dynamic NVS) enhances NVS technologies to model moving 3-D scenes. However, current methods are resource intensive and challenging to compress. 
+            To address this, we present WavePlanes, a fast and more compact hex plane representation, applicable to both dynamic Neural Radiance Fields and Gaussian Splatting methods. 
+            Rather than modeling many feature scales separately (as done previously), we use the inverse discrete wavelet transform to reconstruct features at varying scales. This 
+            leads to a more compact representation and allows us to explore wavelet-based compression schemes for further gains. The proposed compression scheme exploits the sparsity 
+            of wavelet coefficients, by applying hard thresholding to the wavelet planes and storing nonzero coefficients and their locations on each plane in a Hash Map. Compared to 
+            the state-of-the-art (SotA), WavePlanes is significantly smaller, less resource demanding and competitive in reconstruction quality. Compared to small SotA models, WavePlanes 
+            outperforms methods in both model size and quality of novel views.
+          </p>
+        </div>
       </span>
-      <span>
-        <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography</h1>
+      
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">ViVo: A Dataset for Volumetric Video Reconstruction and Compression (dataset)</h1>
+        <h2 style="margin-top:-10px"><a href="">arXiv (TBD)</a> - <a href="https://vivo-bvicr.github.io/">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a> - June-June 2024/5</h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            As research on neural volumetric video reconstruction and compression flourishes, there is a need for diverse and realistic datasets, which can be used to develop and validate 
+            reconstruction and compression models. However, existing volumetric video datasets lack diverse content in terms of both semantic and low-level features that are commonly present 
+            in real-world production pipelines. In this context, we propose a new dataset, \name, for VolumetrIc VideO reconstruction and compression. The dataset is faithful to 
+            real-world volumetric video production and is the first dataset to extend the definition of diversity to include both human-centric characteristics (skin, hair, etc.) and 
+            dynamic visual phenomena (transparent, reflective, liquid, etc.). Each video sequence in this database contains raw data including fourteen multi-view RGB and depth video pairs, 
+            synchronized at 30FPS with per-frame calibration and audio data, and their associated 2-D foreground masks and 3-D point clouds. To demonstrate the use of this database, we have 
+            benchmarked three state-of-the-art (SotA) 3-D reconstruction methods and two volumetric video compression algorithms. The obtained results evidence the challenging nature of the 
+            proposed dataset and the limitations of existing datasets for both volumetric video reconstruction and compression tasks, highlighting the need to develop more effective algorithms 
+            for these applications.
+          </p>
+        </div>
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production (review; 41 pages)</h1>
+        <h2 style="margin-top:-10px"><a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">Springer Nature: Artificial Intelligence Review</a> - Sep-Apr 2022/25</h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            The first (comprehensive) review of computer vision research in the context of real video content acquisition for entertainment. 
+            To establish a structure, we categorise work by General, Virtual, Live and Aerial production, and within each category we 
+            discuss various machine learning applications and their links to other forms production. We also provide category-specific comments
+            on future works and discuss the socail responsibilities for conducting ethical research.
+          </p>
+        </div>
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography (review/art application)</h1>
         <h2 style="margin-top:-10px"><a href="TBD">arXiv</a> - Mar-May 2024</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
+      </div>
+      <div class="project-body">
+        <p style=" font-size: 13px;">
           We provide an overview of Dynamic NeRF and Gaussian Splatting research in the context of cinematography and explore
           the use of these technologies (Nerfacto, 4D-GS and SC-GS) to produce (very) short film. Topics discussed: 
           (1) Dynamic representations, (2) Articulated models vs Scene-based modelling, (3) Data collection
         </p>
+      </div>
+
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">Towards a Robust Framework for NeRF Evaluation (technical)</h1>
+        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2305.18079">arXiv</a> - <a href="https://github.com/azzarelli/wape">code</a> - Jan-May 2023</h2>
+      </div>
+      <div class="project-body">
+        <p style="font-size: 13px;">
+          Moving towards robust NeRF evaluation using synthetic datasets for point-based architectures. 
+          This focuses on point-quality and biases involved with various training and test camera distributions to derive metrics for scene complexity.
+        </p>
+      </div>
+
       </span>
     </div>
 

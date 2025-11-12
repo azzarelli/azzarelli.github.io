@@ -35,6 +35,31 @@ hr {
     left:2%;
 }
 
+
+.project {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.project-header {
+  padding: 0.5rem 0.5rem;
+  transition: background-color 0.2s;
+  border-radius: 10px;
+}
+
+.project-header:hover {
+  background-color: #eaf6ffa2;
+}
+
+.project-body {
+display: block;
+  overflow: hidden;
+  height: 0px;
+  transition: 0.25s;
+}
+
+
 .page-title {
     position: relative;
     left: 50%;
