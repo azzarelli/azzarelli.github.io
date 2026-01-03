@@ -201,11 +201,27 @@
     </div>
 
     <div class="project-container">
-      
+      <span class="project">
+      <div class="project-header">
+        <h1 id="vsr" class="subtitle">VSR: Virtual studio 3D reconstruction and relighting with real in-camera image-based lighting</h1>
+        <h2 style="margin-top:-10px">Aug-Jan 2025/6 | <a href="https://interims-git.github.io/">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a></h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+This paper investigates 3D scene reconstruction and relighting for virtual production (VP) stages, where real foreground objects are captured in front of LED walls that display virtual backgrounds and provide real image-based lighting (IBL) to the foreground. However, this fixes the scene's appearance at capture time and as VP stage lighting is unique to each set it is difficult to anticipate the scene's appearance. So, when the footage does not match the director's expectations re-shoots are required. These are uniquely expensive due to the cost and logistical complexity of VP stages. Addressing this, we propose a VP 3D reconstruction and relighting (VSR) pipeline that synthesizes photorealistic 3D twins of VP scenes and enables changing LED wall content while propagating the corresponding lighting effects to the foreground.
+<br><br>
+Our VSR method relies on multi-view images of a static scene including a real in-camera IBL background, captured under variable background and lighting conditions - a capture setting for which no prior reconstruction or relighting method exists. We therefore establish a foundation for VSR by introducing a novel Gaussian Splatting (GS)-based pipeline, several proxy baselines and multiple datasets including real VP captures. The main technical problems concern designing a suitable representation and re-lighting scheme that samples IBL textures to change the scene's lighting on a per-primitive basis. The main contribution is a geometry-independent GS lighting model that represents IBL texture sampling coordinates and lighting intensity as view-dependent GS parameters. As this model avoids ray-based inverse rendering, it does not require depth or normal priors to learn transmission and reflection effects, it supports complex scenes including transparent objects, and it is implemented without custom CUDA or RTX code. This resulting representation is compact and efficient, requiring less than 5GB of RAM or VRAM to train 1080p scenes. In practice, our approach reduces the reliance on VP-specific hardware and enables greater creative flexibility in post-production. The code, datasets, documentation and video results are available online.
+          </p>
+        </div>
+
+      </span>
+
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">Splatography: Sparse multi-view dynamic Gaussian Splatting for film-making challenge (technical)</h1>
-        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2312.02218">International Conference on 3D Vision 2026 (3DV)</a> - <a href="https://interims-git.github.io/">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a> - Jan-Aug 2025</h2>
+        <h2 style="margin-top:-10px">Jan-Aug 2025 | 
+          <a href="https://arxiv.org/abs/2312.02218">International Conference on 3D Vision 2026 (3DV)</a> - 
+          <a href="./splatographypage/index.html">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a></h2>
         </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
@@ -225,7 +241,7 @@
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields (technical)</h1>
-        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2312.02218">arXiv</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a> - July-Nov 2024</h2>
+        <h2 style="margin-top:-10px">July-Nov 2022/4 | <a href="https://arxiv.org/abs/2312.02218">arXiv</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a></h2>
         </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
@@ -243,7 +259,10 @@
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">ViVo: A Dataset for Volumetric Video Reconstruction and Compression (dataset)</h1>
-        <h2 style="margin-top:-10px"><a href="">arXiv (TBD)</a> - <a href="https://vivo-bvicr.github.io/">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a> - June-June 2024/5</h2>
+        <h2 style="margin-top:-10px">
+          June-June 2024/5 | <a href="https://vivo-bvicr.github.io/">page</a> 
+          <br><a href="">Special Issue on Volumetric Video Reconstruction and Compression, Transactions on Circuits, Signals and Video Transmission, IEEE </a> 
+        </h2>
         </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
@@ -263,7 +282,7 @@
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production (review; 41 pages)</h1>
-        <h2 style="margin-top:-10px"><a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">Springer Nature: Artificial Intelligence Review</a> - Sep-Apr 2022/25</h2>
+        <h2 style="margin-top:-10px">Sep-Apr 2022/5 | <a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">Springer Nature: Artificial Intelligence Review</a></h2>
         </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
@@ -278,7 +297,7 @@
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography (review/art application)</h1>
-        <h2 style="margin-top:-10px"><a href="TBD">arXiv</a> - Mar-May 2024</h2>
+        <h2 style="margin-top:-10px">Mar-May 2024 | <a href="https://arxiv.org/abs/2412.17532">arXiv</a></h2>
       </div>
       <div class="project-body">
         <p style=" font-size: 13px;">
@@ -290,96 +309,65 @@
 
       </span>
 
-      <span class="project">
-      <div class="project-header">
-        <h1 class="subtitle">Towards a Robust Framework for NeRF Evaluation (technical)</h1>
-        <h2 style="margin-top:-10px"><a href="https://arxiv.org/abs/2305.18079">arXiv</a> - <a href="https://github.com/azzarelli/wape">code</a> - Jan-May 2023</h2>
-      </div>
-      <div class="project-body">
-        <p style="font-size: 13px;">
-          Moving towards robust NeRF evaluation using synthetic datasets for point-based architectures. 
-          This focuses on point-quality and biases involved with various training and test camera distributions to derive metrics for scene complexity.
-        </p>
-      </div>
-
-      </span>
     </div>
 
     <hr>
 
     <div class="banner">
-      <p class="banner-text" id="proj">UG Projects</p>
+      <p class="banner-text" id="proj">Video Examples</p>
     </div>
 
     <div class="project-container">
-
-      <span>
-        <h1 class="subtitle">(Industry Collaboration) Online Trend Detection at Scale</h1>
-        <h2 style="margin-top:-10px">MEng Group Design Project - Client: Senseye Ltd. - Sept-Jan 2021/22</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          We produced three unsupervised general trend detection models models which. My part focused on detection using variance-related errors. 
-          This allowed for comprehensive evaluation of monotonic and heteroscedastic trends and 
-          was capable of detecting various behaviours that classical and
-          SoA approaches can not. Additionally, I investigated multi-scale detection for non-uniformly distributed data using a binary change-point detection algorithm to
-          control the window size for evaluation. Documentation
-          <a href="https://github.com/azzarelli/Trend-Detection-at-Scale">here</a>.
-        </p>
-      </span>
-      <span>
-        <h1 class="subtitle">(Thesis) Generalised Ethical Dilemma Solver</h1>
-        <h2 style="margin-top:-10px">MEng Thesis - Sept-May 2020/21</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          By relating classical ML techniques to well defined philosophical, social and ethical frameworks
-          I developed a machine learning algorithm to resolve casual social dilemas. Given a set of possible outcomes, this: (1) selects the appropriate philosophical/social/ethical
-          model based on generally accepted criteria, (2) simulates each model and derive scores for the various resolutions, (3) applies a weighted fusion to make a final choice,
-          and (4) provides reasoning for the choice by refering to the selected models and scores. Documentation
-          <a href="https://github.com/azzarelli/MEng-Dissertation">here</a>.
-        </p>
-      </span>
-      <span>
-        <h1 class="subtitle">Solving a Maze blind using a Duelling Deep Q-Network</h1>
-        <h2 style="margin-top:-10px">Model Implementation and Extension - Jan-June 2022 - Not Published</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          The problem: You are blind, in a maze and fires appear randomly arround you each time you take a step. Can we resolve the maze unsupervised?
-          This looks at deep Q-learning approaches to solve the maze and compares results for Deep-Q, Duelling Deep-Q, Rainbow algorithms.
-          Additionally, I investigated <i>combined experience replay</i> and compared the greedy episilon and Boltzmann eplxoration 
-          methods. Code
-          <a target="_blank" href="https://github.com/azzarelli/RL-Dynamic-Maze-Solver">here</a>.
-          
-        </p>
-      </span>
-      <span>
-        <h1 class="subtitle">(Paper Extension) The Importance of Group-Size Preferences for the Evolution of Cooperation Under the Conditions of Individual Selection</h1>
-        <h2 style="margin-top:-10px">Literature Review and Model Extension - Jan-May 2022 - Not Published</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          I reproduced and extended the proposed <i>Genetic Algorithm</i>; which focuses on replicating the conditions of
-          grouping and dispersal in bacterial micro-colonies to provide insight into cooperative structures.
-          The extension focused on better representing individuals to allow for imprecisions in their understanding of
-          the simulated environment. Paper and code found
-          <a target="_blank" href="https://github.com/azzarelli/Individual-Selection-for-Cooperative-Group-Formation/tree/main/coursework2">here</a>.
-        </p>
-      </span>
+      <video poster="" class="videoDisplay" autoplay controls muted loop height="100%">
+        <source src="src/showcase.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="videoInfo">
+        An example of relighting Virtual Production content with our <a href="https://interims-git.github.io/">Gaussian Splatting pipeline</a>
+      </h2>
+      <iframe 
+        width="100%" 
+        height="480"
+  src="https://www.youtube.com/embed/z8YZhX7JfDU"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+      <h2 class="videoInfo">
+        I streamed a background I was designing in Photoshop to our <a href="https://interims-git.github.io/">Gaussian Splatting reconstruction and relighting pipeline</a>
+        for Virtual Productio to showcase the future potential of creative film making.
+      </h2>
+      <video
+        class="videoDisplay"
+        controls
+        preload="metadata"
+        playsinline
+      >
+        <source src="src/exposure.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <h2 class="videoInfo">
+        I developed IBL exposure and recoloring settings for our <a href="https://interims-git.github.io/">Gaussian Splatting reconstruction and relighting pipeline</a>
+        for Virtual Productio to showcase the future potential of creative film making.
+      </h2>
       
-      <span>
-        <h1 class="subtitle">(Paper Reproduction) Inspecting Functional Modularity in NNs</h1>
-        <h2 style="margin-top:-10px">Group Project - Jan-June 2022 - Not Published</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          A reproduction of, <a href="https://arxiv.org/abs/2010.02066">Are Neural Nets Modular? Inspecting Functional Modularity through Differentiable Weight Masks</a> (ICLR '21).
-          We reproduce the proposed tool for inspecting functional modularity and tested it on a range of NN architectures
-          (namely CNNs and RNNs).
-        </p>
-      </span>
+       <video poster="" class="videoDisplay" autoplay controls muted loop height="100%">
+          <source src="splatographypage/static/videos/piano_vfx.mp4"
+          type="video/mp4">
+        </video>
+        <h2 class="videoInfo">
+          After developing a pipeline for <a href="https://github.com/azzarelli/Splatography-3DV-2026">reconstructing 3-D scenes from sparse multi-view camera set ups</a>
+          I implemented various VFX tools for Gaussian Splatting representations (wait for the end).
+        </h2>
 
-      <span>
-        <h1 class="subtitle">(Internship) Improved Distribution of Physical Sensor Networks under Star Topology</h1>
-        <h2 style="margin-top:-10px">Research Internship at <a href="https://lurtis.com/en/">Lurtis Rules</a> - July-Nov 2020  - Rejection</h2>
-        <p style="margin-top:-10px; font-size: 13px;">
-          We wrote a comparative short paper on evaluating various linear and non-linear strategies
-          for multi-objective sensor distribution for general irregular (agricultural) fields; supervised by
-          <a href="https://www.linkedin.com/in/jose-m-chema-pe%C3%B1a-a0944569/">Jose M. Pena</a>. This primarily uses unsupervised
-          <i>differential evolution</i>.
-        </p>
-      </span>
+        <video poster="" class="videoDisplay" autoplay controls muted loop height="100%">
+          <source src="splatographypage/static/videos/showcase.mp4"
+          type="video/mp4">
+        </video>
+        <h2 class="videoInfo">
+          Same as above but this time I made an audio-visual effect for Gaussian Splatting
+        </h2>
 
 
     </div>
