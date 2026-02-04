@@ -11,6 +11,10 @@
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <script src="js/dropdown.js"></script>
 
@@ -22,9 +26,10 @@
 <script src="scripting/home/javaid.js"></script>
 
   <div id="foreground">
-
+    <div class="banner" style="margin-top: 25px;">
+      <p class="banner-text">Personal Introduction</p>
+    </div>
     <div class="project-container" style="padding-bottom:0px;display: flex;">
-      <img class="photo" src="css/me.png">
 
       <div class="introduction-text-container">
         <p class="introduction-text" >
@@ -51,34 +56,6 @@
     <hr>
 
     <div class="banner">
-      <p class="banner-text">Character</p>
-    </div>
-    <div class="project-container">
-      
-      <span class="project">
-      <div class="project-header">
-        <h2 style="margin-top:-10px">
-          <b>People would describe me as...</b> passionate, organised and rational.
-          <br><b>I am driven by...</b> my love for art and code
-          <br><b>My philosophy is centerd on...</b> enjoying life and bringing joy to the lives of others (through art)
-          <br><b>Recommended fiction...</b> Left Hand of Darkness (Le Guin), Infinite Jest (Wallace), One Piece (Oda), the Aleph (Borges)
-          <br><b>Recommended non-fiction books...</b> Curves for the Mathematically Curious (Havil), Teaching Critical Thinking (Hooks), 
-          Perspectives on Projective Geometry (Richter-Gebert)  
-        </h2>
-      </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-...
-          </p>
-        </div>
-
-      </span>
-
-    </div>
-
-    <hr>
-
-    <div class="banner">
       <p class="banner-text">Education</p>
     </div>
 
@@ -87,7 +64,7 @@
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">Intelligent Cinematography, PhD</h1>
-        <h2 style="margin-top:-10px">Sep-Mar 2022/26 | <a href="https://vilab.blogs.bristol.ac.uk/">Visual Information Lab</a> @ Universtiy of Bristol
+        <h2 style="margin-top:-10px">Sep-Mar 2022/26 | Visual Information Lab, Universtiy of Bristol
           <br> Funded by <a href="https://www.myworld-creates.com/">MyWorld</a> and UKRI 
           <br> Supervised by  <a href="https://www.bristol.ac.uk/people/person/David-Bull-f53987d8-4d62-431b-8228-2d39f944fbfe/">Dave Bull</a>
           and <a href="https://www.bristol.ac.uk/people/person/Pui-Anantrasirichai-49b2250e-53e4-4631-aedc-8154b2cff568/">Pui Anantrasirichai</a>  </h2>
@@ -201,14 +178,14 @@
     <hr>
 
     <div class="banner">
-      <p class="banner-text">Research Papers</p>
+      <p class="banner-text">Research Projects</p>
     </div>
 
     <div class="project-container">
-      <!-- <span class="project">
+      <span class="project">
       <div class="project-header">
-        <h1 id="vsr" class="subtitle">VSR: Virtual studio 3D reconstruction and relighting with real in-camera image-based lighting</h1>
-        <h2 style="margin-top:-10px">Aug-Jan 2025/6 | <a href="https://interims-git.github.io/">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a></h2>
+        <h1 id="vsr" class="subtitle">Gaussian Splatting Light Simulation for Virtual Production</h1>
+        <h2 style="margin-top:-10px">2025/6 | [Submitted to SIGGRAPH] Please email for link to videos and paper
         </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
@@ -218,13 +195,13 @@ Our VSR method relies on multi-view images of a static scene including a real in
           </p>
         </div>
 
-      </span> -->
+      </span>
 
       <span class="project">
       <div class="project-header">
         <h1 class="subtitle">Splatography: Sparse multi-view dynamic Gaussian Splatting for film-making challenge (technical)</h1>
-        <h2 style="margin-top:-10px">Jan-Aug 2025 | 
-          <a href="https://arxiv.org/abs/2312.02218">International Conference on 3D Vision 2026 (3DV)</a> - 
+        <h2 style="margin-top:-10px">2025 | 
+          International Conference on 3D Vision 2026 (3DV) - <a href="https://arxiv.org/abs/2312.02218">paper</a> - 
           <a href="./splatographypage/index.html">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a></h2>
         </div>
         <div class="project-body">
@@ -244,28 +221,9 @@ Our VSR method relies on multi-view images of a static scene including a real in
 
       <span class="project">
       <div class="project-header">
-        <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields (technical)</h1>
-        <h2 style="margin-top:-10px">July-Nov 2022/4 | <a href="https://arxiv.org/abs/2312.02218">arXiv</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a></h2>
-        </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-            Dynamic Novel View Synthesis (Dynamic NVS) enhances NVS technologies to model moving 3-D scenes. However, current methods are resource intensive and challenging to compress. 
-            To address this, we present WavePlanes, a fast and more compact hex plane representation, applicable to both dynamic Neural Radiance Fields and Gaussian Splatting methods. 
-            Rather than modeling many feature scales separately (as done previously), we use the inverse discrete wavelet transform to reconstruct features at varying scales. This 
-            leads to a more compact representation and allows us to explore wavelet-based compression schemes for further gains. The proposed compression scheme exploits the sparsity 
-            of wavelet coefficients, by applying hard thresholding to the wavelet planes and storing nonzero coefficients and their locations on each plane in a Hash Map. Compared to 
-            the state-of-the-art (SotA), WavePlanes is significantly smaller, less resource demanding and competitive in reconstruction quality. Compared to small SotA models, WavePlanes 
-            outperforms methods in both model size and quality of novel views.
-          </p>
-        </div>
-      </span>
-      
-      <span class="project">
-      <div class="project-header">
         <h1 class="subtitle">ViVo: A Dataset for Volumetric Video Reconstruction and Compression (dataset)</h1>
         <h2 style="margin-top:-10px">
-          June-June 2024/5 | <a href="https://vivo-bvicr.github.io/">page</a> 
-          <br><a href="">Special Issue on Volumetric Video Reconstruction and Compression, Transactions on Circuits, Signals and Video Transmission, IEEE </a> 
+          2024/5 | Special Issue on Volumetric Video Reconstruction and Compression, T-CSVT, IEEE 2026 - <a href="https://arxiv.org/abs/2506.00558">paper</a> - <a href="https://vivo-bvicr.github.io/">page</a>
         </h2>
         </div>
         <div class="project-body">
@@ -285,8 +243,26 @@ Our VSR method relies on multi-view images of a static scene including a real in
 
       <span class="project">
       <div class="project-header">
-        <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production (review; 41 pages)</h1>
-        <h2 style="margin-top:-10px">Sep-Apr 2022/5 | <a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">Springer Nature: Artificial Intelligence Review</a></h2>
+        <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields (technical)</h1>
+        <h2 style="margin-top:-10px">2023 | arXiv - <a href="https://arxiv.org/abs/2312.02218">paper</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a></h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            Dynamic Novel View Synthesis (Dynamic NVS) enhances NVS technologies to model moving 3-D scenes. However, current methods are resource intensive and challenging to compress. 
+            To address this, we present WavePlanes, a fast and more compact hex plane representation, applicable to both dynamic Neural Radiance Fields and Gaussian Splatting methods. 
+            Rather than modeling many feature scales separately (as done previously), we use the inverse discrete wavelet transform to reconstruct features at varying scales. This 
+            leads to a more compact representation and allows us to explore wavelet-based compression schemes for further gains. The proposed compression scheme exploits the sparsity 
+            of wavelet coefficients, by applying hard thresholding to the wavelet planes and storing nonzero coefficients and their locations on each plane in a Hash Map. Compared to 
+            the state-of-the-art (SotA), WavePlanes is significantly smaller, less resource demanding and competitive in reconstruction quality. Compared to small SotA models, WavePlanes 
+            outperforms methods in both model size and quality of novel views.
+          </p>
+        </div>
+      </span>
+      
+      <span class="project">
+      <div class="project-header">
+        <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production (review)</h1>
+        <h2 style="margin-top:-10px">2022/5 | Springer Nature: Artificial Intelligence Review, Vol 58 Issue 4 (+40 pages) - <a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">paper</a></h2>
         </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
@@ -300,8 +276,8 @@ Our VSR method relies on multi-view images of a static scene including a real in
 
       <span class="project">
       <div class="project-header">
-        <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography (review/art application)</h1>
-        <h2 style="margin-top:-10px">Mar-May 2024 | <a href="https://arxiv.org/abs/2412.17532">arXiv</a></h2>
+        <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography (review & application)</h1>
+        <h2 style="margin-top:-10px">2024 | arXiv - <a href="https://arxiv.org/abs/2412.17532">paper</a></h2>
       </div>
       <div class="project-body">
         <p style=" font-size: 13px;">
@@ -388,8 +364,6 @@ Our VSR method relies on multi-view images of a static scene including a real in
   </div>
 
   <div id="background">
-    <span class="dot"></span>
-    <div class="triangle"></div>
   </div>
 
   <div class="topbar">
