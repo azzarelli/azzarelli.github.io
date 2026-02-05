@@ -144,6 +144,26 @@ display: block;
     z-index:1;
 }
 
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    left:0%;
+    margin-left:0px;
+    padding-bottom: 10px;
+    z-index:1;
+    
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+}
+.slideritem{
+    position: relative;
+    height: 100%;
+    width: fit-content;
+    padding: 1%;
+}
+
 h1,h2 {
     color: #646572;
     font-family: "Lato", sans-serif;
@@ -184,8 +204,8 @@ h1 {
 
 .videoDisplay{
     position: relative;
-    width: 100%;max-height: 300px;
-    height: fit-content;
+    width: auto;
+    height: 100%;
 }
 .videoInfo{
     font-family: monospace;
