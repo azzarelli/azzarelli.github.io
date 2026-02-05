@@ -9,7 +9,6 @@
   <link href="./css/foreground.css" type="text/css" rel="stylesheet">
   <link href="./css/background.css" type="text/css" rel="stylesheet">
   
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,22 +32,20 @@
 
       <div class="introduction-text-container">
         <p class="introduction-text" >
-          I love digital paitning, animation and clothes making. 
-          I also love reading research papers, designing neural architectures and developing digital tools for cinematography. 
-          During my PhD, I had the opportunity to marry my passions, by researching computer vision tools for filmmaking. 
-          Through this, I gained experience working of Virtual Production and 360 degree Metaverse filming stages and 
-          collaborating with artists to develop digital tools and production workflows that solve real world problems 
-          and/or propose new approaches to content creation. Thinking about the future, I would like continue pursuing
-          my passion for digital tooling for artistic applications.
+  My work involves designing algorithms and tools that push the boundaries of machine learning innovation for filmmaking applications. Another name
+  for this is <i>Intelligent Cinematography</i>. My background is in neural 3-D reconstruction with specialization in dynamic and re-lightable 
+  assets and scenes. I also enjoy traditional graphics, which I use alongside Blender, Unity and OpenGL to explore creative tools for
+  personal projects, like digital painting and animation. This has included developing 2-D VFX with shader for enhancing animations, as well as developing 
+  3-D tools for fashion design. Moving forward, my ambition is to support the creative industry with my technical skills in graphics and computer vision, so...
 
           <br>
           <br>
-          If you are curious about my work, looking for gaps in research or interested to hire/collaborate with me
+          ... if you are curious about my work, looking for gaps in research or wondering whether I would be a good fit for a project,
           feel free to email me: aazzarellib@gmail.com
 
           <br>
           <br>
-          To download my CV <a href="src/adrianazzarelli_26.pdf">click here!</a>
+          To download my CV <a href="src/adrianazzarelli_2026.pdf">click here!</a>
         </p>
       </div>
     </div>
@@ -62,7 +59,10 @@
     <div class="project-container">
       
       <span class="project">
+
       <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
         <h1 class="subtitle">Intelligent Cinematography, PhD</h1>
         <h2 style="margin-top:-10px">Sep-Mar 2022/26 | Visual Information Lab, Universtiy of Bristol
           <br> Funded by <a href="https://www.myworld-creates.com/">MyWorld</a> and UKRI 
@@ -88,6 +88,8 @@
 
       <span class="project">
       <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
         <h1 class="subtitle">Electronic Engineering With AI, MEng</h1>
         <h2 style="margin-top:-10px">Sep-Sep 2018/22 | Universtiy of Southampton
           <br> Thesis supervised by <a href="https://www.ecs.soton.ac.uk/people/mjw7">Mark Weal</a> </h2>
@@ -108,6 +110,135 @@
             <br> Head of the Electronic and Computer Science Mentoring Schee, 2020 & 2021 (COVID period) 
           </p>
         </div>
+
+      </span>
+
+    </div>
+
+
+    <hr>
+
+    <div class="banner">
+      <p class="banner-text">Research Projects</p>
+    </div>
+
+    <div class="project-container">
+      <span class="project">
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 id="vsr" class="subtitle">Gaussian Splatting Light Simulation for Virtual Production</h1>
+        <h2 style="margin-top:-10px">2025/6 | [Undergoing Conference Review] Please email for link to videos and paper
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+This paper investigates 3D scene reconstruction and relighting for virtual production (VP) stages, where real foreground objects are captured in front of LED walls that display virtual backgrounds and provide real image-based lighting (IBL) to the foreground. However, this fixes the scene's appearance at capture time and as VP stage lighting is unique to each set it is difficult to anticipate the scene's appearance. So, when the footage does not match the director's expectations re-shoots are required. These are uniquely expensive due to the cost and logistical complexity of VP stages. Addressing this, we propose a VP 3D reconstruction and relighting (VSR) pipeline that synthesizes photorealistic 3D twins of VP scenes and enables changing LED wall content while propagating the corresponding lighting effects to the foreground.
+<br><br>
+Our VSR method relies on multi-view images of a static scene including a real in-camera IBL background, captured under variable background and lighting conditions - a capture setting for which no prior reconstruction or relighting method exists. We therefore establish a foundation for VSR by introducing a novel Gaussian Splatting (GS)-based pipeline, several proxy baselines and multiple datasets including real VP captures. The main technical problems concern designing a suitable representation and re-lighting scheme that samples IBL textures to change the scene's lighting on a per-primitive basis. The main contribution is a geometry-independent GS lighting model that represents IBL texture sampling coordinates and lighting intensity as view-dependent GS parameters. As this model avoids ray-based inverse rendering, it does not require depth or normal priors to learn transmission and reflection effects, it supports complex scenes including transparent objects, and it is implemented without custom CUDA or RTX code. This resulting representation is compact and efficient, requiring less than 5GB of RAM or VRAM to train 1080p scenes. In practice, our approach reduces the reliance on VP-specific hardware and enables greater creative flexibility in post-production. The code, datasets, documentation and video results are available online.
+          </p>
+        </div>
+
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">Splatography: Sparse multi-view dynamic Gaussian Splatting for film-making challenge (technical)</h1>
+        <h2 style="margin-top:-10px">2025 | 
+          International Conference on 3D Vision 2026 (3DV) - <a href="https://arxiv.org/abs/2312.02218">paper</a> - 
+          <a href="./splatographypage/index.html">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a></h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            Deformable Gaussian Splatting (GS) accomplishes photorealistic dynamic 3-D reconstruction from dense multi-view video (MVV) by learning to deform a canonical GS representation. 
+            However, in filmmaking, tight budgets can result in sparse camera configurations, which limits state-of-the-art (SotA) methods when capturing complex dynamic features. 
+            To address this issue, we introduce an approach that splits the canonical Gaussians and deformation field into foreground and background components using a sparse set of masks 
+            for frames at t=0. Each representation is separately trained on different loss functions during canonical pre-training. Then, during dynamic training, different parameters are 
+            modeled for each deformation field following common filmmaking practices. The foreground stage contains diverse dynamic features so changes in color, position and rotation are 
+            learned. While, the background containing film-crew and equipment, is typically dimmer and less dynamic so only changes in point position are learned. Experiments on 3-D and 
+            2.5-D entertainment datasets show that our method produces SotA qualitative and quantitative results; up to 3 PSNR higher with half the model size on 3-D scenes. Unlike the 
+            SotA and without the need for dense mask supervision, our method also produces segmented dynamic reconstructions including transparent and dynamic textures. 
+          </p>
+        </div>
+
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">ViVo: A Dataset for Volumetric Video Reconstruction and Compression (dataset)</h1>
+        <h2 style="margin-top:-10px">
+          2024/5 | Special Issue on Volumetric Video Reconstruction and Compression, T-CSVT, IEEE 2026 - <a href="https://arxiv.org/abs/2506.00558">paper</a> - <a href="https://vivo-bvicr.github.io/">page</a>
+        </h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            As research on neural volumetric video reconstruction and compression flourishes, there is a need for diverse and realistic datasets, which can be used to develop and validate 
+            reconstruction and compression models. However, existing volumetric video datasets lack diverse content in terms of both semantic and low-level features that are commonly present 
+            in real-world production pipelines. In this context, we propose a new dataset, \name, for VolumetrIc VideO reconstruction and compression. The dataset is faithful to 
+            real-world volumetric video production and is the first dataset to extend the definition of diversity to include both human-centric characteristics (skin, hair, etc.) and 
+            dynamic visual phenomena (transparent, reflective, liquid, etc.). Each video sequence in this database contains raw data including fourteen multi-view RGB and depth video pairs, 
+            synchronized at 30FPS with per-frame calibration and audio data, and their associated 2-D foreground masks and 3-D point clouds. To demonstrate the use of this database, we have 
+            benchmarked three state-of-the-art (SotA) 3-D reconstruction methods and two volumetric video compression algorithms. The obtained results evidence the challenging nature of the 
+            proposed dataset and the limitations of existing datasets for both volumetric video reconstruction and compression tasks, highlighting the need to develop more effective algorithms 
+            for these applications.
+          </p>
+        </div>
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields (technical)</h1>
+        <h2 style="margin-top:-10px">2023 | arXiv - <a href="https://arxiv.org/abs/2312.02218">paper</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a></h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            Dynamic Novel View Synthesis (Dynamic NVS) enhances NVS technologies to model moving 3-D scenes. However, current methods are resource intensive and challenging to compress. 
+            To address this, we present WavePlanes, a fast and more compact hex plane representation, applicable to both dynamic Neural Radiance Fields and Gaussian Splatting methods. 
+            Rather than modeling many feature scales separately (as done previously), we use the inverse discrete wavelet transform to reconstruct features at varying scales. This 
+            leads to a more compact representation and allows us to explore wavelet-based compression schemes for further gains. The proposed compression scheme exploits the sparsity 
+            of wavelet coefficients, by applying hard thresholding to the wavelet planes and storing nonzero coefficients and their locations on each plane in a Hash Map. Compared to 
+            the state-of-the-art (SotA), WavePlanes is significantly smaller, less resource demanding and competitive in reconstruction quality. Compared to small SotA models, WavePlanes 
+            outperforms methods in both model size and quality of novel views.
+          </p>
+        </div>
+      </span>
+      
+      <span class="project">
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production (review)</h1>
+        <h2 style="margin-top:-10px">2022/5 | Springer Nature: Artificial Intelligence Review, Vol 58 Issue 4 (+40 pages) - <a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">paper</a></h2>
+        </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            The first (comprehensive) review of computer vision research in the context of real video content acquisition for entertainment. 
+            To establish a structure, we categorise work by General, Virtual, Live and Aerial production, and within each category we 
+            discuss various machine learning applications and their links to other forms production. We also provide category-specific comments
+            on future works and discuss the socail responsibilities for conducting ethical research.
+          </p>
+        </div>
+      </span>
+
+      <span class="project">
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography (review & application)</h1>
+        <h2 style="margin-top:-10px">2024 | arXiv - <a href="https://arxiv.org/abs/2412.17532">paper</a></h2>
+      </div>
+      <div class="project-body">
+        <p style=" font-size: 13px;">
+          We provide an overview of Dynamic NeRF and Gaussian Splatting research in the context of cinematography and explore
+          the use of these technologies (Nerfacto, 4D-GS and SC-GS) to produce (very) short film. Topics discussed: 
+          (1) Dynamic representations, (2) Articulated models vs Scene-based modelling, (3) Data collection
+        </p>
+      </div>
 
       </span>
 
@@ -172,122 +303,6 @@
         </div>
       </span>
 
-
-    </div>
-
-    <hr>
-
-    <div class="banner">
-      <p class="banner-text">Research Projects</p>
-    </div>
-
-    <div class="project-container">
-      <span class="project">
-      <div class="project-header">
-        <h1 id="vsr" class="subtitle">Gaussian Splatting Light Simulation for Virtual Production</h1>
-        <h2 style="margin-top:-10px">2025/6 | [Submitted to SIGGRAPH] Please email for link to videos and paper
-        </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-This paper investigates 3D scene reconstruction and relighting for virtual production (VP) stages, where real foreground objects are captured in front of LED walls that display virtual backgrounds and provide real image-based lighting (IBL) to the foreground. However, this fixes the scene's appearance at capture time and as VP stage lighting is unique to each set it is difficult to anticipate the scene's appearance. So, when the footage does not match the director's expectations re-shoots are required. These are uniquely expensive due to the cost and logistical complexity of VP stages. Addressing this, we propose a VP 3D reconstruction and relighting (VSR) pipeline that synthesizes photorealistic 3D twins of VP scenes and enables changing LED wall content while propagating the corresponding lighting effects to the foreground.
-<br><br>
-Our VSR method relies on multi-view images of a static scene including a real in-camera IBL background, captured under variable background and lighting conditions - a capture setting for which no prior reconstruction or relighting method exists. We therefore establish a foundation for VSR by introducing a novel Gaussian Splatting (GS)-based pipeline, several proxy baselines and multiple datasets including real VP captures. The main technical problems concern designing a suitable representation and re-lighting scheme that samples IBL textures to change the scene's lighting on a per-primitive basis. The main contribution is a geometry-independent GS lighting model that represents IBL texture sampling coordinates and lighting intensity as view-dependent GS parameters. As this model avoids ray-based inverse rendering, it does not require depth or normal priors to learn transmission and reflection effects, it supports complex scenes including transparent objects, and it is implemented without custom CUDA or RTX code. This resulting representation is compact and efficient, requiring less than 5GB of RAM or VRAM to train 1080p scenes. In practice, our approach reduces the reliance on VP-specific hardware and enables greater creative flexibility in post-production. The code, datasets, documentation and video results are available online.
-          </p>
-        </div>
-
-      </span>
-
-      <span class="project">
-      <div class="project-header">
-        <h1 class="subtitle">Splatography: Sparse multi-view dynamic Gaussian Splatting for film-making challenge (technical)</h1>
-        <h2 style="margin-top:-10px">2025 | 
-          International Conference on 3D Vision 2026 (3DV) - <a href="https://arxiv.org/abs/2312.02218">paper</a> - 
-          <a href="./splatographypage/index.html">page</a> - <a href="https://github.com/azzarelli/Splatography-3DV-2026">code</a></h2>
-        </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-            Deformable Gaussian Splatting (GS) accomplishes photorealistic dynamic 3-D reconstruction from dense multi-view video (MVV) by learning to deform a canonical GS representation. 
-            However, in filmmaking, tight budgets can result in sparse camera configurations, which limits state-of-the-art (SotA) methods when capturing complex dynamic features. 
-            To address this issue, we introduce an approach that splits the canonical Gaussians and deformation field into foreground and background components using a sparse set of masks 
-            for frames at t=0. Each representation is separately trained on different loss functions during canonical pre-training. Then, during dynamic training, different parameters are 
-            modeled for each deformation field following common filmmaking practices. The foreground stage contains diverse dynamic features so changes in color, position and rotation are 
-            learned. While, the background containing film-crew and equipment, is typically dimmer and less dynamic so only changes in point position are learned. Experiments on 3-D and 
-            2.5-D entertainment datasets show that our method produces SotA qualitative and quantitative results; up to 3 PSNR higher with half the model size on 3-D scenes. Unlike the 
-            SotA and without the need for dense mask supervision, our method also produces segmented dynamic reconstructions including transparent and dynamic textures. 
-          </p>
-        </div>
-
-      </span>
-
-      <span class="project">
-      <div class="project-header">
-        <h1 class="subtitle">ViVo: A Dataset for Volumetric Video Reconstruction and Compression (dataset)</h1>
-        <h2 style="margin-top:-10px">
-          2024/5 | Special Issue on Volumetric Video Reconstruction and Compression, T-CSVT, IEEE 2026 - <a href="https://arxiv.org/abs/2506.00558">paper</a> - <a href="https://vivo-bvicr.github.io/">page</a>
-        </h2>
-        </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-            As research on neural volumetric video reconstruction and compression flourishes, there is a need for diverse and realistic datasets, which can be used to develop and validate 
-            reconstruction and compression models. However, existing volumetric video datasets lack diverse content in terms of both semantic and low-level features that are commonly present 
-            in real-world production pipelines. In this context, we propose a new dataset, \name, for VolumetrIc VideO reconstruction and compression. The dataset is faithful to 
-            real-world volumetric video production and is the first dataset to extend the definition of diversity to include both human-centric characteristics (skin, hair, etc.) and 
-            dynamic visual phenomena (transparent, reflective, liquid, etc.). Each video sequence in this database contains raw data including fourteen multi-view RGB and depth video pairs, 
-            synchronized at 30FPS with per-frame calibration and audio data, and their associated 2-D foreground masks and 3-D point clouds. To demonstrate the use of this database, we have 
-            benchmarked three state-of-the-art (SotA) 3-D reconstruction methods and two volumetric video compression algorithms. The obtained results evidence the challenging nature of the 
-            proposed dataset and the limitations of existing datasets for both volumetric video reconstruction and compression tasks, highlighting the need to develop more effective algorithms 
-            for these applications.
-          </p>
-        </div>
-      </span>
-
-      <span class="project">
-      <div class="project-header">
-        <h1 class="subtitle">WavePlanes: A compact Wavelet representation for Dynamic Neural Radiance Fields (technical)</h1>
-        <h2 style="margin-top:-10px">2023 | arXiv - <a href="https://arxiv.org/abs/2312.02218">paper</a> - <a href="./waveplanespage/index.html">page</a> - <a href="https://github.com/azzarelli/waveplanes/">code</a></h2>
-        </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-            Dynamic Novel View Synthesis (Dynamic NVS) enhances NVS technologies to model moving 3-D scenes. However, current methods are resource intensive and challenging to compress. 
-            To address this, we present WavePlanes, a fast and more compact hex plane representation, applicable to both dynamic Neural Radiance Fields and Gaussian Splatting methods. 
-            Rather than modeling many feature scales separately (as done previously), we use the inverse discrete wavelet transform to reconstruct features at varying scales. This 
-            leads to a more compact representation and allows us to explore wavelet-based compression schemes for further gains. The proposed compression scheme exploits the sparsity 
-            of wavelet coefficients, by applying hard thresholding to the wavelet planes and storing nonzero coefficients and their locations on each plane in a Hash Map. Compared to 
-            the state-of-the-art (SotA), WavePlanes is significantly smaller, less resource demanding and competitive in reconstruction quality. Compared to small SotA models, WavePlanes 
-            outperforms methods in both model size and quality of novel views.
-          </p>
-        </div>
-      </span>
-      
-      <span class="project">
-      <div class="project-header">
-        <h1 class="subtitle">Reviewing Intelligent Cinematography: AI research for camera-based video production (review)</h1>
-        <h2 style="margin-top:-10px">2022/5 | Springer Nature: Artificial Intelligence Review, Vol 58 Issue 4 (+40 pages) - <a href="https://link.springer.com/article/10.1007/s10462-024-11089-3">paper</a></h2>
-        </div>
-        <div class="project-body">
-          <p style=" font-size: 13px;">
-            The first (comprehensive) review of computer vision research in the context of real video content acquisition for entertainment. 
-            To establish a structure, we categorise work by General, Virtual, Live and Aerial production, and within each category we 
-            discuss various machine learning applications and their links to other forms production. We also provide category-specific comments
-            on future works and discuss the socail responsibilities for conducting ethical research.
-          </p>
-        </div>
-      </span>
-
-      <span class="project">
-      <div class="project-header">
-        <h1 class="subtitle">Exploring Dynamic Novel View Synthesis Technologies for Cinematography (review & application)</h1>
-        <h2 style="margin-top:-10px">2024 | arXiv - <a href="https://arxiv.org/abs/2412.17532">paper</a></h2>
-      </div>
-      <div class="project-body">
-        <p style=" font-size: 13px;">
-          We provide an overview of Dynamic NeRF and Gaussian Splatting research in the context of cinematography and explore
-          the use of these technologies (Nerfacto, 4D-GS and SC-GS) to produce (very) short film. Topics discussed: 
-          (1) Dynamic representations, (2) Articulated models vs Scene-based modelling, (3) Data collection
-        </p>
-      </div>
-
-      </span>
 
     </div>
 

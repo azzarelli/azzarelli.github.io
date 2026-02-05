@@ -42,6 +42,7 @@ hr {
 }
 
 .project-header {
+  position: relative;
   padding: 0.5rem 0.5rem;
   transition: background-color 0.2s;
   border-radius: 10px;
@@ -168,7 +169,14 @@ h1 {
     font-weight: 300;
 
 }
-
+.downArrow{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 1%;
+    bottom: 30%;
+    z-index: -1;
+}
 .subtitle{
   font-family: "Lato", sans-serif;
     font-size: 15px;
