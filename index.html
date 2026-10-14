@@ -69,6 +69,8 @@
       </div>
         <div class="project-body">
           <p style=" font-size: 13px;">
+            <b>Key words:</b> Gaussian Splatting, Machine Learning, Computer Graphics, Game Engine Design, Rendering Pipelines, Data Capture
+            <br><br>
             <i>BlueAI</i> brings together photo-real underwater reefs (Gaussian Splatting) and game-engine design (CG fish mechanics),
             to exhibit a compelling Virtual Reality experience for reef preservation. The product: Users are placed on a moving chair, strapped to an Apple Vision viewing
             the live reef at 4K per eye at 90FPS, with a joy stick to "swim" around with full 6DoF. <br><br> 
@@ -86,8 +88,7 @@
             rendering and applying shaders to a large-scale, dynamic G-Splatting scene. For those who understand this problem well:
             we can render scenes with 500m-2B primitives @ 4K per eye at +90FPS. This includes rendering the splats, dynamic VFX, procedural CG models - including complex fish interactions and collisions.
             On the VR rasterization task, our g-splat rasterizer outperforms gsplat=1.6.0 and VRSplat by 6x and 22x respectively.
-            <br><br>
-            <b>Key words:</b> Gaussian Splatting, Machine Learning, Computer Graphics, Game Engine Design, Rendering Pipelines, Data Capture
+   
           </p>
         </div>
 
@@ -227,8 +228,87 @@ Our VSR method relies on multi-view images of a static scene including a real in
 
     </div>
 
-        <hr>
 
+    <hr>
+
+    <div class="banner">
+      <p class="banner-text">Fun Side Projects</p>
+    </div>
+
+    <div class="project-container">
+      
+      <span class="project">
+
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">Rendering Gaussian Splats as Orthonormal Voxels</h1>
+        <h2 style="margin-top:-10px"><a href="https://github.com/azzarelli/GaussianKernelMorpher">Python Code</a> | <a href="https://github.com/azzarelli/diff-gaussian-rasterization-kernerl-morph">Raster/CUDA Code</a> </h2>
+      </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            <i>The idea: </i> Can we take a generic .PLY splat and render out the scene as a set of othonormal voxels. This is an appearance effect, implemented in CUDA/C++ as a wrapper to Python. 
+            This bridges two algorithms: AABB-splat sampling and SLAB-based rendering for splat-like voxels (i.e. voxels with opacity and view-dep color).
+            <br><br>
+            Implemented for plug-n-play.
+            <br><br>
+            This project was mostly intended to improve my CUDA/C++ knowledge and skills. Hence, it was implemented with restrictions on using LLMs for coding assistance.
+          </p>
+        </div>
+
+      </span>
+
+      <span class="project">
+
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">Surface Traversal on Gaussian Splatting Models for Clothing Design (Pattern Making)</h1>
+        <h2 style="margin-top:-10px"><a href="https://github.com/azzarelli/Gaussian-Splatting-Surface-Traversal">Python Code</a></h2>
+      </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            <i>The idea: </i> 
+            Can we develop an algorithm to trace the straightest path between two points on the surface of a 3D-GS asset? If you know splatting, the idea of 
+            a "surface" is ambiguous, so we define it as a minimum density value. The code implements picking and a procedural ray-marching algorithm that uses the shadow of
+            the line A-B projected radially outwards to carve the <i>straightest</i> line across the surface.
+            <br><br>
+            <b>Why the "straightest" line?</b> Becasue, I am building a clothing-pattern designer app that uses G-Splatting to produce metric and appearance accurate models. 
+            In pattern making, straight lines are essential for accurate tailoring. Hence, running a different optimizer (e.g. smallest distance or fastest render) would not work 
+            for pattern making. 
+            <br><br>
+            This project was mostly intended to improve my knowledge of graphics concepts applied to new 3-D representations.
+          </p>
+        </div>
+
+      </span>
+
+      <span class="project">
+
+      <div class="project-header">
+        <img class="downArrow" src="images/down.png">
+
+        <h1 class="subtitle">Surface Traversal on Tri-Meshes (Grease Pencil)</h1>
+        <h2 style="margin-top:-10px"><a href="https://github.com/azzarelli/GreasePencilOpenGL">C#/OpenGL Code</a></h2>
+      </div>
+        <div class="project-body">
+          <p style=" font-size: 13px;">
+            <i>The idea: </i> 
+            This was essentially a pre-cursor to the Splatting project above. Same objective but more functionality. The underlying goal way
+            to simulate the infamous Grease-pencil, which is actively used in high-end animated films. 
+            <br><br>
+            This project was mostly intended to improve my knowledge of graphics concepts applied to well known 3-D representations.
+          </p>
+        </div>
+
+      </span>
+
+    </div>
+
+    <hr>
+
+
+    
     <div class="banner">
       <p class="banner-text">Education</p>
     </div>
@@ -311,7 +391,7 @@ Our VSR method relies on multi-view images of a static scene including a real in
       </div>
       <div class="project-body">
           <p style=" font-size: 13px;">
-            I am French and Italian, and grew up in London, UK. I can speak English and French with high profficients. My Italian
+            I am French and Italian, and grew up in London, UK. I can speak English and French with high profficiency. My Italian
             is casual.
           </p>
         </div>
